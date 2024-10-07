@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        table{
+           /* border: 1px solid black;*/
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th {
+            background-color: aqua;
+            border: 1px solid orangered;
+            padding: 10px;
+            
+        }
+        td {
+            border: 1px solid blue;
+            border-style: dotted;
+        }
+        tr :nth-child(3)
+        {
+            background-color: brown;
+        }
+        td:hover 
+        {
+            background-color: green;
+        }
+    </style>
+    <h1>
+        Simple table practice
+    </h1>
+
+    <table>
+        <caption>Test 1</caption>
+        <tr>
+            <th colspan="2">Full Name</th>
+        </tr>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+        </tr>
+        <tr>
+            <td style="width: 20%;">
+                Tayyab
+            </td>
+            <td>
+                Mansoor
+            </td>
+        </tr>
+        <tr>
+            <td>
+                1
+            </td>
+            <td>
+                2
+            </td>
+        </tr>
+    </table>
+
+
+    <table>
+        <caption>Test 2</caption>
+        <tr>
+            <th></th>
+            <th>Last Name</th>
+            <th>First Name</th>
+        </tr>
+        <tr>
+            <th>Full Name</th>
+            <td style="height: 200px;">
+                Mansoor
+            </td>
+            <td>
+                Tayyab
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                2
+            </td>
+            <td>
+                1
+            </td>
+        </tr>
+    </table>
+</html>

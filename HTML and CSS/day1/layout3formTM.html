@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Proposal</title>
+    <style>
+        table {
+            border: 1px solid lightgray;
+            width: 100%;
+            padding: 5px;
+        }
+
+        tr,
+        td {
+            border-collapse: collapse;
+            color:#878482;
+            }
+
+        button {
+            background-color: #007BFF;
+            /* Blue background */
+            color: white;
+            /* White text */
+            border: none;
+            /* Remove default border */
+            border-radius: 5px;
+            /* Rounded corners */
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            }
+        input 
+        {
+        width: 100%; 
+        padding: 10px; 
+        font-size: 16px; 
+        border: 2px solid #d2d4d6; 
+        border-radius: 5px; 
+        box-sizing: border-box; 
+        color: #333; 
+        background-color: #fff;
+
+        }
+
+
+            /*tr,td
+        {
+            border: 1px solid black;
+        }*/
+    </style>
+</head>
+
+
+<body>
+    <table>
+        <tr style="justify-content: center;">
+      
+            <td>About Us</td>
+            <td>Publications</td>
+            <td>For Partners</td>
+            <td>Libraries</td>
+            <td>Resources</td>
+
+        </tr>
+    </table>
+
+
+    <H2>Submit Book Proposal</H2>
+    <table>
+        <tr>
+            <p><b>Note:</b> Fields marked with an asterisk (*) are required</p>
+        </tr>
+
+        <tr>
+            <td>Title of the proposed Book:*</td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <input type="text" name="title" placeholder="">
+            </td>
+        </tr>
+
+
+
+        <tr>
+            <td>Editor/Author Name:*</td>
+        </tr>
+        <tr>
+            <td colspan="3">
+
+                <input type="text" name="author" placeholder="">
+            </td>
+        </tr>
+
+
+
+        <tr>
+            <td>Editor/Author Affiliation:*</td>
+        </tr>
+        <tr>
+            <td colspan="3">
+
+                <input type="text" name="Affiliation" placeholder="">
+            </td>
+        </tr>
+
+
+
+        <tr>
+            <td>Editor/Author's List of Publications *</td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <input type="text" name="publications" placeholder="">
+            </td>
+        </tr>
+
+        <tr>
+            <td>Book Description:*</td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <input type="text" name="Description" placeholder="">
+            </td>
+        </tr>
+
+
+        <tr>
+            <td>Proposal Keywords:*</td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <input type="text" name="keywords" placeholder="">
+            </td>
+        </tr>
+
+
+        <tr>
+            <td>Book Type:*</td>
+            <td>Total Chapters:*</td>
+            <td>Tendative date for submissions of all manuscripts:</td>
+        </tr>
+        <tr>
+            <td>
+                <input type="text" name="type" placeholder="Authored Book">
+            </td>
+            <td>
+                <input type="number" name="Chapters" placeholder="Select Number of Chapters">
+            </td>
+            <td>
+                <input type="date" name="date" placeholder="">
+            </td>
+        </tr>
+
+        <table>
+            <h2> Contact Information</h2>
+
+
+            <tr>
+                <td>Title:*</td>
+                <td>First Name:*</td>
+                <td>Last Name:*</td>
+            </tr>
+
+            <tr>
+                <td>
+                    <input type="title" name="title" placeholder="Mr.">
+                </td>
+                <td>
+                    <input type="text" name="FName" placeholder="">
+                </td>
+                <td>
+                    <input type="text" name="LName" placeholder="">
+                </td>
+            </tr>
+
+
+
+
+
+            <tr>
+                <td>User Category:*</td>
+                <td>Address:</td>
+                <td>City/Town:*</td>
+            </tr>
+
+            <tr>
+                <td>
+                    <input type="text" name="user" placeholder="Professor">
+                </td>
+                <td>
+                    <input type="text" name="Address" placeholder="">
+                </td>
+                <td>
+                    <input type="text" name="City" placeholder="">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Country:*</td>
+                <td>State/Province:*</td>
+                <td>ZIP/Postal code:</td>
+            </tr>
+
+            <tr>
+                <td>
+                    <input type="text" name="Country" placeholder="Select Country">
+                </td>
+                <td>
+                    <input type="text" name="State" placeholder="Others">
+                </td>
+                <td>
+                    <input type="number" name="ZIP" placeholder="">
+                </td>
+            </tr>
+
+
+
+            <tr>
+                <td>Email:*</td>
+                <td>Phone:</td>
+                <td>Fax:</td>
+            </tr>
+
+            <tr>
+                <td>
+                    <input type="email" name="email" placeholder="">
+                </td>
+                <td>
+                    <input type="tel" name="phone" placeholder="">
+                </td>
+                <td>
+                    <input type="number" name="Fax" placeholder="">
+                </td>
+            </tr>
+            <table>
+
+                <tr>
+                    <td style="background-color: #F8F9FA;">
+                        <b>Note:</b>
+                        The Book must be written in English(American or U.K. spelling)
+                        <br>
+                        Any proposal received from the junior scientists (not holding a PhD degree) is not acceptable
+                        <br>
+                        We do not publish MSc or PhD thesis as Books
+                    </td>
+                </tr>
+
+                </tr>
+                <tr style="text-align: center;">
+                    <td>
+                        Image Captcha
+                    </td>
+                </tr>
+                <tr style="text-align: center;">
+                    <td>
+                        <input type="text" name="Captcha" placeholder="Enter Captcha"
+                        style="width: min-content;">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+
+                    </td>
+                </tr>
+                <tr style="text-align: center;">
+                    <td><button type="button">back</button>
+                        <button type="button">submit</button>
+                    </td>
+                </tr>
+            </table>
+        </table>
+
+    <table>
+        <tr>
+            <th colspan="2"
+            rowspan="7">
+                LOGO <br> BENTHAM SCIENCE
+            </th>
+            <th>Sitemap</th>
+            <th>Quick Links</th>
+            <th>Privacy</th>
+            <th>Contact</th>
+        </tr>
+        <tr>
+            <td>
+                Journals
+            </td>
+            <td>
+                Comments & Reviews
+            </td>
+            <td>
+                Press Release
+            </td>
+            <td>
+                Feedback
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Books
+            </td>
+            <td>
+                Bentham Advisory Board
+            </td>
+            <td>
+                Terms & Conditions
+            </td>
+            <td>
+                info@benthamscience.net
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Submit Articles
+            </td>
+            <td>
+                Press Releases
+            </td>
+            <td>
+
+            </td>
+            <td>
+                +34-629 617 602
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Alerting Services
+            </td>
+            <td>
+                Newsletter
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                Gold Open Access
+            </td>
+            <td>
+                Fundung Agencies
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                Library Recommendations
+            </td>
+            <td>
+                Bentham Blogs
+            </td>
+        </tr>
+
+
+
+    </table>
+    <table>
+        <tr>
+            <td>
+                &copy; 2024 Bentham Science Publishers | Privacy Policy
+            </td>
+
+            <td >
+                LinkedIn Facebook Twitter Wordpress Youtube
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

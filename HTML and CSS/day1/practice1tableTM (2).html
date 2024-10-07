@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Layout</title>
+    <style>
+        table
+        {
+            width: 100%;
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        td 
+        {
+            text-align: center;
+            border: 2px solid blue;
+        }
+        td:hover 
+        {
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1> Simple Table using ColSpan and RowSpan</h1>
+    <table>
+        <colgroup>
+            <col span="3" style="background-color: red;">
+            <col span="2" style="background-color: yellow;">
+            
+        </colgroup>
+        <caption>1st Layout</caption>
+        <tr>
+            <td>1</td>
+            <td colspan="2" rowspan="3">2</td>
+            <td colspan="2">3</td>
+            <td rowspan="5">4</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td colspan="2">6</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td rowspan="3">11</td>
+            <td rowspan="3">12</td>
+            <td colspan="2">13</td>
+        </tr>
+        <tr>
+            <td rowspan="2">14</td>
+            <td>15</td>
+            <td>16</td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td>18</td>
+            <td>19</td>
+        </tr>
+    </table>
+</body>
+</html>
