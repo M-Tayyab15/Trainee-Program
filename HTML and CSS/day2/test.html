@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test page</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="day 2\apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="day 2\favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="day 2\favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<style>
+  body {
+    background-image: url('https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA3L2pvYjE0NDgtYmFja2dyb3VuZC0wNGEteF8xLmpwZw.jpg');
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+  div.contain
+  {
+    width: 100%;
+  }
+
+  div.contain div
+  {
+    width: 50%;
+    float: left;
+  }
+
+</style>
+</head>
+<body>
+    <p>This is a basic HTML page created for demonstration purposes.
+        <br>
+        Testing stuff
+    </p>
+    <h4>testing links</h4>
+    <a href="https://www.w3schools.com/html/html_basic.asp" target="_blank">click here to view tutorial</a>
+    <br> <br>
+    <img src="https://portal.xolva.com/images/logoits_login.png" alt="alternate text" width="50%" height="25%">
+    <p title="checking hover">hover over this text to display title</p>
+
+    <pre>
+
+        This is the demonstration of
+      
+        pre tag.
+      <hr>
+        Also hr tag is used to display.
+        
+        a line above.
+      
+      </pre>
+
+      <h2 style="color: blue;">Testing style</h2>
+
+      <h5 style="text-align: center; color: darkmagenta; font-family: 'Courier New', Courier, monospace;">text align check</h5>
+        <p>
+          <b>This text is bold</b> 
+          <br><strong>This text is important!</strong>
+          <br><i>This text is italic</i>
+          <br><em>This text is emphasized</em>
+          <br><small>This is some smaller text.</small>
+          <p>Do not forget to buy <mark>milk</mark> today.</p>
+          <p>My favorite color is <del>blue</del> red.</p>
+          <p>My favorite color is <del>blue</del> <ins>red</ins>.</p>
+          <p>This is <sub>subscripted</sub> text.</p>
+          <p>This is <sup>superscripted</sup> text.</p>
+          <blockquote>blockquote text </blockquote>
+
+          <p>The <abbr title="Information Technology Services">ITS</abbr> was founded in 2000.</p>
+
+          <address>
+            ITS.<br> 
+            Johor,<br>
+            Karachi<br>
+            Pakistan<br>
+            its.com
+          </address>
+          </p>
+            <bdo dir="rtl">This line will be written from right to left</bdo>
+
+            <div style="margin: auto; width: 200px; background-color: blue; min-height: 100px;">
+
+              this is done using div
+
+            </div>
+            <div class="contain">
+
+              <div style="background-color: aqua;">
+
+                <h1>this is div 1</h1>
+
+              </div>
+
+              <div style="background-color: orangered;">
+                <h1>this is div 2</h1>
+              </div>
+
+            </div>
+
+            <div>
+              
+              <hr>
+              <h3>Some JS to display date and time</h3>
+              
+              <button onclick="document.getElementById('datetime').innerText= new Date()">Show Date and Time</button>
+              <div id="datetime">Click the button to see the date and time.</div>
+            </div>
+            
+            
+            
+            <button onclick="fancydate()">Show  Fancy Date and Time</button>
+            
+
+            <div id="fancydatetime">fancy date</div>
+
+              <script>
+
+                function fancydate()
+                {
+                  document.getElementById('fancydatetime').innerText= new Date()
+                  document.getElementById("fancydatetime").style.fontSize = "25px";
+                  document.getElementById("fancydatetime").style.backgroundColor = "white";
+                  document.getElementById("fancydatetime").style.color = "green";
+                }
+                
+                </script>
+</body>
+</html>
