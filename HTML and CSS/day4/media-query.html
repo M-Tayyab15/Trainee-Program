@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media queries</title>
+    <style>
+/* Base Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.main-div {
+    display: grid;
+    gap: 10px;
+    padding: 20px;
+}
+
+/* Box Styling */
+.box {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.header-box {
+    background-color: #4CAF50;
+    color: #ffffff;
+}
+
+.big-box {
+    background-color: #FF5722;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Media Query for 320px and below */
+@media (max-width: 320px) {
+    .main-div {
+        grid-template-columns: 1fr; /* Single column layout */
+    }
+}
+
+/* Media Query for 321px to 768px */
+@media (min-width: 321px) and (max-width: 768px) {
+    .main-div {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns layout */
+        grid-template-rows: auto; /* Auto rows for flexible height */
+    }
+    .box:nth-last-child(-n+4) {
+        grid-column: span 1; /* Last 4 boxes each span one column */
+    }
+}
+
+/* Media Query for 769px and above */
+@media (min-width: 769px) {
+    .main-div {
+        grid-template-columns: repeat(5, 1fr); /* 5 columns layout */
+        grid-template-rows: auto;
+    }
+    .header-box {
+        grid-column: span 2; /* Headers span 2 columns */
+    }
+    .big-box {
+        grid-column: span 4; /* Big Box spans all 5 columns */
+    }
+    .box:nth-last-child(-n+4) {
+        grid-column: span 1; /* Last 4 boxes each span one column */
+    }
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="main-div">
+        <div class="box header-box">Header 1</div>
+        <div class="box header-box">Header 2</div>
+        <div class="box big-box">Big Box</div>
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+        <div class="box">Box 4</div>
+        <div class="box">Box 5</div>
+        <div class="box">Box 6</div>
+        <div class="box">Box 7</div>
+    </div>
+    
+</body>
+</html>
