@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position divs</title>
+    <style>
+        body
+        {
+            background-color: white;
+            margin-left: 20px;
+        }
+        .main
+        {
+            background-color: aqua;
+            width: 500px;
+            height: 500px;
+            align-content: center;
+            border: 1px solid aqua;
+        }
+        .green
+        {
+            background-color: lightgreen;
+            width: 350px;
+            height: 350px;
+            float: right;
+            margin-top: 24%;
+            margin-right: 5%;
+        }
+
+        .fixed-circle
+        {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: maroon;
+            position: fixed;
+            margin-left: 31%;
+        }
+        .bluebox
+        {
+            width: 350px;
+            height: 350px;
+            position: relative;
+            background-color: rgb(100, 172, 197);
+            margin-top: 12%;
+            margin-left: 15%;
+        }
+
+        .rectanglebottom 
+        {
+            width: 500px;
+            height: 55px;
+            background-color: purple;
+            margin-top: 10px;
+            
+            position: relative;
+
+        }
+        .pinkbox
+        {
+            width: 150px;
+            height: 150px;
+            background-color: pink;
+            margin-left: 35px;
+            margin-top: -80%;
+            position: relative;
+        }
+
+
+        .circlebottom
+        {
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            background-color: rgb(34, 201, 201);
+            border: 5px solid white;
+            margin-left: 44%;
+            margin-bottom: 5%;
+            align-content: center;
+        }
+        .smallrectanglefooter
+        {
+            width: 60px;
+            height: 20px;
+            background-color: green;
+            position: fixed;
+            float: right;
+            border-radius: 10px;
+            margin-left: 2%;
+            margin-top: -1%;
+        }
+
+        .stickybox
+        {
+            position: sticky;
+            width: 75px;
+            height: 30px;
+            background-color: #fff49c;
+            margin-left: -5%;
+            margin-top: 3%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+
+        <div class="fixed-circle">
+            <p style="margin-left: 10%; color: white;">fixed</p>
+        </div>
+        
+        <div class="green">
+            
+        </div>
+        
+        <div class="bluebox">
+            
+        </div>
+        
+        <div class="pinkbox">
+        
+        </div>
+
+        <div class="stickybox">
+
+            <p style="font-weight: bold;">Sticky</p>
+
+        </div>
+    </div>
+    
+    <div class=" rectanglebottom">
+        
+        <div class="circlebottom">
+            
+            <div class="smallrectanglefooter">
+                
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
