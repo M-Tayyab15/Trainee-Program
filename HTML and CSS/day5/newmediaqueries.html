@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+
+        body
+        {
+        flex-direction: column;
+        width: 100%;
+        }
+        
+        .main_container
+        {
+            width: 100%;
+            padding: 5px ;
+        }
+
+        .divOrangeContainer
+        {
+            
+        }
+
+        .divOrange 
+        {
+            width: 100%;
+            height: 50px;
+            background-color: orangered;
+            margin-bottom: 3px;
+        }
+
+        .divGreenLemon
+        {
+            width: 100%;
+            min-height: 50px;
+            height: auto;
+            background-color: lawngreen;
+        }
+
+
+
+        @media screen  and (min-width: 768px)
+        {
+            body
+            {
+                display: flex;
+                
+            }
+        }
+
+        @media screen and (min-width: 1024px) {
+  body {
+    background-color: lightgreen;
+    flex-direction: row;
+  }
+  .divOrange
+  {
+    width: 50%;
+    float: left;
+    height: 100px;
+    margin: 5px;
+  }
+}
+    </style>
+</head>
+<body>
+     <div class="main_container">
+       
+        <div class="divOrangeContainer">
+
+            
+            <div class="divOrange">
+                1st orange box 1
+            </div>
+            
+            <div class="divOrange">
+                2nd orange box
+            </div>
+            
+        </div>
+
+        <div class="divGreenLemon">
+            big lemon green box
+        </div>
+
+        <div>
+            <div>
+                blue rectangle box 1
+            </div>
+            <div>
+                blue rectangle box 2
+            </div>
+            <div>
+                blue rectangle box 3
+            </div>
+
+            <div>
+                <div>
+                    final box 1
+                </div>
+                <div>
+                    final box 2
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    final box 3
+                </div>
+                <div>
+                    final box 4
+                </div>
+            </div>
+            
+        </div>
+     </div>
+</body>
+</html>
