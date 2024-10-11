@@ -1,0 +1,710 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Montserrat;
+    background-color: #ffffff;
+    color: white;
+}
+
+.container {
+    width: 1050px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header h1 {
+    color: #5eb6ff;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+header h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+header p {
+    font-size: 16px;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.buttons {
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.primary {
+    background-color: #1da6f2;
+    color: white;
+}
+
+.secondary {
+    background-color: transparent;
+    border: 1px solid #5eb6ff;
+    color: #5eb6ff;
+}
+
+.courses {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.course-card {
+    background-color: white;
+    color: #1e2742;
+    border-radius: 8px;
+    padding: 20px;
+    width: 28%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.course-card h3 {
+    margin: 15px 0;
+    font-size: 18px;
+}
+
+.course-card p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+}
+
+.red {
+    background-color: #ffc3b0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.head-section
+{
+    background: rgba(37, 43, 66, 1);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+}
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px 20px;
+    color: rgb(255, 255, 255);
+}
+.menu a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+
+.auth-buttons a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.login
+{
+    background-color: rgba(37, 43, 66, 1) ;
+}
+.join-us
+{
+    background-color:  rgba(35, 166, 240, 1);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.green {
+    background-color: #c3ffb0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blue {
+    background-color: #b0d8ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section2
+{
+    background-color: white;
+    color: black;
+}
+
+.redhr
+{
+    width: 50px;
+    height: 2px;
+    color: red;
+    background-color: red;
+    padding-top: 2px;
+    margin: 10px 0px 10px 0px;
+}
+
+.secondpage
+{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: left;
+    margin:8% 1% 8% 1%;
+
+}
+.redhr2
+{
+    width: 60px;
+    height: 4px;
+    color: red;
+    background-color: red;
+    padding-top: 2px;
+    margin: 20px 0px 75px 0px;
+}
+
+.pack
+{
+    width: 320px;
+    size: 40px;
+    font-weight: 700;
+    margin: 10px 0px 60px 0px;
+    padding-right: 50px;
+}
+
+.greyp
+{
+    color: grey;
+    padding-bottom: 50px;
+}
+
+.bluetext
+{
+
+    color: rgba(35, 166, 240, 1);
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.section3-main
+{
+    margin: 40px 1px 1px 0px;
+    padding: 1px 1px 1px 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.section3-images
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+img.section3-images
+{
+    width: 240px;
+    height: 660px;
+}
+
+.section4-main
+{
+    margin: 40px 1px 1px 0px;
+    padding: 1px 1px 1px 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.sec4-img-container
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    justify-items: center;
+}
+.img-box
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.checked {
+    color: orange;
+  }
+
+  .stars
+  {
+    flex-direction: row;
+    margin-top: -10%;
+ }
+
+ .section5
+ {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 40px 1px 1px 0px;
+    padding: 1px 1px 1px 1px;
+    gap: 30px;
+ }
+
+ .email-input {
+    padding: 1px;
+    font-size: 16px;
+    flex: 1;
+    min-width: 400px;
+    min-height: 36px;
+}
+
+
+
+
+
+
+/*footer css*/
+
+footer {
+    background-color: #1e2742;
+    padding: 20px;
+    color: #fff;
+}
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.col {
+    flex: 1 1 250px;
+    padding: 0 20px;
+}
+
+h4 {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-around;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+
+
+.final
+{
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+
+
+
+
+
+/*picture css*/
+
+
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 240px;
+    text-align: center;
+}
+
+.card-header {
+    position: relative;
+}
+
+.sale-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: red;
+    color: #fff;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+.card-header img {
+    width: 100%;
+    height: auto;
+}
+
+.card-body {
+    padding: 15px;
+    text-align:left;
+}
+
+.card-language {
+    font-size: 12px;
+    color: rgba(35, 166, 240, 1);
+}
+
+.card h3 {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.card-info {
+    font-size: 12px;
+    color: #666;
+    margin: 10px 0;
+}
+
+.card-price {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #666;
+}
+
+.sale-price {
+    color: #28a745;
+    font-weight: bold;
+}
+
+.card-icons span {
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.learn-more {
+    background-color: #ffffff;
+    color: rgba(35, 166, 240, 1);
+    border: 1px solid rgba(35, 166, 240, 1);
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: 700;
+}
+
+.learn-more:hover {
+    background-color: #0056b3;
+}
+
+.product-actions
+{
+    display: flex;
+    width: 45px;
+    margin: -50px 0px 0px 35px;
+    padding: 0px 0px 0px 5px;
+    gap: 20px;
+}
+
+.engstar
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: 700;
+    align-items: center;
+    
+}
+
+.stars-rating
+{
+    background-color: rgba(37, 43, 66, 1);
+    color: white;
+    height: 25px;
+    border-radius: 10px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+}
+.frame-1
+{
+    margin: 0px 0px 0px 0px;
+    width: 199px;
+}
+
+.salestag
+{
+    font-weight: 700;
+    font-size: 14px;
+    margin: 0px 0px 20px 0px;
+}
+
+
+
+
+.circular
+{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circular img {
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+    
+}
+
+
+
+
+
+/* media queries */
+
+
+
+
+/* Small Screens (Mobile Devices) */
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 16px;
+    }
+
+    header h2 {
+        font-size: 24px;
+    }
+
+    header p {
+        font-size: 14px;
+        max-width: 100%;
+    }
+
+    .buttons {
+        margin-bottom: 20px;
+        margin-top: 20px;
+        flex-direction: column;
+    }
+
+    .btn {
+        font-size: 12px;
+        padding: 8px 16px;
+        margin: 5px 0;
+    }
+
+    .courses {
+        flex-direction: column;
+    }
+
+    .course-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .section2, .section3-main, .section4-main, .section5 {
+        margin: 20px 0;
+        padding: 10px;
+    }
+
+    .email-input {
+        min-width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+/* Medium Screens (Tablets) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 18px;
+    }
+
+    header h2 {
+        font-size: 28px;
+    }
+
+    header p {
+        font-size: 15px;
+        max-width: 100%;
+    }
+
+    .buttons {
+        flex-direction: row;
+        margin-bottom: 30px;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 10px 20px;
+        margin: 0 5px;
+    }
+
+    .courses {
+        flex-direction: column;
+    }
+
+    .course-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .section2, .section3-main, .section4-main, .section5 {
+        margin: 30px 0;
+        padding: 20px;
+    }
+
+    .email-input {
+        min-width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+/* Large Screens (Desktops and Larger) */
+@media (min-width: 1025px) {
+    .container {
+        width: 1050px;
+        padding: 20px;
+    }
+
+    .courses {
+        flex-direction: row;
+    }
+
+    .course-card {
+        width: 28%;
+    }
+
+    .section2, .section3-main, .section4-main, .section5 {
+        margin: 40px 1px;
+        padding: 1px 1px;
+    }
+
+    .email-input {
+        min-width: 400px;
+    }
+}
+
+/* Extra Large Screens (Very Large Desktops) */
+@media (min-width: 1440px) {
+    .container {
+        width: 1100px;
+        padding: 20px;
+    }
+
+    .course-card {
+        width: 28%;
+    }
+
+    .section2, .section3-main, .section4-main, .section5 {
+        margin: 50px 1px;
+        padding: 1px 1px;
+    }
+
+    .email-input {
+        min-width: 450px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
