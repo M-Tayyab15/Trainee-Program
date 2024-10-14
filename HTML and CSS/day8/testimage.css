@@ -1,0 +1,160 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.card-container {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 200px;
+    text-align: center;
+}
+
+.card-header {
+    position: relative;
+}
+
+.sale-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: red;
+    color: #fff;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+.card-header img {
+    width: 100%;
+    height: auto;
+}
+
+.card-body {
+    padding: 15px;
+    text-align:left;
+}
+
+.card-language {
+    font-size: 12px;
+    color: rgba(35, 166, 240, 1);
+}
+
+.card h3 {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.card-info {
+    font-size: 12px;
+    color: #666;
+    margin: 10px 0;
+}
+
+.card-price {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #666;
+}
+
+.sale-price {
+    color: #28a745;
+    font-weight: bold;
+}
+
+.card-icons span {
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.learn-more {
+    background-color: #ffffff;
+    color: rgba(35, 166, 240, 1);
+    border: 1px solid rgba(35, 166, 240, 1);
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: 700;
+}
+
+.learn-more:hover {
+    background-color: #0056b3;
+}
+
+.product-actions
+{
+    display: flex;
+    width: 40px;
+    margin: -50px 0px 0px 20px;
+    padding: 0px 0px 0px 10px;
+    gap: 10px;
+}
+.engstar
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: 700;
+    align-items: center;
+    
+}
+
+.stars-rating
+{
+    background-color: rgba(37, 43, 66, 1);
+    color: white;
+    height: 25px;
+    border-radius: 10px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.frame-1
+{
+    margin: -15px 0px -5px 0px;
+}
+
+
+
+
+/*test*/
+
+
+
+.circular
+{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circular img {
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+    
+}
