@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+.rating-container {
+    text-align: center;
+}
+
+.rating {
+    direction: rtl;
+    display: inline-block;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    font-size: 2rem;
+    color: #ccc;
+    cursor: pointer;
+    margin: 0;
+}
+
+.rating input:checked ~ label {
+    color: #ffcc00;
+}
+
+.rating input:checked ~ label:hover,
+.rating input:checked ~ label:hover ~ label {
+    color: #ffcc00;
+}
+
+.rating label:hover,
+.rating label:hover ~ label {
+    color: #ffcc00;
+}
