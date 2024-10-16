@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rezilla - Find a perfect home you love</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="real.css">
+<style>
+    .top-bar {
+        height: 40px;
+        background-color: #6c5ce7;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .navbar-custom {
+        background-color: white;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .navbar-custom .navbar-nav .nav-link {
+        color: #2d3436;
+    }
+
+    .navbar-custom .navbar-brand {
+        font-weight: bold;
+        color: #2d3436;
+    }
+
+    .header-content {
+        padding: 50px 10px;
+        color: #2d3436;
+    }
+
+    .search-panel {
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .form-control, .btn {
+        border-radius: 20px;
+    }
+    
+    .carousel-inner img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+    
+    .customer-logos {
+        margin-top: 20px;
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 1);
+        width: 360px;
+        height: 100px;
+        border-radius: 50px 50px 50px 50px;
+    }
+
+    .customer-logos img {
+        width: auto;
+        border-radius: 50%;
+    }
+
+    /* Custom styles for navigation controls */
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 5%; /* Adjust width as needed */
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        background-color: white; /* White background for the circles */
+        border-radius: 50%; /* Circle shape */
+        padding: 10px; /* Adjust padding for circle size */
+        filter: grayscale(100%); /* Make icons grey */
+    }
+
+    .carousel-control-prev-icon {
+        background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"%3E%3Cpath fill="none" stroke="%23000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M15 6l-6 6 6 6"/%3E%3C/svg%3E');
+    }
+
+    .carousel-control-next-icon {
+        background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"%3E%3Cpath fill="none" stroke="%23000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M9 6l6 6-6 6"/%3E%3C/svg%3E');
+    }
+
+    @media (max-width: 768px) {
+        .navbar {
+            flex-wrap: wrap;
+        }
+        
+        .brand {
+            margin-bottom: 15px;
+        }
+
+        .navbar-left .nav-links {
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .header-content h1 {
+            font-size: 36px;
+        }
+
+        .search-container {
+            margin: 20px 0;
+            width: 100%;
+        }
+
+        .footlike {
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .logos-section {
+            text-align: center;
+            padding: 20px;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .navbar-left .nav-links {
+            text-align: center;
+        }
+
+        .search-container {
+            padding: 15px;
+        }
+
+        .search-form input, 
+        .search-form select {
+            height: 50px;
+        }
+    }
+</style>
+</head>
+<body>
+
+<div class="container-fluid top-most div">
+    <div class="location-pin">
+        <img src="project files/icon _pin.png" alt="" style="width: 12px; height: 16px; margin: -15px 0px 0px 0px;">
+        <p>Rezilla, 18 Grattan St, Brooklyn</p>
+    </div>
+
+    <div class="phone-email d-flex justify-content-between gap-3">
+        <div class="d-flex align-items-center">
+            <img src="project files/icon _phone.png" alt="" style="width: 16px; height: 16px;">
+            <p class="mb-0 ps-2">+1 206-214-2298</p>
+        </div>
+        
+        <div class="d-flex align-items-center">
+            <img src="project files/icon _mail.png" alt="" style="width: 16px; height: 16px;">
+            <p class="mb-0 ps-2">support@rezilla.com</p>
+        </div>
+    </div>
+</div>
+
+<section class="bg-cover" style="background-image: url('Rectangle 4.png'); background-repeat: no-repeat; background-position: center;">
+    <!-- Navigation Bar -->
+    <header class="navbar navbar-expand-lg">
+        <nav class="navbar-container container-fluid">
+            <div class="navbar-left d-flex align-items-center">
+                <ul class="nav-links d-flex list-unstyled">
+                    <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Listings</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Blogs</a></li>
+                </ul>
+            </div>
+            <div class="brand d-flex align-items-center">
+                <div class="rounded-circle bg-primary d-flex justify-content-center align-items-center" style="height: 50px; width: 50px;">
+                    <img src="/day10/reshot-icon-house-XJ53QBRVTC 1.png" alt="Rezilla Logo">
+                </div>
+                <span class="fw-bold text-dark">Rezilla</span>
+            </div>
+            <div class="navbar-right d-flex align-items-center">
+                <a href="#" class="login-link me-2">Login/Register</a>
+                <a href="#" class="add-listing-btn">Add Listing</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="header-content">
+                    <p class="text-primary fw-bold">REAL ESTATE</p>
+                    <h1 class="display-4 fw-bold">Find a perfect home you love..!</h1>
+                    <p class="text-secondary">Etiam eget elementum elit. Aenean dignissim dapibus vestibulum. Integer a dolor eu sapien sodales vulputate ac in purus.</p>
+                </div>
+                <div style="position: relative;">
+                    <img src="/day10/Ellipse 9.png" alt="" class="position-absolute end-0">
+                </div>
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="project files/luxury-classic-modern-bedroom-suite-hotel 1.png" alt="Property Image" class="d-block w-100">
+                        </div>
+                        <!-- Additional carousel items -->
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="col-md-1"></div>
+            <div class="col-md-4">
+                <!-- Search Form -->
+                <div class="search-container p-4">
+                    <div class="search-header">
+                        <p class="fw-bold">Property Search Panel</p>
+                    </div>
+                    <form class="search-form">
+                        <input type="text" class="form-control mb-3" placeholder="Enter Location or Keyword">
+                        <select class="form-select mb-3">
+                            <option selected>Property Type</option>
+                            <option value="1">House</option>
+                            <option value="2">Apartment</option>
+                            <option value="3">Villa</option>
+                        </select>
+                        <div class="d-grid">
+                            <button class="btn btn-primary" type="submit">Search Property</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+</body>
+</html>
