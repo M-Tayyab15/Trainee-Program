@@ -1,0 +1,246 @@
+/* General Reset */
+/*
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f7faff;
+    color: #333;
+}
+
+.navbar {
+    background-color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar-left .nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.nav-links .active {
+    color: #5d50f8;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.brand img {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+
+.login-link {
+    color: #333;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+.add-listing-btn {
+    background-color: #5d50f8;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 30px;
+}
+
+.hero-content {
+    max-width: 50%;
+}
+
+.hero-content h3 {
+    color: #5d50f8;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.hero-content h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    margin-bottom: 30px;
+    color: #666;
+}
+
+.image-slider {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.image-slider img {
+    width: 100%;
+    display: block;
+}
+
+.search-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-tabs {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.search-tabs button {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.search-tabs .active {
+    border-bottom: 3px solid #5d50f8;
+    color: #5d50f8;
+}
+
+.search-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.search-form input,
+.search-form select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.advance-search-link {
+    color: #5d50f8;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.search-button {
+    background-color: #5d50f8;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.footer-stats {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+    background-color: #f7faff;
+    border-top: 1px solid #e5e5e5;
+}
+
+.footer-stats .stat {
+    display: flex;
+    align-items: center;
+}
+
+.footer-stats .stat img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+*/
+/* Basic styling for body and container */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+/* Container for circular text */
+.circle-text {
+    position: relative;
+    width: 300px; /* Adjust based on your needs */
+    height: 300px; /* Same as width for a perfect circle */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle-text-inner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px; /* Adjust text size as needed */
+    color: #333;
+    font-family: Arial, sans-serif;
+    /* Create the circular text effect */
+    transform: rotate(-90deg);
+    transform-origin: center;
+}
+
+.circle-text-inner::before {
+    content: "Circular Text Example";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px; /* Adjust text size as needed */
+    color: #333;
+    font-family: Arial, sans-serif;
+    transform: rotate(90deg);
+    transform-origin: center;
+    white-space: nowrap;
+}
