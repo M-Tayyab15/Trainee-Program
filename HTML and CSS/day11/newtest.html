@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neighborhood Properties</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        .section-title {
+            text-align: left;
+            margin: 50px 0 30px;
+        }
+        .section-title p {
+            color: #6b6ae2;
+            font-weight: 600;
+            margin-bottom: 0;
+        }
+        .section-title h2 {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .property-card {
+            position: relative;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+        .property-card img {
+            width: 100%;
+            height: 200px; /* Adjust height for better alignment */
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        .property-card:hover img {
+            transform: scale(1.05);
+        }
+        .property-info {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            color: white;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+        }
+        .property-info .number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            line-height: 1;
+            margin-bottom: 5px;
+        }
+        .property-info .location {
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Section Title -->
+    <div class="section-title">
+        <p>AREAS ACROSS THE TOWN</p>
+        <h2>Neighborhood Properties</h2>
+    </div>
+    <!-- Property Cards -->
+    <div class="row">
+        <!-- Card 1 -->
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="property-card">
+                <img src="Rectangle 17.png" alt="New York City, NY">
+                <div class="property-info">
+                    <div class="number">216</div>
+                    <div class="location">New York City, NY</div>
+                </div>
+            </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="property-card">
+                <img src="Rectangle 25.png" alt="Houston, TX">
+                <div class="property-info">
+                    <div class="number">141</div>
+                    <div class="location">Houston, TX</div>
+                </div>
+            </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="property-card">
+                <img src="Rectangle 26.png" alt="San Diego, CA">
+                <div class="property-info">
+                    <div class="number">212</div>
+                    <div class="location">San Diego, CA</div>
+                </div>
+            </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="property-card">
+                <img src="Rectangle 27.png" alt="Philadelphia, PA">
+                <div class="property-info">
+                    <div class="number">183</div>
+                    <div class="location">Philadelphia, PA</div>
+                </div>
+            </div>
+        </div>
+        <!-- Card 5 -->
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="property-card">
+                <img src="Rectangle 28.png" alt="San Francisco, CA">
+                <div class="property-info">
+                    <div class="number">112</div>
+                    <div class="location">San Francisco, CA</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
