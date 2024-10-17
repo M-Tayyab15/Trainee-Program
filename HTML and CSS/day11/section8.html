@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latest Blogs & Posts</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #fd03d3;
+            color: #333;
+        }
+
+        .container {
+            padding: 40px 20px;
+        }
+
+        .card {
+            background-color: #FFFFFF;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-top: 20px;
+        }
+
+        .card img {
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .card-body {
+            padding: 15px;
+            text-align: left;
+        }
+
+        .date-badge {
+            position: absolute;
+            background-color: #000;
+            color: #fff;
+            font-size: 0.8rem;
+            padding: 5px 10px;
+            border-radius: 10px;
+
+            width: 55px;
+            height: 50px;
+            text-align: center;
+            top: 0px;
+            left: 50px;
+        }
+
+        .title {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .description {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        /* .navigation-indicator {
+            display: flex;
+            justify-content: center;
+            gap: 5px;
+            padding: 10px 0;
+        } */
+        .nav-dot {
+            width: 10px;
+            height: 10px;
+            background-color: #ccc;
+            border-radius: 50%;
+        }
+
+        .nav-dot.active {
+            background-color: #333;
+        }
+
+        .arrow-right {
+            position: absolute;
+            /*  right: 20px;
+            transform: translateY(-50%); */
+            background-color: #fff;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgba(58, 12, 163, 1);
+            font-size: 20px;
+        }
+
+
+        .navigation-indicator {
+            display: flex;
+            justify-content: center;
+            /* Adjust spacing between bars */
+            align-items: center;
+            width: 100%;
+            /* Adjust width as needed */
+            gap: 5px;
+            padding: 10px 0;
+        }
+
+        .nav-bar {
+            width: 100px;
+            /* Width of each bar */
+            height: 5px;
+            /* Height of each bar */
+            background-color: gray;
+            /* Default color of inactive bars */
+            border-radius: 2px;
+            /* Optional: rounded corners */
+            transition: background-color 0.3s;
+            /* Smooth transition for color change */
+        }
+
+        .nav-bar.active {
+            background-color: white;
+            /* Color of the active bar */
+        }
+
+        /* Optional: Add some margin or spacing if needed */
+        .navigation-indicator .nav-bar:not(:last-child) {
+            margin-right: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2 class="text-center">What's Trending</h2>
+        <h4 class="text-center">Latest Blogs & Posts</h4>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="Rectangle 35.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <span class="date-badge">28 TUE</span>
+                        <p class="title">Top 10 Home Buying Mistakes to Avoid</p>
+                        <p class="description">Etiam eget elementum elit. Aenean dignissim dapibus vestibulum.</p>
+                    </div>
+                </div>
+                <div class="arrow-right">
+                    <span>&#8594;</span>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="Rectangle 36.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <span class="date-badge">08 MON</span>
+                        <p class="title">How to Stage Your Home for a Quick Sale</p>
+                        <p class="description">Nullam odio lacus, dictum quis pretium congue, vehicula venenatis nunc.
+                        </p>
+                    </div>
+                </div>
+                <div class="arrow-right">
+                    <span>&#8594;</span>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="Rectangle 37.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <span class="date-badge">26 WED</span>
+                        <p class="title">5 Tips for First-Time Home Sellers</p>
+                        <p class="description">In hac habitasse platea dictumst. Phasellus vel velit eu augue maximus.
+                        </p>
+                    </div>
+                </div>
+                <div class="arrow-right">
+                    <span>&#8594;</span>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="navigation-indicator">
+                <div class="nav-bar active"></div>
+                <div class="nav-bar"></div>
+                <div class="nav-bar"></div>
+            </div>
+
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
