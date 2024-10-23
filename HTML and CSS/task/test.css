@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+*
+{
+    font-family: Mulish;
+}
+header
+{
+    background: url(BG.png);
+    background-size: cover;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.white-bar
+{   display: flex;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    border-radius: 20px;
+    padding: 24px 50px;
+}
+
+
+.meet-us
+{
+    font-weight: 800;
+    font-size: 74px;
+    color: white;
+}
+
+.discover
+{
+  color: white;
+  font-weight: 600;
+  font-size: 32px;
+}
+
+.frank
+{
+    color: rgba(255, 202, 16, 1);
+}
+
+.header4x
+{
+  padding: 24px;
+}
+
+.card
+{
+    background-color: rgba(255, 255, 255, 0.25);
+    
+}
+
+.card-title
+{
+  font-size: 24px;
+}
+
+.lib
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.section2
+{
+    padding: 100px;
+    gap: 10px;
+}
+
+.headings
+{
+    color: rgba(1, 68, 121, 1);
+    font-size: 54px;
+    font-weight: 800;
+}
+
+
+.card-custom {
+    border: none;
+    border-radius: 8px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: rgba(245, 247, 248, 1);
+}
+
+.text-con
+{
+    color:rgba(30, 30, 30, 1);
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.text-titleimg
+{
+    font-size: 24px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 1);
+}
+
+.ta
+{
+  text-align: right;
+}
+
+@media (max-width: 576px) {
+    .collab {
+      max-width: 100%; /* Full width on very small screens */
+    }
+    .text-titleimg
+    {
+      font-size: 16px;
+    }
+  }
+
+
+  footer
+  {
+    background-color:rgba(255, 255, 255, 1);
+    padding: 100px;
+  }
+
+  .foooter
+  {
+    display: flex;
+  }
+
+  .foot-con
+  {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 16px;
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+
+/* Media Queries for responsiveness */
+
+/* Large screens (desktops and tablets) */
+@media (min-width: 992px) {
+  .section2 {
+      padding: 100px 15px;
+  }
+
+  .headings {
+      font-size: 54px;
+  }
+
+  .text-con {
+      font-size: 24px;
+  }
+  .learnmore
+  {
+    font-weight: 700;
+    font-size: 14px;
+  }
+}
+
+/* Medium screens (tablets) */
+@media (max-width: 991px) and (min-width: 768px) {
+/*  .white-bar {
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+  }
+
+  .meet-us {
+      font-size: 3rem;
+  }
+
+  .section2 {
+      padding: 50px 15px;
+  }
+
+  .headings {
+      font-size: 2.5rem;
+  }
+
+  .text-con {
+      font-size: 1.5rem;
+  }*/
+
+  .card-title
+  {
+    font-size: 20px;
+  }
+
+  .foooter {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+}
+
+/* Small screens (phones and small tablets) */
+@media (max-width: 767px) {
+ /* .white-bar {
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+  }*/
+  .meet-us {
+      font-size: 54px ;
+  }
+
+
+  .section2 {
+      padding: 30px 15px;
+  }
+
+  .headings {
+      font-size: 2rem;
+  }
+
+  .text-con {
+      font-size: 1.25rem;
+  }
+
+  .collab {
+      max-width: 100%; /* Ensure the image fits within the container */
+  }
+
+  .foooter {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+
+  .foot-con {
+      font-size: 0.875rem;
+  }
+  .white-bar img {
+    max-width: 210px; /* Ensure images are responsive */
+    height: auto;    /* Maintain aspect ratio */
+  }
+  .ta
+{
+  text-align: none;
+}
+}
+
+/* Extra small screens (very small phones) */
+@media (max-width: 576px) {
+  
+  .meet-us
+  {
+    font-size: 54px;
+  }
+
+  .section2 {
+      padding: 20px 15px;
+  }
+
+  .headings {
+      font-size: 1.5rem;
+      order: 1;
+  }
+
+  .text-con {
+      order: 2;
+  }
+  .white-bar img {
+    max-width: 140px; /* Ensure images are responsive */
+    height: auto;    /* Maintain aspect ratio */
+  }
+  .white-bar
+  {
+    padding: 12px 24px;
+  }
+}
+
+
+
+@media (max-width: 576px) and (min-width: 425px) {
+  .header4x {
+      flex: 1 0 48%; /* Make the cards occupy 48% of the screen width */
+      max-width: 48%; /* Ensure no overflow */
+      margin-bottom: 10px; /* Add some spacing between rows */
+  }
+  .text-con
+  {
+    text-align: left;
+    font-size: 20px;
+  }
+  .headings
+  {
+    text-align: left;
+  }
+  .card-title
+  {
+    font-size: 16px;
+  }
+  .discover
+  {
+    font-size: 24px;
+  }
+  .card-custom
+  {
+    width: 150px;
+  }
+  .text-titleimg
+  {
+    width: 139px;
+  }
+
+}
+
+@media (min-width: 1024px){
+ 
+  .white-bar
+  {
+    padding: 24px 50px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+}
