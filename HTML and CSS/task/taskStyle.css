@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+*
+{
+    font-family: Mulish;
+}
+header
+{
+    background: url(BG.png) no-repeat left top;
+    background-size: cover;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.white-bar
+{   display: flex;
+    background-color: white;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    border-radius: 20px;
+}
+
+.meet-us
+{
+    font-weight: 800;
+    font-size: 74px;
+    color: white;
+}
+
+.frank
+{
+    color: rgba(255, 202, 16, 1);
+}
+
+.card
+{
+    background-color: rgba(255, 255, 255, 0.25);
+    
+}
+
+.lib
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.section2
+{
+    padding: 100px;
+    gap: 10px;
+}
+
+.headings
+{
+    color: rgba(1, 68, 121, 1);
+    font-size: 54px;
+    font-weight: 800;
+}
+
+
+.card-custom {
+    border: none;
+    border-radius: 8px; /* Rounded corners */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.text-con
+{
+    color:rgba(30, 30, 30, 1);
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.text-titleimg
+{
+    font-size: 24px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 1);
+}
+.ta
+{
+  text-align: right;
+}
+
+@media (max-width: 576px) {
+    .collab {
+      max-width: 100%; /* Full width on very small screens */
+    }
+  }
+
+
+  footer
+  {
+    background-color:rgba(255, 255, 255, 1);
+    padding: 100px;
+  }
+
+  .foooter
+  {
+    display: flex;
+  }
+
+  .foot-con
+  {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 16px;
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  @media (max-width: 768px) {
+    .foooter {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .headings
+    {
+      font-size: 40px ;
+    }
+    .text-con
+    {
+      font-size: 20px;
+    }
+    .section2
+    {
+   
+    }
+  }
+
+
+  @media (max-width: 768px) {
+    .foooter {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .headings
+    {
+      font-size: 40px ;
+    }
+    .text-con
+    {
+      font-size: 20px;
+    }
+    .section2
+    {
+   
+    }
+  }
