@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>White Bar Example</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <style>
+        .white-bar {
+            display: flex;
+            background-color: white;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            border-radius: 20px;
+            border: 1px solid #ddd; /* Optional: for visual reference */
+        }
+
+        .white-bar img {
+            max-width: 100%; /* Ensure images are responsive */
+            height: auto;    /* Maintain aspect ratio */
+        }
+    </style>
+</head>
+<body>
+    <div class="row white-bar">
+        <img src="Asset 2@2x.svg" alt="Logo 1" class="img-fluid">
+        <img src="image 5.svg" alt="Logo 2" class="img-fluid">
+    </div>
+</body>
+</html>
