@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+body {
+    background-color: #f0f8ff;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 12px;
+    border: 1px solid #e9e1e1;
+}
+
+th {
+    background-color: #007BFF;
+    color: white;
+}
+
+td {
+    background-color: #ffffff;
+}
+
+button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #6e160c;
+}
+
+.restore {
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    height: 120px;
+    width: 150px;
+    margin: 15px;
+}
+
+.restore:hover {
+    background-color: #1e5e88;
+}
+
+tr:hover td {
+    background-color: #f1f1f1;
+}
+
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center;">TO DO LIST</h1>
+        <div style="display: flex;justify-content: center;">
+            <button class="restore">
+                <h1>
+                    Restore List
+                </h1>
+        </div>
+    </button>
+    <table>
+        <thead>
+            <tr>
+                <th>Number</th>
+                <th>Name</th>
+                <th>Date</th>
+                <th>Price $</th>
+                <th>Origin</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Bike</td>
+                <td>1 Sept 2024</td>
+                <td>100</td>
+                <td>Pakistan</td>
+                <td><button class="delete-btn">Delete Row</button></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Car</td>
+                <td>16 Sept 2024</td>
+                <td>200</td>
+                <td>China</td>
+                <td><button class="delete-btn">Delete Row</button></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Cycle</td>
+                <td>7 Sept 2024</td>
+                <td>300</td>
+                <td>UAE</td>
+                <td><button class="delete-btn">Delete Row</button></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Truck</td>
+                <td>4 Sept 2024</td>
+                <td>400</td>
+                <td>Pakistan</td>
+                <td><button class="delete-btn">Delete Row</button></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Airplane</td>
+                <td>10 Sept 2024</td>
+                <td>500</td>
+                <td>Pakistan</td>
+                <td><button class="delete-btn">Delete Row</button></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Helicopter</td>
+                <td>12 Sept 2024</td>
+                <td>600</td>
+                <td>Pakistan</td>
+                <td><button class="delete-btn">Delete Row</button></td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Bus</td>
+                <td>7 Sept 2024</td>
+                <td>700</td>
+                <td>Pakistan</td>
+                <td><button class="delete-btn">Delete Row</button></td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Van</td>
+                <td>5 Sept 2024</td>
+                <td>800</td>
+                <td>Pakistan</td>
+                <td><button class="delete-btn">Delete Row</button></td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>Scooty</td>
+                <td>3 Sept 2024</td>
+                <td>950</td>
+                <td>Pakistan</td>
+                <td><button class="delete-btn">Delete Row</button></td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>Cart</td>
+                <td>2 Sept 2024</td>
+                <td>900</td>
+                <td>Pakistan</td>
+                <td><button class="delete-btn">Delete Row</button></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        $(document).ready(function () {
+            $(".delete-btn").click(function () {
+                $(this).closest('tr').hide(400);
+            });
+        });
+
+        $(document).ready(function () {
+            $(".restore").click(function () {
+                $("tr").show(200);
+            });
+        });
+    </script>
+</body>
+
+</html>
