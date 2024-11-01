@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test2</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        .slides-container {
+            position: relative;
+            width: 100%;
+            height: 500px;
+            display: block;
+            margin-left: 15%;
+            overflow: hidden;
+        }
+
+        .slide {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: none;
+        }
+
+        .nav-button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            padding: 10px 15px;
+            cursor: pointer;
+            border: none;
+            background-color: #007BFF;
+            color: white;
+            border-radius: 5px;
+            font-size: 16px;
+            z-index: 1;
+        }
+
+        #prev {
+            left: 10px; /* Position to the left */
+        }
+
+        #next {
+            right: 10px; /* Position to the right */
+        }
+
+        .nav-button:hover {
+            background-color: #0056b3;
+        }
+
+        .pagination {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .pagination-dot {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            margin: 0 5px;
+            border-radius: 50%;
+            background-color: lightgray;
+            cursor: pointer;
+        }
+
+        .active {
+            background-color: #007BFF; /* Active dot color */
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>jQuery Slide Show</h1>
+    <div class="slides-container">
+        <!-- Slide 1 -->
+        <div class="slide">
+            <img src="https://www.educative.io/api/edpresso/shot/6290565820579840/image/4750930661343232" alt="image1" width="500" height="500">
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="slide">
+            <img src="https://www.educative.io/api/edpresso/shot/6290565820579840/image/4680713398648832" alt="image2" width="500" height="500">
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="slide">
+            <img src="https://www.educative.io/api/edpresso/shot/6290565820579840/image/4955241567748096" alt="image3" width="500" height="500">
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="slide">
+            <img src="https://www.educative.io/api/edpresso/shot/6290565820579840/image/4787308698796032" alt="image4" width="500" height="500">
+        </div>
+
+        <!-- Slide 5 -->
+        <div class="slide">
+            <img src="https://www.educative.io/api/edpresso/shot/6290565820579840/image/5079526311460864" alt="image5" width="500" height="500">
+        </div>
+
+        <button class="nav-button" id="prev">Previous</button>
+        <button class="nav-button" id="next">Next</button>
+    </div>
+
+    <div class="pagination">
+        <!-- Pagination dots will be inserted here -->
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            var slides = $('.slide');
+            var slideIndex = 0;
+
+            // Show the first slide
+            $(slides[slideIndex]).show();
+
+            // Create pagination dots
+            for (let i = 0; i < slides.length; i++) {
+                $('.pagination').append(`<div class="pagination-dot" data-index="${i}"></div>`);
+            }
+            $('.pagination-dot').eq(slideIndex).addClass('active'); // Set active dot
+
+            // Function to show a slide based on index
+            function showSlide(index) {
+                $(slides).fadeOut(); // Hide all slides
+                $(slides[index]).fadeIn(); // Show the current slide
+                $('.pagination-dot').removeClass('active'); // Remove active class from all dots
+                $('.pagination-dot').eq(index).addClass('active'); // Set active class for current dot
+            }
+
+            // Next button click event
+            $('#next').click(function () {
+                slideIndex = (slideIndex + 1) % slides.length; // Increment index
+                showSlide(slideIndex);
+            });
+
+            // Previous button click event
+            $('#prev').click(function () {
+                slideIndex = (slideIndex - 1 + slides.length) % slides.length; // Decrement index
+                showSlide(slideIndex);
+            });
+
+            // Pagination dot click event
+            $('.pagination').on('click', '.pagination-dot', function () {
+                slideIndex = $(this).data('index'); // Get index from data attribute
+                showSlide(slideIndex);
+            });
+
+        });
+    </script>
+</body>
+</html>
