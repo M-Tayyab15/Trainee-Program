@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Slide Show</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+
+        h1 {
+            text-align: center;
+        }
+
+        .slides-container {
+            position: relative;
+            width: 100%;
+            height: 500px;
+            display: flex;
+            align-content: center;
+            justify-content: center;
+        }
+
+        .slide {
+            position: absolute;
+            display: none;
+        }
+
+        .nav-button {
+            position: absolute;
+            top: 45%;
+            font-size: 40px;
+            padding: 10px 15px;
+            cursor: pointer;
+            border: none;
+            background-color: #007BFF;
+            color: white;
+            border-radius: 5px;
+        }
+
+        #prev {
+            margin-right: 72%;
+        }
+
+        #next {
+            margin-left: 72%;
+        }
+
+        .nav-button:hover {
+            background-color: #0056b3;
+        }
+
+        .pagination-dot {
+            width: 10px;
+            height: 10px;
+            margin: 0 5px;
+            border-radius: 50%;
+            background-color: lightgray;
+        }
+
+        .active {
+            background-color: #007BFF;
+        }
+
+        .pagination_display {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <section style="background-color: lightblue;">
+
+        <div class="container">
+            <header
+                class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+                <div>
+                    <h1>jQuery Slide Show</h1>
+                </div>
+
+
+                <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="#" class="nav-link px-2">Home</a></li>
+                    <li><a href="#" class="nav-link px-2 link-dark">Features</a></li>
+                    <li><a href="#" class="nav-link px-2 link-dark">Pricing</a></li>
+                    <li><a href="#" class="nav-link px-2 link-dark">FAQs</a></li>
+                    <li><a href="#" class="nav-link px-2 link-dark">About</a></li>
+                </ul>
+
+                <div class="col-md-3 text-end">
+                    <button type="button" class="btn btn-outline-primary me-2">Login</button>
+                    <button type="button" class="btn btn-primary">Sign-up</button>
+                </div>
+            </header>
+        </div>
+    </section>
+
+    <section>
+
+        <div class="slides-container">
+       
+            <div class="slide">
+                <img src="image1_1.jpg" alt="image1" width="1000" height="500">
+            </div>
+
+           
+            <div class="slide">
+                <img src="image2.jpg" alt="image2" width="1000" height="500">
+            </div>
+
+        
+            <div class="slide">
+                <img src="image3.jpg" alt="image3" width="1000" height="500">
+            </div>
+
+       
+            <div class="slide">
+                <img src="image6.jpg" alt="image4" width="1000" height="500">
+            </div>
+
+           
+            <div class="slide">
+                <img src="image5.jpg" alt="image5" width="1000" height="500">
+            </div>
+
+            <button class="nav-button" id="prev">&#8592;</button>
+            <button class="nav-button" id="next">&#8594;</button>
+
+        </div>
+        <div class="pagination pagination_display">
+            <div class="pagination-dot active" data-index="0"></div>
+            <div class="pagination-dot" data-index="1"></div>
+            <div class="pagination-dot" data-index="2"></div>
+            <div class="pagination-dot" data-index="3"></div>
+            <div class="pagination-dot" data-index="4"></div>
+        </div>
+    </section>
+
+    <section style="background-color: lightblue;">
+        <div class="container">
+            <footer class="py-3 my-4">
+                <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+                </ul>
+                <p class="text-center">&copy; Tayyab Mansoor</p>
+            </footer>
+        </div>
+    </section>
+
+    <script>
+        $(document).ready(function () {
+
+            var slides = $('.slide');
+            var slideIndex = 0;
+
+            $(slides[slideIndex]).show();
+
+
+            function showSlide(index) {
+                $(slides).fadeOut(2000);
+                $(slides[index]).fadeIn(2000);
+                $('.pagination-dot').removeClass('active');
+                $('.pagination-dot').eq(index).addClass('active');
+            }
+
+
+            $('#next').click(function () {
+                slideIndex += 1
+                if (slideIndex > 4) {
+                    slideIndex = 0;
+                }
+                showSlide(slideIndex);
+            });
+
+
+            $('#prev').click(function () {
+                slideIndex -= 1;
+                if (slideIndex < 0) {
+                    slideIndex = 4;
+                }
+                showSlide(slideIndex);
+            });
+        });
+    </script>
+</body>
+</html>
