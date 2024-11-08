@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        img {
+            right: -200px;
+            width: 200px;
+            opacity: 0.3;
+            position: absolute;
+        }
+        body {
+            height: 1000px;
+        }
+    </style>
+    <script>
+    $(document).ready(function() {
+        let lastScrollTop = 0;
+
+        $(window).scroll(function() {
+            let scrollTop = $(this).scrollTop();
+
+            if (scrollTop > lastScrollTop) {
+          
+                $("div").stop(true).animate({
+                    left: '250px',
+                    opacity: '1.0',
+                    height: '150px',
+                    width: '150px',
+                    marginTop: '50px'
+                }, "slow");
+
+                $("img").stop(true).animate({
+                    right: '73%',
+                    opacity: '1.0',
+                    height: '150px',
+                    width: '300px',
+                    top: '30%'
+                }, "slow");
+            } else {
+               
+                $("div").stop(true).animate({
+                    left: '-250px',
+                    opacity: '0.1',
+                    height: '150px',
+                    width: '150px',
+                    marginTop: '50px'
+                }, "slow");
+
+                $("img").stop(true).animate({
+                    right: '-73%',
+                    opacity: '0.1',
+                    height: '150px',
+                    width: '300px',
+                    top: '30%'
+                }, "slow");
+            }
+
+            lastScrollTop = scrollTop;
+        });
+    });
+    </script> 
+</head>
+<body>
+
+<div style="background:#98bf21;height:100px;width:100px;position:absolute; left: -100px; opacity: 0.3; margin-top: 50px;">text wala div</div>
+<img src="/day1+2/information_technology_services_pk_cover.jpg" alt="">
+
+</body>
+</html>
