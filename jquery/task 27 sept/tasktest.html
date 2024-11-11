@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form n Table</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        input[type=text],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+
+
+        }
+
+        input[type=url] {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+        }
+
+        label {
+            padding: 12px 12px 12px 0;
+            display: inline-block;
+        }
+
+        input[type=submit] {
+            background-color: #04AA6D;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            float: right;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+        .container {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+        .col-25 {
+            float: left;
+            width: 25%;
+            margin-top: 6px;
+        }
+
+        .col-75 {
+            float: left;
+            width: 75%;
+            margin-top: 6px;
+        }
+
+        .row::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        @media screen and (max-width: 600px) {
+
+            .col-25,
+            .col-75,
+            input[type=submit] {
+                width: 100%;
+                margin-top: 0;
+            }
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 12px;
+            border: 1px solid #e9e1e1;
+        }
+
+        th {
+            background-color: #007BFF;
+            color: white;
+        }
+
+        td {
+            background-color: #ffffff;
+        }
+
+        button {
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #6e160c;
+        }
+
+        tr:hover td {
+            background-color: #f1f1f1;
+        }
+
+        .message {
+            position: relative;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: opacity 0.5s ease-in-out;
+            opacity: 0;
+            z-index: 10;
+        }
+
+        .message.success {
+            background-color: green;
+            color: white;
+        }
+
+        .message.error {
+            background-color: red;
+            color: white;
+        }
+
+        .message.show {
+            opacity: 1;
+        }
+
+        .container-fluid {
+            padding: 30px;
+        }
+
+        /* HTML: <div class="loader"></div> */
+        .loader {
+            width: 124px;
+            height: 24px;
+            -webkit-mask:
+                conic-gradient(from 135deg at top, #0000, #000 .5deg 90deg, #0000 90.5deg) 0 0,
+                conic-gradient(from -45deg at bottom, #0000, #000 .5deg 90deg, #0000 90.5deg) 0 100%;
+            -webkit-mask-size: 25% 50%;
+            -webkit-mask-repeat: repeat-x;
+            background: linear-gradient(#25b09b 0 0) left/0% 100% no-repeat #ddd;
+            animation: l13 2s infinite linear;
+            display: none;
+        }
+
+        @keyframes l13 {
+            100% {
+                background-size: 100% 100%
+            }
+        }
+    </style>
+    <style>
+        .styled-table {
+            border: 2px solid #007BFF;
+            background-color: #000000;
+            color: rgb(249, 244, 244);
+        }
+
+        .styled-table th {
+            background-color: #1a1928;
+            color: white;
+        }
+
+        .styled-table td {
+            background-color: #000000;
+        }
+
+        .styled-table tr:hover td {
+            background-color: #000000;
+        }
+
+        #style-btn {
+            background-color: black;
+        }
+
+        .display {
+            display: none;
+
+        }
+
+        .loaderCity {
+            width: 60px;
+            aspect-ratio: 4;
+            background: radial-gradient(circle closest-side, #000 90%, #0000) 0/calc(100%/3) 100% space;
+            clip-path: inset(0 100% 0 0);
+            animation: l1 2s steps(4) infinite;
+            position: relative;
+            left: 50px;
+            top: 30px;
+            display: none;
+        }
+
+        @keyframes l1 {
+            to {
+                clip-path: inset(0 -34% 0 0)
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        </div>
+        <div class="container-fluid">
+            <form id="taskform">
+                <div class="row">
+                    <div class="col-md-3">
+                        <label for="fname">First Name</label>
+                    </div>
+                    <div class="col-md-9">
+                        <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <label for="lname">Last Name</label>
+                    </div>
+                    <div class="col-md-9">
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <label for="Gender">Gender</label>
+                    </div>
+                    <div class="col-md-9">
+                        <input type="radio" id="Male" name="Gender" value="Male" required>
+                        <label for="Male">Male</label>
+                        <input type="radio" id="Female" name="Gender" value="Female">
+                        <label for="Female">Female</label><br>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <label for="country">Country</label>
+                    </div>
+                    <div class="col-md-9">
+                        <select id="country" name="country">
+                            <option value="">Select a Country</option>
+                            <option value="Pakistan">Pakistan</option>
+                            <option value="Australia">Australia</option>
+                            <option value="Canada">Canada</option>
+                            <option value="USA">USA</option>
+                            <option value="Others">Others</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <label for="state">State</label>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="loaderCity"></div>
+                        <select id="state" name="state" disabled>
+                            <option value="">Please select a country first</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row">
+
+                    <div class="col-md-3">
+                        <label for="stack">Subject</label>
+                    </div>
+                    <div class="col-md-9">
+                        <input type="radio" id="HTML" name="stack" value="HTML" required>
+                        <label for="HTML">HTML</label>
+                        <input type="radio" id="CSS" name="stack" value="CSS">
+                        <label for="CSS">CSS</label>
+                        <input type="radio" id="JavaScript" name="stack" value="JavaScript">
+                        <label for="JavaScript">JavaScript</label>
+                        <input type="radio" id="Otherss" name="stack" value="Otherss">
+                        <label for="Otherss">Others</label><br>
+                    </div>
+                </div>
+
+                <div class="loader"></div>
+                <div class="row" id="other-stack" style="display: none;">
+                    <div class="col-md-3">
+                        <label>Other Stack Options</label>
+                    </div>
+                    <div class="col-md-9">
+                        <input type="radio" id="PHP" name="otherStack" value="PHP">
+                        <label for="PHP">PHP</label>
+                        <input type="radio" id="Python" name="otherStack" value="Python">
+                        <label for="Python">Python</label>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-md-3">
+                        <label for="URL">Website</label>
+                    </div>
+                    <div class="col-md-9">
+                        <input type="url" id="URL" name="URL" placeholder="Your Website">
+                    </div>
+                </div>
+                <br>
+                <div class="row offset-10">
+                    <input type="submit" value="Add" class="add-btn">
+                </div>
+            </form>
+        </div>
+        </div>
+    </section>
+
+    <!-- 
+    <div class="message"></div>
+    -->
+    <div style="height: 70px;">
+
+        <div class="alert alert-danger" style="display: none;">
+            <strong>Danger!</strong> Indicates a dangerous or potentially negative action.
+        </div>
+        <div class="alert alert-success" style="display: none;">
+            <strong>Success!</strong> Indicates a successful or positive action.
+        </div>
+    </div>
+
+    <section>
+        <table id="tabli">
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Gender</th>
+                    <th>Country</th>
+                    <th>State</th>
+                    <th>Subject</th>
+                    <th>URL</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Tayyab</td>
+                    <td>Mansoor</td>
+                    <td>Male</td>
+                    <td>Pakistan</td>
+                    <td>Sindh</td>
+                    <td>HTML</td>
+                    <td><a href="https://www.google.com/" target="_blank">Google</a></td>
+                    <td><button class="delete-btn">Delete Row</button></td>
+                </tr>
+                <tr>
+                    <td>Hamza</td>
+                    <td>Khan</td>
+                    <td>Male</td>
+                    <td>Pakistan</td>
+                    <td>Sindh</td>
+                    <td>CSS</td>
+                    <td><a href="https://www.google.com/" target="_blank">Google</a></td>
+                    <td><button class="delete-btn">Delete Row</button></td>
+                </tr>
+                <tr>
+                    <td>First Warzan</td>
+                    <td>Warzan</td>
+                    <td>Male</td>
+                    <td>Pakistan</td>
+                    <td>Sindh</td>
+                    <td>JavaScript</td>
+                    <td><a href="https://www.google.com/" target="_blank">Google</a></td>
+                    <td><button class="delete-btn">Delete Row</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="row">
+            <div class="col-md-12">
+                <button id="style-btn">Change Table Style</button>
+            </div>
+            <script>
+                $(document).ready(function () {
+
+                    $("#taskform").submit(function (event) {
+                        event.preventDefault();
+
+
+                        const fname = $("#fname").val();
+                        const Lname = $("#lname").val();
+                        const gender = $("input[name='Gender']:checked").val();
+                        const country = $("#country").val();
+                        const state = $("#state").val();
+                        const stack = $("input[name='stack']:checked").val()
+                        const url = $("#URL").val();
+                        const otherStack = $("input[name='otherStack']:checked").val() || "None";
+
+
+
+
+                        const urlLink = `<a href="${url}" target="_blank">${url}</a>`;
+
+                        $("input[name='stack']").change(function () {
+                            if ($(this).val() === "Otherss") {
+                                $(".loader").show();
+
+                                setTimeout(function () {
+                                    $(".loader").hide();
+                                    $("#other-stack").show();
+                                }, 2000);
+                            } else {
+                                $("#other-stack").hide();
+                                $("input[name='otherStack']").prop('checked', false);
+                            }
+                        });
+
+
+
+                        $("#tabli tbody").append(`
+                        <tr>
+                            <td>${fname}</td>
+                            <td>${Lname}</td>
+                            <td>${gender}</td>
+                            <td>${country}</td>
+                            <td>${state}</td>
+                            <td>${stack === 'Otherss' ? otherStack : stack}</td>
+                            <td>${urlLink}</td>
+                            <td><button class="delete-btn">Delete Row</button></td>
+                        </tr>
+                    `);
+                        $(this).trigger("reset");
+                    });
+
+                    $(document).on("click", ".delete-btn", function () {
+                        const fname = $(this).closest('tr').find('td:eq(0)').text();
+                        $(this).closest('tr').hide(200);
+                        // alert(`${fname}'s record has been deleted.`);
+                        const alertDel = $(".alert-success");
+                        alertDel.text(`${fname}'s record has been deleted.`).show(1000);
+                        alertDel.hide(4000);
+                    });
+                    $(document).on("click", ".add-btn", function () {
+                        const fname = $("#fname").val();
+                        const messageDiv = $(".message");
+                        const alertSuccess = $(".alert-success");
+                        alertSuccess.text(`${fname}'s record has been added.`).show(1000);
+                        alertSuccess.hide(4000);
+                        /* messageDiv.text(`${fname}'s record has been added.`).addClass("success show");
+                         setTimeout(function () {
+                             messageDiv.removeClass("show");
+                         }, 2000); */
+                    });
+
+                });
+
+            </script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+                crossorigin="anonymous"></script>
+
+
+            <script>
+                $(document).ready(function () {
+                    const countrySelect = $('#country');
+                    const stateSelect = $('#state');
+
+                    const option2Country = {
+                        Pakistan: ['Sindh', 'Balochistan', 'KPK', 'Punjab', 'Other'],
+                        Australia: ['New South Wales', 'Victoria', 'Queensland', 'Western Australia', 'South Australia', 'Tasmania', 'Northern Territory', 'Australian Capital Territory'],
+                        Canada: ['Alberta', 'British Columbia', 'Manitoba', 'New Brunswick', 'Newfoundland and Labrador', 'Nova Scotia', 'Ontario', 'Prince Edward Island', 'Quebec', 'Saskatchewan'],
+                        USA: ['Alabama', 'Alaska', 'Arizona', 'Arkansas', 'California', 'Colorado', 'Connecticut', 'Delaware', 'Florida', 'Georgia', 'Hawaii', 'Idaho', 'Illinois', 'Indiana', 'Iowa', 'Kansas', 'Kentucky', 'Louisiana', 'Maine', 'Maryland', 'Massachusetts', 'Michigan', 'Minnesota', 'Mississippi', 'Missouri', 'Montana', 'Nebraska', 'Nevada', 'New Hampshire', 'New Jersey', 'New Mexico', 'New York', 'North Carolina', 'North Dakota', 'Ohio', 'Oklahoma', 'Oregon', 'Pennsylvania', 'Rhode Island', 'South Carolina', 'South Dakota', 'Tennessee', 'Texas', 'Utah', 'Vermont', 'Virginia', 'Washington', 'West Virginia', 'Wisconsin', 'Wyoming'],
+                        Others: []
+                    };
+
+                    countrySelect.change(function () {
+                        const selectedCountry = $(this).val();
+                        $(".loaderCity").show();
+                        stateSelect.empty().prop('disabled', true);
+
+                        setTimeout(() => {
+                            $(".loaderCity").hide();
+                            const stateOptions = option2Country[selectedCountry];
+
+                            if (stateOptions) {
+                                stateOptions.forEach(state => {
+                                    stateSelect.append('<option value="' + state + '">' + state + '</option>');
+                                });
+                                stateSelect.prop('disabled', false);
+                            } else {
+                                stateSelect.append('<option value="">Please select a country first</option>');
+                            }
+                        }, 2000);
+                    });
+                });
+            </script>
+
+            <script>
+                $(document).ready(function () {
+
+
+                    let styleToggle = false;
+
+                    $("#style-btn").click(function () {
+                        styleToggle = !styleToggle;
+
+                        if (styleToggle) {
+                            $("#tabli").addClass("styled-table");
+                            $("#tabli").css({ "font-size": "200%" });
+                            $("#tabli").css({ "font-family": "fantasy" });
+                            $("#tabli").css({ "text-align": "center" });
+                        } else {
+                            $("#tabli").removeClass("styled-table");
+                            $("#tabli").css({ "font-size": "100%" });
+                            $("#tabli").css({ "font-family": "Arial" });
+                            $("#tabli").css({ "text-align": "start" });
+                        }
+                    });
+                });
+            </script>
+
+
+    </section>
+</body>
+
+</html>
