@@ -1,0 +1,190 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="keywords" content="htmlcss bootstrap menu, navbar, hover, vanilla js, nav menu CSS examples" />
+	<meta name="description" content="Bootstrap 5 navbar hover example with vanilla javascript by bootstrap methods" />
+
+	<title>Hover NavBar Task</title>
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+		crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+		crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+	<style>
+		.dropdown-item {
+			font-size: 20px;
+			font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+			font-weight: bold;
+			text-align: center;
+			color: white;
+		}
+
+		@media (min-width: 1024px) {
+			.dropdown-menu-lg {
+				min-width: 950px;
+				opacity: 0.9;
+				background-color: azure;
+			}
+
+			.dropdown-menu {
+				margin-top: 0;
+			}
+
+			.dropdown-item {
+				font-size: 30px;
+				font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+				font-weight: bold;
+				text-align: center;
+			}
+
+			.navbar-nav {
+				position: relative;
+			}
+
+			.dropdown-center {
+				position: fixed;
+				left: 20%;
+			}
+		}
+		
+	</style>
+
+</head>
+
+<body>
+
+	<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+		<div class="container alter">
+			<a class="navbar-brand col-md-4" href="#">Task 1</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"
+				aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="main_nav">
+				<ul class="navbar-nav">
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" style="color: white;">
+							Dropdown 1 </a>
+
+						<div class="dropdown-center">
+							<ul class="dropdown-menu dropdown-menu-lg"
+								style="background-image: url(background.jpg); opacity: 0.8; background-size: cover; background-repeat: no-repeat;">
+								<li><a class="dropdown-item" href="https://www.benthamscience.com/">Bentham Science</a>
+								</li>
+								<li><a class="dropdown-item" href="https://www.google.com/">Google</a></li>
+								<li><a class="dropdown-item" href="https://portal.xolva.com/">Xolva</a></li>
+								<li><a class="dropdown-item" href="https://www.benthamscience.com/">Bentham Science</a>
+								</li>
+								<li><a class="dropdown-item" href="https://www.google.com/">Google</a></li>
+								<li><a class="dropdown-item" href="https://portal.xolva.com/">Xolva</a></li>
+								<li><a class="dropdown-item" href="https://www.benthamscience.com/">Bentham Science</a>
+								</li>
+								<li><a class="dropdown-item" href="https://www.google.com/">Google</a></li>
+								<li><a class="dropdown-item" href="https://portal.xolva.com/">Xolva</a></li>
+							</ul>
+
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" style="color: white;">
+							Dropdown 2 </a>
+						<div class="dropdown-center">
+							<ul class="dropdown-menu dropdown-menu-lg" style="background-color: lightcyan;">
+								<li>
+									<div class="dropdown-menu" aria-labelledby="navbarByDisease">
+										<div class="row" style="background-color: lightcyan;">
+											<div class="col-md-12">
+												<h4 class="text-md-center">Articles By Disease </h4>
+											</div>
+											<div class="col-md-8">
+												<p>Bentham is offering subject-based scholarly content collections which
+													are tailored to meet specific research needs. Researchers can access
+													related articles from current and back volumes by purchasing access
+													to these collections. Subscribers will also have access to new
+													articles as soon as they are published and added to these
+													collections. With new articles being added to these collections on a
+													daily basis, the collections serve as an ideal tool to keep
+													researchers updated with new developments in the respective fields.
+												</p>
+											</div>
+											<div class="col-md-4">
+												<ul  class="submenu-level1" style="list-style-type: circle;">
+													<li><a href="/alldiseases/295/anti%20inflammatory">Anti
+															Inflammatory</a></li>
+													<li><a href="/alldiseases/258/cardiovascular%20disorders">Cardiovascular
+															Disorders</a></li>
+													<li><a href="/alldiseases/281/neurological%20disorders">Neurological
+															Disorders</a></li>
+													<li><a href="/alldiseases/283/diabetes">Diabetes</a></li>
+													<li><a href="/alldiseases/16/oncology">Oncology</a></li>
+													<li><a href="/alldiseases/622/coronavirus">Coronavirus</a></li>
+												</ul>
+												<a href="/alldiseases" class="btn btn-outline-light ml-4 px-5 mt-2" style="background-color: black;">View
+													All</a>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" style="color: white;"> Dropdown 3 </a>
+
+						<div class="dropdown-center" style="color: white;">
+							<ul class="dropdown-menu dropdown-menu-lg" style="background-color: black;">
+								<ul class="sub-menu">
+									<li
+										class="et_pb_menu_page_id-512 menu-item menu-item-type-custom menu-item-object-custom menu-item-512 dropdown-item">
+										<a href="https://trafix.com/our-services#oms-service">OMS</a>
+									</li>
+									<li
+										class="et_pb_menu_page_id-513 menu-item menu-item-type-custom menu-item-object-custom menu-item-513 dropdown-item">
+										<a href="https://trafix.com/our-services#ems-service">EMS</a>
+									</li>
+									<li
+										class="et_pb_menu_page_id-514 menu-item menu-item-type-custom menu-item-object-custom menu-item-514 dropdown-item">
+										<a href="https://trafix.com/our-services#fix-service">FIX</a>
+									</li>
+									<li
+										class="et_pb_menu_page_id-515 menu-item menu-item-type-custom menu-item-object-custom menu-item-515 dropdown-item">
+										<a href="https://trafix.com/our-services#compliance-service">Compliance</a>
+									</li>
+									<li
+										class="et_pb_menu_page_id-516 menu-item menu-item-type-custom menu-item-object-custom menu-item-516 dropdown-item">
+										<a href="https://trafix.com/our-services#risk-service">Risk Controls</a>
+									</li>
+									<li
+										class="et_pb_menu_page_id-517 menu-item menu-item-type-custom menu-item-object-custom menu-item-517 dropdown-item">
+										<a href="https://trafix.com/our-services#post-service">Post-Trade Services</a>
+									</li>
+									<li
+										class="et_pb_menu_page_id-518 menu-item menu-item-type-custom menu-item-object-custom menu-item-518 dropdown-item">
+										<a href="https://trafix.com/our-services#api-service">API</a>
+									</li>
+								</ul>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<script>
+		$(document).ready(function () {
+			$('.dropdown').hover(function () {
+				$(this).find('.dropdown-menu').show();
+			}, function () {
+				$(this).find('.dropdown-menu').hide();
+			});
+		});
+	</script>
+</body>
+
+</html>
