@@ -1,0 +1,30 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border: 2px solid #000;
+    overflow: hidden;
+}
+
+.movable-button {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border: none;
+}
+
+.controls {
+    margin-top: 20px;
+}
+
+button {
+    margin: 5px;
+}

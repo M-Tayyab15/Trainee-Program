@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Content with jQuery</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        .content {
+            display: none; /* Hide content by default */
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Column 1</th>
+                <th>Column 2</th>
+                <th>Column 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="content1">T1</td>
+                <td class="content2">T2</td>
+                <td class="content3">T3</td>
+            </tr>
+            <tr>
+                <td class="content1">T4</td>
+                <td class="content2">T5</td>
+                <td class="content3">T6</td>
+            </tr>
+            <tr>
+                <td>
+                    <button class="toggle-btn">On</button>
+                </td>
+                <td>
+                    <button class="toggle-btn">On</button>
+                </td>
+                <td>
+                    <button class="toggle-btn">On</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        $(document).ready(function() {
+            $('.toggle-btn').click(function() {
+                const index = $(this).parent().index(); // Get the index of the button
+                const content = $(`.content${index + 1}`); // Select the corresponding content
+
+                // Toggle visibility of the content
+                content.toggle(); // Toggle display
+
+                // Change button text
+                const isVisible = content.is(':visible');
+                $(this).text(isVisible ? 'Off' : 'On');
+            });
+        });
+    </script>
+</body>
+</html>
