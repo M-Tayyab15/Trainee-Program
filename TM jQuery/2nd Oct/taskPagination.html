@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagination Task</title>
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.1.7/css/dataTables.dataTables.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdn.datatables.net/2.1.7/js/dataTables.js"></script>
+    <style>
+        tr
+        {
+            text-align: center;
+        }
+        table.dataTable thead th
+        {
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <table id="meraTable" class="display" style="width:100%">
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Title Name</th>
+                <th>Name Name</th>
+                <th>Friend Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>Doe</td>
+                <td>Aunty Doe</td>
+                <td>Friend Doe</td>
+            </tr>
+            <tr>
+                <td>Sir</td>
+                <td>Anas</td>
+                <td>Anas Bahi</td>
+                <td>Name</td>
+                <td>Warzan</td>
+            </tr>
+            <tr>
+                <td>Sir</td>
+                <td>Anas</td>
+                <td>Anas Bahi</td>
+                <td>Name</td>
+                <td>Warzan</td>
+            </tr>
+            <tr>
+                <td>Bahi</td>
+                <td>Hilal</td>
+                <td>Sir</td>
+                <td>Name</td>
+                <td>Teacher</td>
+            </tr>
+            <tr>
+                <td>Sir</td>
+                <td>Hilal</td>
+                <td>Bahi</td>
+                <td>Frontend</td>
+                <td>Owais</td>
+            </tr>
+            <tr>
+                <td>Ovais</td>
+                <td>Tufail</td>
+                <td>Trainee</td>
+                <td>Frontend</td>
+                <td>Hamza</td>
+            </tr>
+            <tr>
+                <td>Hamza</td>
+                <td>Khan</td>
+                <td>Trainee</td>
+                <td>Frontend</td>
+                <td>Warzan</td>
+            </tr>
+            <tr>
+                <td>Muhammad</td>
+                <td>Hamza</td>
+                <td>Dev</td>
+                <td>Frontend</td>
+                <td>Ahmed</td>
+            </tr>
+            <tr>
+                <td>Muhammad</td>
+                <td>Ahmed</td>
+                <td>Umrah</td>
+                <td>Designer</td>
+                <td>Mohib</td>
+            </tr>
+            <tr>
+                <td>Mohib</td>
+                <td>Mohib</td>
+                <td>Intern</td>
+                <td>jquery</td>
+                <td>Zohib</td>
+            </tr>
+            <tr>
+                <td>Tayyab</td>
+                <td>Mansoor</td>
+                <td>Program</td>
+                <td>New</td>
+                <td>Ahmed</td>
+            </tr>
+            <tr>
+                <td>Lucas</td>
+                <td>Moura</td>
+                <td>Player</td>
+                <td>Football</td>
+                <td>Kane</td>
+            </tr>
+            <tr>
+                <td>Imran</td>
+                <td>Khan</td>
+                <td>Cricketer</td>
+                <td>Captain</td>
+                <td>PTI</td>
+            </tr>
+            <tr>
+                <td>Oliver</td>
+                <td>Kahn</td>
+                <td>Zoalie</td>
+                <td>Zizou</td>
+                <td>Klose</td>
+            </tr>
+            <tr>
+                <td>Anwar</td>
+                <td>Maqsood</td>
+                <td>Cricketer</td>
+                <td>Pakistan</td>
+                <td>Friends</td>
+            </tr>
+            <tr>
+                <td>Martin</td>
+                <td>Odegaard</td>
+                <td>CM</td>
+                <td>Midfielder</td>
+                <td>Arsenal</td>
+            </tr>
+            <tr>
+                <td>David</td>
+                <td>Raya</td>
+                <td>Goalie</td>
+                <td>GK</td>
+                <td>Arsenal</td>
+            </tr>
+            <tr>
+                <td>Thery</td>
+                <td>Henry</td>
+                <td>King</td>
+                <td>Football</td>
+                <td>Europe</td>
+            </tr>
+            <tr>
+                <td>Fakhar</td>
+                <td>Zaman</td>
+                <td>Batsman</td>
+                <td>Cricket</td>
+                <td>Pakistan</td>
+            </tr>
+            <tr>
+                <td>Warzan</td>
+                <td>Khan</td>
+                <td>Student</td>
+                <td>Pakistan</td>
+                <td>Laptop</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <script>
+$(document).ready(function() {
+            new DataTable('#meraTable', {
+                lengthMenu: [5, 10, 15, 20], 
+                pageLength: 20, 
+            }); 
+        });
+    </script>
+</body>
+</html>

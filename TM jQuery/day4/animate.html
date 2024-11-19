@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animate task</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
+    <style>
+        body {
+            background-color: rgb(107, 91, 149);
+        }
+
+        .panel {
+            padding: 10px;
+            background-color: #e5eecc;
+            width: 600px;
+            border-radius: 10px;
+            height: 223px;
+        }
+
+        .flip {
+            padding: 10px;
+            text-align: center;
+            font-size: 16px;
+            font-weight: bold;
+            display: none;
+            background-color: rgb(147, 134, 242);
+            width: 600px;
+
+        }
+
+        .row {
+            height: 350px;
+        }
+
+        .flexi {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+    </style>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        .slides-container {
+            position: relative;
+            width: 100%;
+            height: 500px;
+            display: flex;
+            align-content: center;
+            justify-content: center;
+        }
+
+        .slide {
+            position: absolute;
+            display: none;
+        }
+
+        .nav-button {
+            position: absolute;
+            top: 45%;
+            font-size: 40px;
+            cursor: pointer;
+            border: none;
+            color: rgb(248, 241, 241);
+            border-radius: 5px;
+            background-color: transparent;
+        }
+
+        #prev {
+            margin-right: 63%;
+
+        }
+
+        #next {
+            margin-left: 63%;
+
+        }
+
+        .nav-button:hover {
+            background-color: #000000;
+        }
+
+        .pagination-dot {
+            width: 10px;
+            height: 10px;
+            margin: 0 5px;
+            border-radius: 50%;
+            background-color: lightgray;
+        }
+
+        .active {
+            background-color: #070708;
+        }
+
+        .pagination_display {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            position: absolute;
+            left: 47%;
+            top: 90%;
+        }
+
+        .heighty {
+            height: 400px
+        }
+
+        .pagination-slider {
+            position: relative;
+        }
+    </style>
+    <style>
+        .animate {
+            position: relative;
+            height: 600px;
+            background-image: url(/day5/Screenshot_1.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            opacity: 0.05;
+
+        }
+
+        .animatewaliimg {
+            right: -200px;
+            width: 200px;
+            opacity: 0.3;
+            position: absolute;
+        }
+
+        .textwaladiv {
+            position: absolute;
+            background: transparent;
+
+            width: 350px;
+            left: -100px;
+            opacity: 0.3;
+            margin-top: 10px;
+            text-align: center;
+            font-size: 18px;
+            color: white;
+
+        }
+
+        .animateVertical {
+            position: relative;
+            height: 600px;
+            background-image: url(/day4/world-scaled.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            opacity: 0.05;
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .imgVertical {
+            bottom: -200px;
+            width: 500px;
+            opacity: 0.3;
+            position: absolute;
+        }
+
+        .textVertical {
+            position: absolute;
+            background: transparent;
+            width: 350px;
+            top: -100px;
+            left: 10%;
+            opacity: 0.3;
+            margin-top: 50px;
+            text-align: center;
+            font-size: 20px;
+            color: white;
+
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <section style="background-color: lightblue;"></section>
+
+    <div class="container">
+        <header
+            class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+            <div>
+                <h1>jQuery Slide Show</h1>
+            </div>
+
+
+            <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                <li><a href="#" class="nav-link px-2">Home</a></li>
+                <li><a href="#" class="nav-link px-2 link-dark">Features</a></li>
+                <li><a href="#" class="nav-link px-2 link-dark">Pricing</a></li>
+                <li><a href="#" class="nav-link px-2 link-dark">FAQs</a></li>
+                <li><a href="#" class="nav-link px-2 link-dark">About</a></li>
+            </ul>
+
+            <div class="col-md-3 text-end">
+                <button type="button" class="btn btn-success me-2">Login</button>
+                <button type="button" class="btn btn-success">Sign-up</button>
+            </div>
+        </header>
+    </div>
+    </section>
+
+    <section class="pagination-slider">
+
+        <div class="slides-container">
+
+            <div class="slide">
+                <img src="/day3/image1_1.jpg" alt="image1" width="1000" height="500">
+            </div>
+
+
+            <div class="slide">
+                <img src="/day3/image2.jpg" alt="image2" width="1000" height="500">
+            </div>
+
+
+            <div class="slide">
+                <img src="/day3/image3.jpg" alt="image3" width="1000" height="500">
+            </div>
+
+
+            <div class="slide">
+                <img src="/day3/image6.jpg" alt="image4" width="1000" height="500">
+            </div>
+
+
+            <div class="slide">
+                <img src="/day3/image5.jpg" alt="image5" width="1000" height="500">
+            </div>
+
+            <button class="nav-button" id="prev"> < </button>
+                    <button class="nav-button" id="next">></button>
+
+        </div>
+        <div class="pagination pagination_display">
+            <div class="pagination-dot active" data-index="0"></div>
+            <div class="pagination-dot" data-index="1"></div>
+            <div class="pagination-dot" data-index="2"></div>
+            <div class="pagination-dot" data-index="3"></div>
+            <div class="pagination-dot" data-index="4"></div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="container mt-3">
+            <div class="row">
+                <div class="col-md-6 flexi">
+                    <img class="panel" src="/day3/image5.jpg" alt="">
+                    <div class="flip">image 1 description image 1 description scenery of lake</div>
+                </div>
+                <div class="col-md-6 flexi">
+                    <img class="panel" src="/day3/image1.jpg" alt="">
+                    <div class="flip">image 1 description image 1 description scenery of lake</div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-md-6 flexi">
+                    <img class="panel" src="/day3/image4.jpg" alt="">
+                    <div class="flip">image 1 description image 1 description scenery of lake</div>
+                </div>
+                <div class="col-md-6 flexi">
+                    <img class="panel" src="/day3/image6.jpg" alt="">
+                    <div class="flip">image 1 description image 1 description scenery of lake</div>
+                </div>
+            </div>
+
+            <div class="row heighty">
+
+                <h3 style="text-align: center;"> Toggle Images</h3>
+
+                <div class="col-md-6 flexi heighty">
+                    <img class="panel" src="/day3/image2.jpg" alt="">
+                    <div class="flip">image 2 description image 2 description scenery of sky</div>
+                </div>
+                <div class="col-md-6 flexi heighty">
+                    <img class="panel" src="pexels-pixabay-206359.jpg" alt="">
+                    <div class="flip">image 2 description image 2 description scenery of skye</div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            $(document).ready(function () {
+
+                $(".flip").first().show();
+
+
+                $(".panel").slice(0, 4).click(function () {
+                    let checker = $(this).next();
+
+                    if (checker.is(":visible")) {
+                        checker.slideUp("slow");
+                    } else {
+                        $(".flip").slice(0, 4).slideUp("slow");
+                        checker.slideDown("slow");
+                    }
+                });
+
+                $(".panel").slice(4).click(function () {
+                    $(this).next(".flip").slideToggle("slow");
+                });
+            });
+        </script>
+
+    </section>
+
+
+    <section class="animate">
+
+        <div class="textwaladiv">Get ready for some dynamic visuals! This section comes to life with animation.
+            <br>
+            Watch as this section springs into action with engaging animations
+            <br>
+            Experience the magic of movement this part features animated elements
+            <br>
+            Dive into the animated section where visuals dance and tell a story
+        </div>
+        <img src="/day3/image1_1.jpg" alt="" class="animatewaliimg">
+
+        <script>
+            $(document).ready(function () {
+                let lastScrollTop = 0;
+
+                $(window).scroll(function () {
+                    let scrollTop = $(this).scrollTop();
+
+                    if (scrollTop > lastScrollTop) {
+
+
+                        $(".animate").stop(true).animate(
+                            {
+                                opacity: '1.0'
+                            },
+                            1000);
+
+
+                        $(".textwaladiv").stop(true).animate({
+                            left: '200px',
+                            opacity: '1.0',
+                            top: '30%',
+                            width: '350px',
+
+                        }, 1000);
+
+                        $(".animatewaliimg").stop(true).animate({
+                            right: '30%',
+                            opacity: '1.0',
+                            height: '300px',
+                            width: '500px',
+                            top: '30%'
+                        }, 1000);
+                    } else {
+
+                        $(".textwaladiv").stop(true).animate({
+                            left: '-250px',
+                            opacity: '0.1',
+
+                            width: '350px',
+
+                        }, 1000);
+
+                        $(".animatewaliimg").stop(true).animate({
+                            right: '-73%',
+                            opacity: '0.1',
+                            height: '150px',
+                            width: '300px',
+                            top: '30%'
+                        }, 1000);
+
+                        $(".animate").stop(true).animate(
+                            {
+                                opacity: '0.05'
+                            },
+                            2000);
+                    }
+
+                    lastScrollTop = scrollTop;
+                });
+            });
+        </script>
+
+
+    </section>
+
+    <hr style="height: 50px;">
+
+    <section class="animateVertical">
+
+        <div class="textVertical">Hi and welcome to Vertical animated section <br>
+
+            The Stoney Mountains tower in the bright sunlight, their rugged peaks contrasting with the serene lakes
+            nestled in between. The water glistens, mirroring the blue sky and surrounding greenery.Its a peaceful escape where
+            the mountains meet the calm of the lakes.</div>
+        <img src="/day3/image6.jpg" alt="" class="imgVertical">
+
+
+        <script>
+
+            $(document).ready(function () {
+                let lastScrollTopVertical = 0;
+
+                $(window).scroll(function () {
+                    let scrollTopVertical = $(this).scrollTop();
+                    let animateVerticalSection = $(".animateVertical");
+
+                    if (scrollTopVertical + $(window).height() > animateVerticalSection.offset().top) {
+                        if (scrollTopVertical > lastScrollTopVertical) {
+                            animateVerticalSection.stop(true).animate({ opacity: '1.0' }, 1000);
+                            $(".textVertical").stop(true).animate({
+                                top: '60px',
+                                left: '150px',
+                                opacity: '1.0',
+                                width: '350px'
+                            }, 1000);
+                            $(".imgVertical").stop(true).animate({
+                                bottom: '40%',
+                                opacity: '1.0',
+                                height: '250px',
+                                width: '500px',
+                            }, 1000);
+                        } else {
+                            $(".textVertical").stop(true).animate({
+                                top: '-250px',
+                                opacity: '0.1',
+                                width: '350px'
+                            }, 1000);
+                            $(".imgVertical").stop(true).animate({
+                                bottom: '-40%',
+                                opacity: '0.1',
+                                height: '250px',
+                                width: '500px',
+                            }, 1000);
+                            animateVerticalSection.stop(true).animate({ opacity: '0.05' }, 1000);
+                        }
+                    }
+
+                    lastScrollTopVertical = scrollTopVertical;
+                });
+            });
+
+        </script>
+    </section>
+
+    <section style="background-color: lightblue;">
+        <div class="container">
+            <footer class="py-3 my-4">
+                <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+                </ul>
+                <p class="text-center">&copy; Tayyab Mansoor</p>
+            </footer>
+        </div>
+    </section>
+
+    <script>
+        $(document).ready(function () {
+
+            var slides = $('.slide');
+            var slideIndex = 0;
+
+            $(slides[slideIndex]).show();
+
+
+            function showSlide(index) {
+                $(slides).fadeOut(2000);
+                $(slides[index]).fadeIn(2000);
+                $('.pagination-dot').removeClass('active');
+                $('.pagination-dot').eq(index).addClass('active');
+            }
+
+
+            $('#next').click(function () {
+                slideIndex += 1
+                if (slideIndex > 4) {
+                    slideIndex = 0;
+                }
+                showSlide(slideIndex);
+            });
+
+
+            $('#prev').click(function () {
+                slideIndex -= 1;
+                if (slideIndex < 0) {
+                    slideIndex = 4;
+                }
+                showSlide(slideIndex);
+            });
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task2</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            margin-top: 50px;
+            justify-content: space-around;
+            background-color: #f0f4f8;
+        }
+
+        .img-contain {
+     
+            width: 480px;
+        }
+
+        #id1,#id2,#id3 {
+            transition: width 0.3s ease;
+        }
+
+        img {
+            width: 150px;
+            border: 2px solid lightblue;
+            border-radius: 5px;
+        }
+
+        .reset-button {
+            display: none;
+            margin-top: 10px;
+            padding: 10px 15px;
+            background-color: blue;
+            color: white;
+            cursor: pointer;
+        }
+
+        .reset-button:hover {
+            background-color: darkblue;
+        }
+
+        .main-div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 700px;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main-div">
+        <div class="img-contain">
+            <img id="id1" src="Bentham_Science_Publishers_Logo.png" alt="">
+        </div>
+        <button id="reset-button1" class="reset-button">Reset</button>
+    </div>
+
+    <div class="main-div">
+        <div class="img-contain">
+            <img id="id2" src="Bentham_Science_Publishers_Logo.png" alt="">
+        </div>
+        <button id="reset-button2" class="reset-button">Reset</button>
+    </div>
+
+    <div class="main-div">
+        <div class="img-contain">
+            <img id="id3" src="Bentham_Science_Publishers_Logo.png" alt="">
+        </div>
+        <button id="reset-button3" class="reset-button">Reset</button>
+    </div>
+<!-- code for click and reset button
+    <script>
+        $(document).ready(function () {
+            function zoomReset(imgId, btnId) {
+                let isZoomed = false;
+                
+                $(imgId).hover(function () {
+                    if (!isZoomed) {
+                        $(imgId).css('width', '490px');
+                        $(btnId).show();
+                        isZoomed = true;
+                    }
+                });
+                
+                $(btnId).click(function () {
+                    if (isZoomed) {
+                        $(imgId).css('width', '150px');
+                        $(btnId).hide();
+                        isZoomed = false;
+                    }
+                });
+            }
+            zoomReset('#id1', '#reset-button1');
+            zoomReset('#id2', '#reset-button2');
+            zoomReset('#id3', '#reset-button3');
+        });
+    </script>
+-->
+
+
+<!-- code for hover in and out -->
+<script>
+$("img").hover(function(){
+  $(this).css("width", "490px");
+  }, function(){
+  $(this).css("width", "150px");
+});
+</script>
+</body>
+
+</html>

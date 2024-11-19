@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task1</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .column {
+            position: relative;
+            height: 150px;
+            width: 30%;
+            margin: 0px 20px;
+        }
+
+        .header {
+            font-weight: bold;
+            text-align: center;
+            font-size: large;
+        }
+
+        .toggle-btn1,
+        .toggle-btn2,
+        .toggle-btn3 {
+            position: absolute;
+            bottom: 0;
+            left: 45%;
+        }
+
+        .content1,
+        .content2,
+        .content3 {
+            border: 1px solid rgb(0, 0, 0);
+            text-align: center;
+            border-radius: 10px;
+            margin: 10px 0px;
+        }
+
+        .task2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 10%;
+        }
+
+        #bigDiv {
+            width: 200px;
+            height: 200px;
+            border: 5px solid #494747;
+            position: relative;
+            overflow: hidden;
+        }
+
+        #smallButton {
+            width: 50px;
+            height: 50px;
+            border-radius: 5px;
+            background-color: red;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .controls {
+            margin-top: 20px;
+        }
+
+        .control-button {
+            margin: 0 5px;
+            padding: 10px;
+        }
+
+        body {
+            color: beige;
+            margin: auto;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            overflow: auto;
+            background: linear-gradient(315deg, rgba(101, 0, 94, 1) 3%, rgba(60, 132, 206, 1) 38%, rgba(48, 238, 226, 1) 68%, rgba(255, 25, 25, 1) 98%);
+            animation: gradient 15s ease infinite;
+            background-size: 400% 400%;
+            background-attachment: fixed;
+        }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 0%;
+            }
+
+            50% {
+                background-position: 100% 100%;
+            }
+
+            100% {
+                background-position: 0% 0%;
+            }
+        }
+
+        .wave {
+            background: rgb(255 255 255 / 25%);
+            border-radius: 1000% 1000% 0 0;
+            position: fixed;
+            width: 200%;
+            height: 12em;
+            animation: wave 10s -3s linear infinite;
+            transform: translate3d(0, 0, 0);
+            opacity: 0.8;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+        }
+
+        .wave:nth-of-type(2) {
+            bottom: -1.25em;
+            animation: wave 18s linear reverse infinite;
+            opacity: 0.8;
+        }
+
+        .wave:nth-of-type(3) {
+            bottom: -2.5em;
+            animation: wave 20s -1s reverse infinite;
+            opacity: 0.9;
+        }
+
+        @keyframes wave {
+            2% {
+                transform: translateX(1);
+            }
+
+            25% {
+                transform: translateX(-25%);
+            }
+
+            50% {
+                transform: translateX(-50%);
+            }
+
+            75% {
+                transform: translateX(-25%);
+            }
+
+            100% {
+                transform: translateX(1);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+    </div>
+
+
+    <h1 style="text-align: center;">Start of task 1</h1>
+    <div class="row">
+
+        <div class="column col-md-4">
+            <div class="header">Column 1</div>
+            <div class="content1">T1</div>
+            <div class="content1">T4</div>
+            <button class="toggle-btn1 btn btn-success">On</button>
+
+        </div>
+        <div class="column col-md-4">
+            <div class="header">Column 2</div>
+            <div class="content2">T2</div>
+            <div class="content2">T5</div>
+            <button class="toggle-btn2 btn btn-success">On</button>
+        </div>
+        <div class="column col-md-4">
+            <div class="header">Column 3</div>
+            <div class="content3">T3</div>
+            <div class="content3">T6</div>
+            <div>
+                <button class="toggle-btn3 btn btn-success">On</button>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script>
+        $(document).ready(function () {
+            $('.toggle-btn1').click(function () {
+                $(".content1").toggle();
+                if ($(".content1").is(':visible')) {
+                    $(this).text('Off');
+                } else {
+                    $(this).text('On');
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('.toggle-btn2').click(function () {
+                $(".content2").toggle();
+                if ($(".content2").is(':visible')) {
+                    $(this).text('Off');
+                } else {
+                    $(this).text('On');
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('.toggle-btn3').click(function () {
+                $(".content3").toggle();
+                if ($(".content3").is(':visible')) {
+                    $(this).text('Off');
+                } else {
+                    $(this).text('On');
+                }
+            });
+        });
+    </script>
+
+
+
+    <section class="task2">
+
+        <h1 style="text-align: center;">Start of task 2</h1>
+
+        <div id="bigDiv">
+            <div id="smallButton"></div>
+        </div>
+        <div class="controls">
+            <button id="left" class="control-button btn btn-info">Left</button>
+            <button id="right" class="control-button btn btn-info">Right</button>
+            <button id="up" class="control-button btn btn-info">Up</button>
+            <button id="down" class="control-button btn btn-info">Down</button>
+        </div>
+        <div class="controls">
+            <button id="auto" class="control-button btn btn-info">Auto</button>
+        </div>
+
+
+        <script>
+            $(document).ready(function () {
+                const $smallButton = $('#smallButton');
+                const $bigDiv = $('#bigDiv');
+                const step = 10;
+                const stepAuto = 150;
+                let checker;
+
+                function moveButton(x, y) {
+                    const currentLeft = $smallButton.position().left;
+                    const currentTop = $smallButton.position().top;
+
+
+                    const newLeft = Math.min(Math.max(currentLeft + x, 0), $bigDiv.width() - $smallButton.width());
+                    const newTop = Math.min(Math.max(currentTop + y, 0), $bigDiv.height() - $smallButton.height());
+
+                    $smallButton.stop().animate({ left: newLeft, top: newTop }, 200);
+                }
+
+                $('#left').click(function () { moveButton(-step, 0); });
+                $('#right').click(function () { moveButton(step, 0); });
+                $('#up').click(function () { moveButton(0, -step); });
+                $('#down').click(function () { moveButton(0, step); });
+
+                $('#auto').click(function () {
+                    if (checker) {
+                        clearInterval(checker);
+                        checker = null;
+                        $(this).text('Auto');
+                    } else {
+                        $(this).text('Stop');
+                        checker = setInterval(function () {
+                            let direction = Math.floor(Math.random() * 4);
+                            switch (direction) {
+                                case 0: moveButton(-stepAuto, 0); break;
+                                case 1: moveButton(stepAuto, 0); break;
+                                case 2: moveButton(0, -stepAuto); break;
+                                case 3: moveButton(0, stepAuto); break;
+                            }
+                        }, 500);
+                    }
+                });
+            });
+        </script>
+    </section>
+
+
+</body>
+
+
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        $(document).ready(function () {
+            $("h3").click(function () {
+                $(this).hide();
+            });
+        });
+
+
+        $(document).ready(function () {
+            $('h5').hover(function () {
+                $(this).hide();
+            });
+        });
+    </script>
+
+    <h3>
+        testing jquery through hide function
+    </h3>
+
+    <h3>
+        test 2
+    </h3>
+
+
+    <h5>
+        hover to blur test.
+    </h5>
+
+    <button type="button" class="btn btn-primary" id="test">Button to hide/show h2 tag</button>
+
+
+
+    <script>
+        $(document).ready(function () {
+            $("#test").click(function () {
+                $("h2").toggle(2000); // Hide or show the clicked paragraph
+            });
+        });
+    </script>
+
+
+    <h2>hi world</h2>
+
+
+    <div style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
+        <img id="fadeImage" src="pak.jpg" height="300" width="300" alt="image">
+        <h1 id="flip">Click to slide down panel</h1>
+        <h1 id="slide">Pakistan</h1>
+    </div>
+
+
+    <script>
+        $(document).ready(function () {
+            function fadeInOut() {
+                $("#fadeImage").fadeIn(2000).delay(1000).fadeOut(2000, fadeInOut); // Fade in, wait, fade out
+            }
+
+            fadeInOut(); // Start the fading effect
+        });
+
+        $(document).ready(function () {
+            $("#flip").click(function () {
+                $("#slide").slideToggle(1000);
+            });
+        });
+
+        $(document).ready(function () {
+            $("#flip").click(function () {
+                $("#panel").slideToggle("slow");
+            });
+        });
+    </script>
+</body>
+
+</html>

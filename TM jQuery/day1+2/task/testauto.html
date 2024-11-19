@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 10%;
+        }
+        #bigDiv {
+            width: 200px;
+            height: 200px;
+            border: 2px solid #000;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .task2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 10%;
+        }
+
+        #bigDiv {
+            width: 200px;
+            height: 200px;
+            border: 2px solid #000;
+            position: relative;
+            overflow: hidden;
+        }
+
+        #smallButton {
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .controls {
+            margin-top: 20px;
+        }
+
+        .control-button {
+            margin: 0 5px;
+            padding: 10px;
+        }
+    </style>
+    </style>
+</head>
+<body>
+    <section class="task2">
+        <h1 style="text-align: center;">Start of task 2</h1>
+        
+        <div id="bigDiv">
+            <div id="smallButton"></div>
+            <div id="star" style="position: absolute; width: 20px; height: 20px; background: yellow; display: none; border-radius: 10px;"></div>
+        </div>
+        
+        <div class="controls">
+            <button id="left" class="control-button">Left</button>
+            <button id="right" class="control-button">Right</button>
+            <button id="up" class="control-button">Up</button>
+            <button id="down" class="control-button">Down</button>
+            <button id="auto" class="control-button">Auto</button>
+        </div>
+        
+        <div id="score" style="text-align: center; margin-top: 20px;">Score: 0</div>
+        <div id="timer" style="text-align: center; margin-top: 20px;">Time: 0s</div>
+        
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                const $smallButton = $('#smallButton');
+                const $bigDiv = $('#bigDiv');
+                const $star = $('#star');
+                const $score = $('#score');
+                const $timer = $('#timer');
+                const step = 10;
+                const stepAuto = 50;
+                let checker;
+                let score = 0;
+                let timerInterval;
+                let timeElapsed = 0;
+                let gameStarted = false;
+    
+                function moveButton(x, y) {
+                    const currentLeft = $smallButton.position().left;
+                    const currentTop = $smallButton.position().top;
+    
+                    const newLeft = Math.min(Math.max(currentLeft + x, 0), $bigDiv.width() - $smallButton.width());
+                    const newTop = Math.min(Math.max(currentTop + y, 0), $bigDiv.height() - $smallButton.height());
+    
+                    $smallButton.stop().animate({ left: newLeft, top: newTop }, 200, function() {
+                        checkCollision(newLeft, newTop);
+                    });
+                }
+    
+                function placeStar() {
+                    const x = Math.random() * ($bigDiv.width() - $star.width());
+                    const y = Math.random() * ($bigDiv.height() - $star.height());
+                    $star.css({ left: x, top: y }).show();
+                }
+    
+                function checkCollision(left, top) {
+                    const starPos = $star.position();
+                    if (left < starPos.left + $star.width() &&
+                        left + $smallButton.width() > starPos.left &&
+                        top < starPos.top + $star.height() &&
+                        top + $smallButton.height() > starPos.top) {
+                        score++;
+                        $score.text('Score: ' + score);
+                        $star.hide();
+                        placeStar();
+                    }
+                }
+    
+                $('#left').click(function () { startGame(); moveButton(-step, 0); });
+                $('#right').click(function () { startGame(); moveButton(step, 0); });
+                $('#up').click(function () { startGame(); moveButton(0, -step); });
+                $('#down').click(function () { startGame(); moveButton(0, step); });
+    
+                $('#auto').click(function () {
+                    if (checker) {
+                        clearInterval(checker);
+                        checker = null;
+                        $(this).text('Auto');
+                    } else {
+                        $(this).text('Stop');
+                        
+                        checker = setInterval(function () {
+                            let direction = Math.floor(Math.random() * 4);
+                            switch (direction) {
+                                case 0: moveButton(-stepAuto, 0); break;
+                                case 1: moveButton(stepAuto, 0); break;
+                                case 2: moveButton(0, -stepAuto); break;
+                                case 3: moveButton(0, stepAuto); break;
+                            }
+                        }, 500);
+                    }
+                });
+    
+                function startGame() {
+                    if (!gameStarted) {
+                        gameStarted = true;
+                        placeStar();
+                        timerInterval = setInterval(function() {
+                            timeElapsed++;
+                            $timer.text('Time: ' + timeElapsed + 's');
+                        }, 1000);
+                    }
+                }
+            });
+        </script>
+    </section>
+    
+</body>
+</html>

@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Test Luck</title>
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .task2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 10%;
+        }
+
+        #bigDiv {
+            width: 400px;
+            height: 400px;
+            border: 5px solid #494747;
+            position: relative;
+            overflow: hidden;
+            background-color: #e9ecef;
+        }
+
+        #smallButton {
+            width: 40px;
+            height: 40px;
+            background-color: red;
+            position: absolute;
+        }
+
+        .obstacle {
+            width: 50px;
+            height: 10px;
+            background-color: blue;
+            position: absolute;
+        }
+
+        .controls {
+            margin-top: 20px;
+        }
+
+        #message {
+            display: none;
+            font-size: 24px;
+            font-weight: bold;
+            color: green;
+        }
+
+        #timer {
+            margin-top: 20px;
+            font-size: 18px;
+            color: white;
+        }
+
+        .hide {
+            display: none;
+        }
+
+        .goalState {
+            width: 40px;
+            height: 40px;
+            background-color: gold;
+            right: 0;
+            bottom: 0;
+            position: absolute;
+            text-align: center;
+            font-weight: bold;
+            font-size: small;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 0 60px 30px #ffffff24, 0 0 100px 60px #fdff00;
+        }
+    </style>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #111;
+        }
+
+        .container {
+            position: relative;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .ring {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            border: 4px solid transparent;
+            border-top: 4px solid #24ecff55;
+            border-radius: 50%;
+            margin: -30px;
+            filter: drop-shadow(0 0 10px #24ecff) drop-shadow(0 0 30px #24ecff) drop-shadow(0 0 50px #24ecff);
+            animation: animate 6s linear infinite;
+        }
+
+        @keyframes animate {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .ring::before {
+            content: "\f135";
+            position: absolute;
+            top: 10px;
+            right: -4px;
+            rotate: 90deg;
+            font-family: fontAwesome;
+            color: #24ecff;
+            font-size: 2em;
+        }
+
+        .ring:nth-child(2) {
+            border: 4px solid transparent;
+            border-left: 4px solid #93ff2d;
+            filter: drop-shadow(0 0 10px #93ff2d) drop-shadow(0 0 30px #93ff2d) drop-shadow(0 0 50px #93ff2d);
+            animation: animate2 6s linear infinite;
+            animation-delay: -1s;
+        }
+
+        .ring:nth-child(2)::before {
+            content: "\f072";
+            top: initial;
+            bottom: -6px;
+            left: 12px;
+            right: initial;
+            rotate: 45deg;
+            color: #93ff2d;
+        }
+
+        @keyframes animate2 {
+            0% {
+                transform: rotate(360deg);
+            }
+
+            100% {
+                transform: rotate(0deg);
+            }
+        }
+
+        .ring:nth-child(3) {
+            position: absolute;
+            top: -66.66px;
+            border: 4px solid transparent;
+            border-left: 4px solid #ff1d6c55;
+            filter: drop-shadow(0 0 10px #ff1d6c) drop-shadow(0 0 30px #ff1d6c) drop-shadow(0 0 50px #ff1d6c);
+            animation: animate2 6s linear infinite;
+            animation-delay: -3s;
+        }
+
+        .ring:nth-child(3)::before {
+            content: "\e518";
+            rotate: 135deg;
+            top: initial;
+            right: initial;
+            bottom: -6px;
+            left: 12px;
+            color: #ff1d6c;
+        }
+    </style>
+
+    <style>
+        .glow {
+            text-shadow: 0 0 10px rgba(255, 255, 0, 1), 0 0 20px rgba(255, 255, 0, 1);
+            transition: text-shadow 0.3s ease-in-out;
+        }
+
+        .highlight {
+            background-color: rgba(243, 252, 6, 0.6);
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        footer
+        {
+            margin-top: 100px;
+            color: ghostwhite;
+        }
+    </style>
+
+</head>
+
+<body>
+    <section class="task2">
+        <div class="container">
+            <div class="ring" style="position: fixed; left: 300px;"></div>
+            <div class="ring" style="position: fixed; left: 1060px;"></div>
+            <div class="ring" style="position: relative;"></div>
+        </div>
+        <h1 style="color: white;">Game to Test Your Luck</h1>
+        <div id="bigDiv">
+            <div class="goalState">Target</div>
+            <div id="smallButton"></div>
+            <div class="obstacle" style="left: 50%; top: 5%;"></div>
+            <div class="obstacle" style="left: 40%; top: 80%;"></div>
+            <div class="obstacle" style="left: 80%; top: 20%;"></div>
+            <div class="obstacle" style="left: 30%; top: 30%;"></div>
+            <div class="obstacle" style="left: 30%; top: 90%;"></div>
+            <div class="obstacle" style="left: 50%; top: 50%;"></div>
+        </div>
+        <div class="controls">
+            <button id="left" class="btn btn-info hide">Left</button>
+            <button id="right" class="btn btn-info hide">Right</button>
+            <button id="up" class="btn btn-info hide">Up</button>
+            <button id="down" class="btn btn-info hide">Down</button>
+            <button id="auto" class="btn btn-info">Start</button>
+        </div>
+        <div id="timer">Time: <span id="time">0</span>s</div>
+        <div id="message">GOAL REACHED!</div>
+        <div>
+            <h5 id="under10" style="color: gold;">Under 10 seconds: WOW! Very Lucky &#128081;</h5>
+            <h5 id="under20" style="color: silver;">Under 20 seconds: Lucky &#128578;</h5>
+            <h5 id="under30" style="color: brown;">Under 30 seconds: Meh &#128566; </h5>
+            <h5 id="over30" style="color: red;">Over 30 seconds: I regret to inform you &#128128;</h5>
+        </div>
+        <footer>
+            Created by Tayyab Mansoor
+        </footer>
+        <script>
+            $(function () {
+                const $smallButton = $('#smallButton');
+                const $bigDiv = $('#bigDiv');
+                const jump = 15;
+                let timer, autoTimer, seconds = 0;
+
+
+                function moveButton(x, y) {
+                    const newPos = {
+                        left: Math.min(Math.max($smallButton.position().left + x, 0), $bigDiv.width() - $smallButton.width()),
+                        top: Math.min(Math.max($smallButton.position().top + y, 0), $bigDiv.height() - $smallButton.height())
+                    };
+
+                    if (!checkCollision(newPos.left, newPos.top)) {
+                        $smallButton.stop().animate(newPos, 200, () => checkWin(newPos.left, newPos.top));
+                    } else {
+                        navigateAroundObstacle();
+                    }
+                }
+
+
+                function checkCollision(left, top) {
+                    return $('.obstacle').toArray().some(obstacle => {
+                        const $obstacle = $(obstacle);
+                        const obstaclePos = $obstacle.position();
+                        return left < obstaclePos.left + $obstacle.width() &&
+                            left + $smallButton.width() > obstaclePos.left &&
+                            top < obstaclePos.top + $obstacle.height() &&
+                            top + $smallButton.height() > obstaclePos.top;
+                    });
+                }
+
+                function checkWin(left, top) {
+                    if (left >= 348 && top >= 348) {
+
+                        //(left >= $bigDiv.width() - $smallButton.width() && top >= $bigDiv.height() - $smallButton.height()) {
+                        clearInterval(timer);
+                        clearInterval(autoTimer);
+                        $('#message').show();
+                    }
+                }
+
+                function startTimer() {
+                    seconds = 0;
+                    $('#timer').show();
+                    timer = setInterval(() => {
+                        seconds++;
+                        $('#time').text(seconds);
+                    }, 1000);
+                }
+
+                function navigateAroundObstacle() {
+                    const directions = [{ x: 50, y: 0 },
+                    { x: -50, y: 0 },
+                    { x: 0, y: 50 },
+                    { x: 0, y: -50 }].sort(() => Math.random() - 0.5);
+                    for (const { x, y } of directions) {
+                        const newLeft = $smallButton.position().left + x;
+                        const newTop = $smallButton.position().top + y;
+                        if (!checkCollision(newLeft, newTop) &&
+                            newLeft >= 0 && newLeft <= $bigDiv.width() - $smallButton.width() &&
+                            newTop >= 0 && newTop <= $bigDiv.height() - $smallButton.height()) {
+                            moveButton(x, y);
+                            return;
+                        }
+                    }
+                }
+
+                function moveAuto() {
+                    const targetLeft = $bigDiv.width() - $smallButton.width();
+                    const targetTop = $bigDiv.height() - $smallButton.height();
+                    const leftDiff = targetLeft - $smallButton.position().left;
+                    const topDiff = targetTop - $smallButton.position().top;
+
+                    if (Math.abs(leftDiff) > Math.abs(topDiff)) {
+                        const x = Math.sign(leftDiff) * jump;
+                        moveButton(x, 0);
+                    } else {
+                        const y = Math.sign(topDiff) * jump;
+                        moveButton(0, y);
+                    }
+                    checkWin($smallButton.position().left, $smallButton.position().top);
+                }
+
+
+                $('#left').click(() => { moveButton(-jump, 0); startTimer(); });
+                $('#right').click(() => { moveButton(jump, 0); startTimer(); });
+                $('#up').click(() => { moveButton(0, -jump); startTimer(); });
+                $('#down').click(() => { moveButton(0, jump); startTimer(); });
+
+                $('#auto').click(() => {
+                    if (autoTimer) {
+                        clearInterval(autoTimer);
+                        autoTimer = null;
+                        $('#auto').text('Start');
+                    } else {
+                        $('#auto').text('Stop');
+                        startTimer();
+                        autoTimer = setInterval(() => {
+                            moveAuto();
+                            updateGlowHighlight();
+                        }, 100);
+                    }
+
+                    function updateGlowHighlight() {
+                        $('h5').removeClass('glow highlight');
+
+                        if (seconds < 10) {
+                            $('#under10').addClass('glow');
+                        } else if (seconds < 20) {
+                            $('#under20').addClass('highlight');
+                        } else if (seconds < 30) {
+                            $('#under30').addClass('highlight');
+                        } else {
+                            $('#over30').addClass('highlight');
+                        }
+                    }
+                });
+            });
+        </script>
+
+    </section>
+</body>
+
+</html>

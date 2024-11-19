@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        input[type=text],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+        }
+
+        label {
+            padding: 12px 12px 12px 0;
+            display: inline-block;
+        }
+
+        input[type=submit] {
+            background-color: #04AA6D;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            float: right;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+        .container {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+        .col-25 {
+            float: left;
+            width: 25%;
+            margin-top: 6px;
+        }
+
+        .col-75 {
+            float: left;
+            width: 75%;
+            margin-top: 6px;
+        }
+
+        .row::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        @media screen and (max-width: 600px) {
+            .col-25,
+            .col-75,
+            input[type=submit] {
+                width: 100%;
+                margin-top: 0;
+            }
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 12px;
+            border: 1px solid #e9e1e1;
+        }
+
+        th {
+            background-color: #007BFF;
+            color: white;
+        }
+
+        td {
+            background-color: #ffffff;
+        }
+
+        button {
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #6e160c;
+        }
+
+        tr:hover td {
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <form id="taskform">
+                <div class="row">
+                    <div class="col-25">
+                        <label for="fname">First Name</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="lname">Last Name</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="Gender">Gender</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="radio" id="Male" name="Gender" value="Male">
+                        <label for="Male">Male</label>
+                        <input type="radio" id="Female" name="Gender" value="Female">
+                        <label for="Female">Female</label><br>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="country">Country</label>
+                    </div>
+                    <div class="col-75">
+                        <select id="country" name="country">
+                            <option value="Pakistan">Pakistan</option>
+                            <option value="Australia">Australia</option>
+                            <option value="Canada">Canada</option>
+                            <option value="Usa">USA</option>
+                            <option value="Others">Others</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="state">State</label>
+                    </div>
+                    <div class="col-75">
+                        <select id="state" name="state">
+                            <option value="Sindh">Sindh</option>
+                            <option value="Balochistan">Balochistan</option>
+                            <option value="KPK">Khyber</option>
+                            <option value="Punjab">Punjab</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <input type="submit" value="Add">
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <p style="display: none;"><var>message</var> has been deleted</p>
+
+    <section>
+        <table id="tabli">
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Gender</th>
+                    <th>Country</th>
+                    <th>State</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Tayyab</td>
+                    <td>Mansoor</td>
+                    <td>Male</td>
+                    <td>Pakistan</td>
+                    <td>Sindh</td>
+                    <td><button class="delete-btn">Delete Row</button></td>
+                </tr>
+                <tr>
+                    <td>Hamza</td>
+                    <td>Khan</td>
+                    <td>Male</td>
+                    <td>Pakistan</td>
+                    <td>Sindh</td>
+                    <td><button class="delete-btn">Delete Row</button></td>
+                </tr>
+                <tr>
+                    <td>First Warzan</td>
+                    <td>Warzan</td>
+                    <td>Male</td>
+                    <td>Pakistan</td>
+                    <td>Sindh</td>
+                    <td><button class="delete-btn">Delete Row</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <script>
+            $(document).ready(function () {
+                
+                $("#taskform").submit(function (event) {
+                    event.preventDefault(); 
+
+                  
+                    const fname = $("#fname").val();
+                    const Lname = $("#lname").val();
+                    const gender = $("input[name='Gender']:checked").val();
+                    const country = $("#country").val();
+                    const state = $("#state").val();
+
+                    $("#tabli tbody").append(`
+                        <tr>
+                            <td>${fname}</td>
+                            <td>${Lname}</td>
+                            <td>${gender}</td>
+                            <td>${country}</td>
+                            <td>${state}</td>
+                            <td><button class="delete-btn">Delete Row</button></td>
+                        </tr>
+                    `);
+
+                    $(this).trigger("reset");
+                });
+
+                $(document).on("click", ".delete-btn", function () {
+                    $(this).closest('tr').hide(200);
+                    });
+        
+                });
+    
+        </script>
+
+
+    </section>
+</body>
+
+</html>

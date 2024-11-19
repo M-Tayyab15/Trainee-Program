@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task2</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+        }
+
+        .image-container {
+            overflow: hidden;
+        }
+
+        #zoomable-image {
+            width: 300px; /* Original width */
+            transition: width 0.3s ease; /* Smooth transition */
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img id="ID1" src="pak.jpg" alt="Zoomable Image">
+    </div>
+    <button id="reset-button">Reset</button>
+    <div class="image-container">
+        <img id="ID2" src="" alt="Zoomable Image">
+    </div>
+    <button id="reset-button">Reset</button>
+    <div class="image-container">
+        <img id="ID3" src="pak.jpg" alt="Zoomable Image">
+    </div>
+    <button id="reset-button">Reset</button>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            let isZoomed = false;
+
+            $('#ID1').click(function() {
+                if (!isZoomed) {
+                    $(this).css('width', '450px'); // Increase size (zoom in)
+                    isZoomed = true;
+                }
+            });
+
+            $('#reset-button').click(function() {
+                if (isZoomed) {
+                    $('#zoomable-image').css('width', '300px'); // Reset size
+                    isZoomed = false;
+                }
+            });
+        });
+    </script>
+</body>
+</html>
