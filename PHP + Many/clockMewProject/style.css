@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #212121; /* dark background */
+    color: #fff; /* white text color */
+}
+
+.clock-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+   
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.clock {
+    font-size: 72px; /* increased font size */
+    font-weight: bold;
+    text-align: center;
+}
+
+.clock span {
+    margin: 0 20px; /* increased margin */
+    color: #34A85A; /* bright green color for digits */
+    font-size: 72px; /* increased font size */
+    text-shadow: 0 0 10px #34A85A, 0 0 20px #34A85A, 0 0 30px #34A85A; /* added glow effect */
+}
+
+.clock span#hour, .clock span#minute, .clock span#second {
+    display: inline-block;
+    width: 80px; /* increased width */
+    height: 100px; /* increased height */
+    line-height: 100px;
+    text-align: center;
+   
+    border-radius: 5px;
+ 
+    padding: 20px; /* increased padding */
+}
+
+.clock span#hour:before, .clock span#minute:before, .clock span#second:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  
+    border-radius: 5px;
+}
+.clock span#ampm {
+    font-size: 36px; /* smaller font size for AM/PM */
+    color: #34A85A; /* bright green color for AM/PM */
+    text-shadow: 0 0 0px #34A85A, 0 0 10px #34A85A, 0 0 15px #34A85A; /* added glow effect */
+    margin-left: 5px; /* add some space between the clock and AM/PM */
+}
+
+/* Responsive design */
+@media only screen and (max-width: 768px) {
+    .clock {
+        font-size: 48px;
+    }
+    .clock span {
+        margin: 0 10px;
+        font-size: 48px;
+        text-shadow: 0 0 5px #34A85A, 0 0 10px #34A85A, 0 0 15px #34A85A; /* adjusted glow effect for smaller screens */
+    }
+    .clock span#hour, .clock span#minute, .clock span#second {
+        width: 60px;
+        height: 80px;
+        line-height: 80px;
+    }
+}

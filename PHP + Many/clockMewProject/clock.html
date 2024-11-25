@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="clock-container">
+        <div class="clock">
+            <span id="hour"></span>
+            <span id="minute"></span>
+            <span id="second"></span>
+            <span id="ampm"></span> 
+        </div>
+    </div>
+
+    <script>
+       function updateClock() {
+    const now = new Date();
+    const hour = now.getHours();
+    const minute = now.getMinutes();
+    const second = now.getSeconds();
+    let ampm = hour >= 12 ? 'PM' : 'AM'; // determine AM or PM
+
+    document.getElementById('hour').innerHTML = hour.toString().padStart(2, '0');
+    document.getElementById('minute').innerHTML = minute.toString().padStart(2, '0');
+    document.getElementById('second').innerHTML = second.toString().padStart(2, '0');
+    document.getElementById('ampm').innerHTML = ampm; // display AM or PM
+}
+
+setInterval(updateClock, 1000); // Update clock every 1 second
+
+
+setInterval(updateClock, 1000); // Update clock every 1 second
+    </script>
+</body>
+</html>
