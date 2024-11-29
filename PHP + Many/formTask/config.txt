@@ -1,0 +1,12 @@
+# Configuration File
+
+# Email Settings
+EMAIL_HOST=smtp.gmail.com
+EMAIL_PORT=587
+EMAIL_USERNAME=muhammadtayyabafc@gmail.com
+EMAIL_PASSWORD=mctg epdb ijqa ddzc
+EMAIL_FROM=muhammadtayyabafc@gmail.com
+EMAIL_FROM_NAME=Tayyab Mansoor
+
+# Other Settings
+SUBJECT=Registration Form
