@@ -403,7 +403,6 @@ include 'Eheader.php';
         </div> -->
 
 
-        <!-- Hot Products Carousel -->
 <!-- Hot Products Carousel -->
 <div class="text-center my-4">
     <h2 style="color: red;"><i class="bi bi-fire"></i> Hot Products</h2>
