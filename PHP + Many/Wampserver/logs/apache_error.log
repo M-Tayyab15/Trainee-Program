@@ -1,0 +1,347 @@
+- Wampserver trace report -
+File created by Wampserver install
+[Thu Sep 12 11:32:02.069661 2024] [mpm_winnt:notice] [pid 14704:tid 796] AH00455: Apache/2.4.41 (Win64) PHP/7.3.12 configured -- resuming normal operations
+[Thu Sep 12 11:32:02.069661 2024] [mpm_winnt:notice] [pid 14704:tid 796] AH00456: Apache Lounge VS16 Server built: Aug  9 2019 16:46:32
+[Thu Sep 12 11:32:02.069661 2024] [core:notice] [pid 14704:tid 796] AH00094: Command line: 'c:\\wamp64\\bin\\apache\\apache2.4.41\\bin\\httpd.exe -d C:/wamp64/bin/apache/apache2.4.41'
+[Thu Sep 12 11:32:02.112773 2024] [mpm_winnt:notice] [pid 14704:tid 796] AH00418: Parent: Created child process 14792
+[Thu Sep 12 11:32:03.127789 2024] [mpm_winnt:notice] [pid 14792:tid 728] AH00354: Child: Starting 64 worker threads.
+[Thu Sep 12 13:53:47.084282 2024] [mpm_winnt:notice] [pid 14704:tid 796] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Thu Sep 12 13:53:49.109897 2024] [mpm_winnt:notice] [pid 14792:tid 728] AH00364: Child: All worker threads have exited.
+[Thu Sep 12 13:53:49.459496 2024] [mpm_winnt:notice] [pid 14704:tid 796] AH00430: Parent: Child process 14792 exited successfully.
+[Thu Sep 12 13:54:16.093827 2024] [mpm_winnt:notice] [pid 18404:tid 868] AH00455: Apache/2.4.41 (Win64) PHP/7.3.12 configured -- resuming normal operations
+[Thu Sep 12 13:54:16.093827 2024] [mpm_winnt:notice] [pid 18404:tid 868] AH00456: Apache Lounge VS16 Server built: Aug  9 2019 16:46:32
+[Thu Sep 12 13:54:16.093827 2024] [core:notice] [pid 18404:tid 868] AH00094: Command line: 'c:\\wamp64\\bin\\apache\\apache2.4.41\\bin\\httpd.exe -d C:/wamp64/bin/apache/apache2.4.41'
+[Thu Sep 12 13:54:16.109402 2024] [mpm_winnt:notice] [pid 18404:tid 868] AH00418: Parent: Created child process 7976
+[Thu Sep 12 13:54:16.914804 2024] [mpm_winnt:notice] [pid 7976:tid 732] AH00354: Child: Starting 64 worker threads.
+[Fri Sep 13 09:00:17.999882 2024] [mpm_winnt:notice] [pid 18404:tid 868] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Fri Sep 13 09:00:21.821139 2024] [mpm_winnt:notice] [pid 7976:tid 732] AH00364: Child: All worker threads have exited.
+[Fri Sep 13 09:00:34.315050 2024] [mpm_winnt:notice] [pid 18404:tid 868] AH00430: Parent: Child process 7976 exited successfully.
+[Fri Sep 13 09:09:38.146315 2024] [mpm_winnt:notice] [pid 7512:tid 780] AH00455: Apache/2.4.41 (Win64) PHP/7.3.12 configured -- resuming normal operations
+[Fri Sep 13 09:09:38.146315 2024] [mpm_winnt:notice] [pid 7512:tid 780] AH00456: Apache Lounge VS16 Server built: Aug  9 2019 16:46:32
+[Fri Sep 13 09:09:38.146315 2024] [core:notice] [pid 7512:tid 780] AH00094: Command line: 'c:\\wamp64\\bin\\apache\\apache2.4.41\\bin\\httpd.exe -d C:/wamp64/bin/apache/apache2.4.41'
+[Fri Sep 13 09:09:38.161564 2024] [mpm_winnt:notice] [pid 7512:tid 780] AH00418: Parent: Created child process 1488
+[Fri Sep 13 09:09:38.567750 2024] [mpm_winnt:notice] [pid 1488:tid 756] AH00354: Child: Starting 64 worker threads.
+[Fri Sep 13 10:13:18.675506 2024] [php7:error] [pid 1488:tid 1220] [client ::1:52254] script 'C:/wamp64/www/day2/welcome.php' not found or unable to stat, referer: http://localhost/day2/forms.php
+[Fri Sep 13 10:13:19.064068 2024] [php7:error] [pid 1488:tid 1220] [client ::1:52254] script 'C:/wamp64/www/day2/welcome.php' not found or unable to stat, referer: http://localhost/day2/forms.php
+[Fri Sep 13 10:13:24.359591 2024] [php7:error] [pid 1488:tid 1228] [client ::1:52255] script 'C:/wamp64/www/day2/welcome.php' not found or unable to stat, referer: http://localhost/day2/forms.php
+[Fri Sep 13 10:17:02.229495 2024] [php7:error] [pid 1488:tid 1220] [client ::1:52424] script 'C:/wamp64/www/day2/welcome.php' not found or unable to stat, referer: http://localhost/day2/forms.php
+[Fri Sep 13 10:40:49.440341 2024] [php7:error] [pid 1488:tid 1228] [client ::1:53291] script 'C:/wamp64/www/day2/test_get.php' not found or unable to stat, referer: http://localhost/day2/forms.php
+[Mon Sep 30 11:42:46.524160 2024] [mpm_winnt:notice] [pid 7512:tid 780] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Mon Sep 30 11:42:53.465771 2024] [mpm_winnt:notice] [pid 1488:tid 756] AH00364: Child: All worker threads have exited.
+[Mon Sep 30 11:43:19.028936 2024] [mpm_winnt:notice] [pid 7512:tid 780] AH00431: Parent: Forcing termination of child process 1488
+[Mon Oct 07 08:54:07.923815 2024] [mpm_winnt:notice] [pid 10020:tid 768] AH00455: Apache/2.4.41 (Win64) PHP/7.3.12 configured -- resuming normal operations
+[Mon Oct 07 08:54:07.923815 2024] [mpm_winnt:notice] [pid 10020:tid 768] AH00456: Apache Lounge VS16 Server built: Aug  9 2019 16:46:32
+[Mon Oct 07 08:54:07.923815 2024] [core:notice] [pid 10020:tid 768] AH00094: Command line: 'c:\\wamp64\\bin\\apache\\apache2.4.41\\bin\\httpd.exe -d C:/wamp64/bin/apache/apache2.4.41'
+[Mon Oct 07 08:54:07.938337 2024] [mpm_winnt:notice] [pid 10020:tid 768] AH00418: Parent: Created child process 8796
+[Mon Oct 07 08:54:08.475744 2024] [mpm_winnt:notice] [pid 8796:tid 4] AH00354: Child: Starting 64 worker threads.
+[Mon Oct 07 15:36:46.644608 2024] [mpm_winnt:notice] [pid 10020:tid 768] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Mon Oct 07 15:36:50.210407 2024] [mpm_winnt:notice] [pid 8796:tid 4] AH00364: Child: All worker threads have exited.
+[Mon Oct 07 15:37:09.834730 2024] [mpm_winnt:notice] [pid 10020:tid 768] AH00430: Parent: Child process 8796 exited successfully.
+[Tue Oct 08 09:14:30.288584 2024] [mpm_winnt:notice] [pid 10764:tid 776] AH00455: Apache/2.4.41 (Win64) PHP/7.3.12 configured -- resuming normal operations
+[Tue Oct 08 09:14:30.288584 2024] [mpm_winnt:notice] [pid 10764:tid 776] AH00456: Apache Lounge VS16 Server built: Aug  9 2019 16:46:32
+[Tue Oct 08 09:14:30.288584 2024] [core:notice] [pid 10764:tid 776] AH00094: Command line: 'c:\\wamp64\\bin\\apache\\apache2.4.41\\bin\\httpd.exe -d C:/wamp64/bin/apache/apache2.4.41'
+[Tue Oct 08 09:14:30.455048 2024] [mpm_winnt:notice] [pid 10764:tid 776] AH00418: Parent: Created child process 7240
+[Tue Oct 08 09:14:31.205836 2024] [mpm_winnt:notice] [pid 7240:tid 736] AH00354: Child: Starting 64 worker threads.
+[Tue Oct 08 11:30:24.549138 2024] [mpm_winnt:notice] [pid 10764:tid 776] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Tue Oct 08 11:30:27.592989 2024] [mpm_winnt:notice] [pid 7240:tid 736] AH00364: Child: All worker threads have exited.
+[Tue Oct 08 11:30:31.246385 2024] [mpm_winnt:notice] [pid 10764:tid 776] AH00430: Parent: Child process 7240 exited successfully.
+[Tue Oct 08 11:36:23.755180 2024] [mpm_winnt:notice] [pid 4568:tid 776] AH00455: Apache/2.4.41 (Win64) PHP/7.3.12 configured -- resuming normal operations
+[Tue Oct 08 11:36:23.755180 2024] [mpm_winnt:notice] [pid 4568:tid 776] AH00456: Apache Lounge VS16 Server built: Aug  9 2019 16:46:32
+[Tue Oct 08 11:36:23.755180 2024] [core:notice] [pid 4568:tid 776] AH00094: Command line: 'c:\\wamp64\\bin\\apache\\apache2.4.41\\bin\\httpd.exe -d C:/wamp64/bin/apache/apache2.4.41'
+[Tue Oct 08 11:36:25.017611 2024] [mpm_winnt:notice] [pid 4568:tid 776] AH00418: Parent: Created child process 5472
+[Tue Oct 08 11:36:29.645996 2024] [mpm_winnt:notice] [pid 5472:tid 740] AH00354: Child: Starting 64 worker threads.
+[Wed Oct 09 17:17:31.028354 2024] [mpm_winnt:notice] [pid 4568:tid 776] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Wed Oct 09 17:17:34.335414 2024] [mpm_winnt:notice] [pid 5472:tid 740] AH00364: Child: All worker threads have exited.
+[Wed Oct 09 17:17:54.963726 2024] [mpm_winnt:notice] [pid 4568:tid 776] AH00430: Parent: Child process 5472 exited successfully.
+[Thu Oct 10 08:56:17.971001 2024] [mpm_winnt:notice] [pid 11240:tid 780] AH00455: Apache/2.4.41 (Win64) PHP/7.3.12 configured -- resuming normal operations
+[Thu Oct 10 08:56:17.971001 2024] [mpm_winnt:notice] [pid 11240:tid 780] AH00456: Apache Lounge VS16 Server built: Aug  9 2019 16:46:32
+[Thu Oct 10 08:56:17.973398 2024] [core:notice] [pid 11240:tid 780] AH00094: Command line: 'c:\\wamp64\\bin\\apache\\apache2.4.41\\bin\\httpd.exe -d C:/wamp64/bin/apache/apache2.4.41'
+[Thu Oct 10 08:56:18.148720 2024] [mpm_winnt:notice] [pid 11240:tid 780] AH00418: Parent: Created child process 9328
+[Thu Oct 10 08:56:19.127546 2024] [mpm_winnt:notice] [pid 9328:tid 716] AH00354: Child: Starting 64 worker threads.
+[Fri Oct 11 16:06:45.929711 2024] [php7:error] [pid 9328:tid 1236] [client ::1:59511] script 'C:/wamp64/www/create-glassmorphism-login-form-html-css/Glassmorphism Login Form/dashboard.php' not found or unable to stat
+[Fri Oct 11 16:07:01.216551 2024] [php7:error] [pid 9328:tid 1240] [client ::1:59513] script 'C:/wamp64/www/create-glassmorphism-login-form-html-css/Glassmorphism Login Form/dashboard.php' not found or unable to stat, referer: http://localhost/create-glassmorphism-login-form-html-css/Glassmorphism%20Login%20Form/index.php
+[Fri Oct 11 16:15:58.248068 2024] [php7:error] [pid 9328:tid 1240] [client ::1:59732] script 'C:/wamp64/www/create-glassmorphism-login-form-html-css/Glassmorphism Login Form/dashboard.php' not found or unable to stat, referer: http://localhost/create-glassmorphism-login-form-html-css/Glassmorphism%20Login%20Form/index.php
+[Fri Oct 11 16:15:58.978591 2024] [php7:error] [pid 9328:tid 1240] [client ::1:59735] script 'C:/wamp64/www/create-glassmorphism-login-form-html-css/Glassmorphism Login Form/dashboard.php' not found or unable to stat, referer: http://localhost/create-glassmorphism-login-form-html-css/Glassmorphism%20Login%20Form/index.php
+[Fri Oct 11 16:15:59.477052 2024] [php7:error] [pid 9328:tid 1240] [client ::1:59735] script 'C:/wamp64/www/create-glassmorphism-login-form-html-css/Glassmorphism Login Form/dashboard.php' not found or unable to stat, referer: http://localhost/create-glassmorphism-login-form-html-css/Glassmorphism%20Login%20Form/index.php
+[Mon Oct 14 10:23:16.630185 2024] [php7:error] [pid 9328:tid 1220] [client ::1:63596] script 'C:/wamp64/www/w3admin-main/login2..php' not found or unable to stat
+[Mon Oct 14 11:32:57.652258 2024] [php7:error] [pid 9328:tid 1220] [client ::1:64796] script 'C:/wamp64/www/w3admin-main/index.php' not found or unable to stat, referer: http://localhost/w3admin-main/index2.php
+[Mon Oct 14 11:33:04.521063 2024] [php7:error] [pid 9328:tid 1232] [client ::1:64797] script 'C:/wamp64/www/w3admin-main/index.php' not found or unable to stat, referer: http://localhost/w3admin-main/index2.php
+[Mon Oct 14 14:22:00.580718 2024] [php7:error] [pid 9328:tid 1236] [client ::1:49598] script 'C:/wamp64/www/login-dashboard/login22.php' not found or unable to stat, referer: http://localhost/login-dashboard/login2.php
+[Mon Oct 14 16:11:47.524511 2024] [php7:error] [pid 9328:tid 1240] [client ::1:50955] script 'C:/wamp64/www/login-dashboard/logout.php' not found or unable to stat, referer: http://localhost/login-dashboard/index2.php
+[Wed Oct 16 10:02:56.100817 2024] [mpm_winnt:notice] [pid 11240:tid 780] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Wed Oct 16 10:02:58.743458 2024] [mpm_winnt:notice] [pid 9328:tid 716] AH00364: Child: All worker threads have exited.
+[Wed Oct 16 10:03:05.687707 2024] [mpm_winnt:notice] [pid 11240:tid 780] AH00430: Parent: Child process 9328 exited successfully.
+[Wed Oct 16 10:03:14.528414 2024] [mpm_winnt:notice] [pid 15988:tid 648] AH00455: Apache/2.4.41 (Win64) PHP/7.3.12 configured -- resuming normal operations
+[Wed Oct 16 10:03:14.528414 2024] [mpm_winnt:notice] [pid 15988:tid 648] AH00456: Apache Lounge VS16 Server built: Aug  9 2019 16:46:32
+[Wed Oct 16 10:03:14.528414 2024] [core:notice] [pid 15988:tid 648] AH00094: Command line: 'c:\\wamp64\\bin\\apache\\apache2.4.41\\bin\\httpd.exe -d C:/wamp64/bin/apache/apache2.4.41'
+[Wed Oct 16 10:03:14.562048 2024] [mpm_winnt:notice] [pid 15988:tid 648] AH00418: Parent: Created child process 13040
+[Wed Oct 16 10:03:15.187502 2024] [mpm_winnt:notice] [pid 13040:tid 720] AH00354: Child: Starting 64 worker threads.
+[Wed Oct 16 10:10:40.873955 2024] [mpm_winnt:notice] [pid 15988:tid 648] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Wed Oct 16 10:10:42.898748 2024] [mpm_winnt:notice] [pid 13040:tid 720] AH00364: Child: All worker threads have exited.
+[Wed Oct 16 10:10:43.241021 2024] [mpm_winnt:notice] [pid 15988:tid 648] AH00430: Parent: Child process 13040 exited successfully.
+[Wed Oct 16 10:10:45.870153 2024] [mpm_winnt:notice] [pid 14004:tid 852] AH00455: Apache/2.4.41 (Win64) PHP/7.3.12 configured -- resuming normal operations
+[Wed Oct 16 10:10:45.870153 2024] [mpm_winnt:notice] [pid 14004:tid 852] AH00456: Apache Lounge VS16 Server built: Aug  9 2019 16:46:32
+[Wed Oct 16 10:10:45.870153 2024] [core:notice] [pid 14004:tid 852] AH00094: Command line: 'c:\\wamp64\\bin\\apache\\apache2.4.41\\bin\\httpd.exe -d C:/wamp64/bin/apache/apache2.4.41'
+[Wed Oct 16 10:10:45.885775 2024] [mpm_winnt:notice] [pid 14004:tid 852] AH00418: Parent: Created child process 20284
+[Wed Oct 16 10:10:46.340905 2024] [mpm_winnt:notice] [pid 20284:tid 764] AH00354: Child: Starting 64 worker threads.
+[Wed Oct 16 16:45:22.946567 2024] [mpm_winnt:notice] [pid 14004:tid 852] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Wed Oct 16 16:45:27.032735 2024] [mpm_winnt:notice] [pid 20284:tid 764] AH00364: Child: All worker threads have exited.
+[Wed Oct 16 16:45:32.961237 2024] [mpm_winnt:notice] [pid 14004:tid 852] AH00430: Parent: Child process 20284 exited successfully.
+[Wed Oct 16 16:45:55.494143 2024] [mpm_winnt:notice] [pid 14192:tid 900] AH00455: Apache/2.4.41 (Win64) PHP/7.3.12 configured -- resuming normal operations
+[Wed Oct 16 16:45:55.494143 2024] [mpm_winnt:notice] [pid 14192:tid 900] AH00456: Apache Lounge VS16 Server built: Aug  9 2019 16:46:32
+[Wed Oct 16 16:45:55.494143 2024] [core:notice] [pid 14192:tid 900] AH00094: Command line: 'c:\\wamp64\\bin\\apache\\apache2.4.41\\bin\\httpd.exe -d C:/wamp64/bin/apache/apache2.4.41'
+[Wed Oct 16 16:45:55.505159 2024] [mpm_winnt:notice] [pid 14192:tid 900] AH00418: Parent: Created child process 5244
+[Wed Oct 16 16:45:56.134125 2024] [mpm_winnt:notice] [pid 5244:tid 724] AH00354: Child: Starting 64 worker threads.
+[Mon Oct 21 15:07:23.924281 2024] [php7:error] [pid 5244:tid 1232] [client ::1:61477] script 'C:/wamp64/www/formTask/success2.php' not found or unable to stat, referer: http://localhost/formTask/index2.php
+[Tue Oct 22 09:21:03.586800 2024] [mpm_winnt:notice] [pid 14192:tid 900] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Tue Oct 22 09:21:06.290865 2024] [mpm_winnt:notice] [pid 5244:tid 724] AH00364: Child: All worker threads have exited.
+[Tue Oct 22 09:21:08.507204 2024] [mpm_winnt:notice] [pid 14192:tid 900] AH00430: Parent: Child process 5244 exited successfully.
+[Tue Oct 22 09:21:28.765970 2024] [mpm_winnt:notice] [pid 7992:tid 640] AH00455: Apache/2.4.41 (Win64) PHP/7.3.12 configured -- resuming normal operations
+[Tue Oct 22 09:21:28.765970 2024] [mpm_winnt:notice] [pid 7992:tid 640] AH00456: Apache Lounge VS16 Server built: Aug  9 2019 16:46:32
+[Tue Oct 22 09:21:28.765970 2024] [core:notice] [pid 7992:tid 640] AH00094: Command line: 'c:\\wamp64\\bin\\apache\\apache2.4.41\\bin\\httpd.exe -d C:/wamp64/bin/apache/apache2.4.41'
+[Tue Oct 22 09:21:28.779918 2024] [mpm_winnt:notice] [pid 7992:tid 640] AH00418: Parent: Created child process 14616
+[Tue Oct 22 09:21:29.359891 2024] [mpm_winnt:notice] [pid 14616:tid 828] AH00354: Child: Starting 64 worker threads.
+[Tue Oct 22 12:46:07.296515 2024] [mpm_winnt:notice] [pid 7992:tid 640] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Tue Oct 22 12:46:09.476598 2024] [mpm_winnt:notice] [pid 14616:tid 828] AH00364: Child: All worker threads have exited.
+[Tue Oct 22 12:46:10.637931 2024] [mpm_winnt:notice] [pid 7992:tid 640] AH00430: Parent: Child process 14616 exited successfully.
+[Tue Oct 22 12:46:12.683907 2024] [mpm_winnt:notice] [pid 7112:tid 804] AH00455: Apache/2.4.41 (Win64) PHP/7.3.12 configured -- resuming normal operations
+[Tue Oct 22 12:46:12.683907 2024] [mpm_winnt:notice] [pid 7112:tid 804] AH00456: Apache Lounge VS16 Server built: Aug  9 2019 16:46:32
+[Tue Oct 22 12:46:12.683907 2024] [core:notice] [pid 7112:tid 804] AH00094: Command line: 'c:\\wamp64\\bin\\apache\\apache2.4.41\\bin\\httpd.exe -d C:/wamp64/bin/apache/apache2.4.41'
+[Tue Oct 22 12:46:12.699958 2024] [mpm_winnt:notice] [pid 7112:tid 804] AH00418: Parent: Created child process 17696
+[Tue Oct 22 12:46:14.903643 2024] [mpm_winnt:notice] [pid 17696:tid 812] AH00354: Child: Starting 64 worker threads.
+[Wed Oct 23 12:08:36.666329 2024] [mpm_winnt:notice] [pid 7112:tid 804] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Wed Oct 23 12:08:40.347770 2024] [mpm_winnt:notice] [pid 17696:tid 812] AH00364: Child: All worker threads have exited.
+[Wed Oct 23 12:08:47.749373 2024] [mpm_winnt:notice] [pid 7112:tid 804] AH00430: Parent: Child process 17696 exited successfully.
+[Wed Oct 23 12:17:50.312354 2024] [mpm_winnt:notice] [pid 4296:tid 776] AH00455: Apache/2.4.41 (Win64) PHP/7.3.12 configured -- resuming normal operations
+[Wed Oct 23 12:17:50.406568 2024] [mpm_winnt:notice] [pid 4296:tid 776] AH00456: Apache Lounge VS16 Server built: Aug  9 2019 16:46:32
+[Wed Oct 23 12:17:50.406568 2024] [core:notice] [pid 4296:tid 776] AH00094: Command line: 'c:\\wamp64\\bin\\apache\\apache2.4.41\\bin\\httpd.exe -d C:/wamp64/bin/apache/apache2.4.41'
+[Wed Oct 23 12:17:50.406568 2024] [mpm_winnt:notice] [pid 4296:tid 776] AH00418: Parent: Created child process 6876
+[Wed Oct 23 12:17:52.157488 2024] [mpm_winnt:notice] [pid 6876:tid 732] AH00354: Child: Starting 64 worker threads.
+[Fri Oct 25 09:05:56.738542 2024] [mpm_winnt:notice] [pid 4296:tid 776] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Fri Oct 25 09:05:59.155530 2024] [mpm_winnt:notice] [pid 6876:tid 732] AH00364: Child: All worker threads have exited.
+[Fri Oct 25 09:05:59.520872 2024] [mpm_winnt:notice] [pid 4296:tid 776] AH00430: Parent: Child process 6876 exited successfully.
+[Fri Oct 25 09:06:08.727865 2024] [mpm_winnt:notice] [pid 4644:tid 820] AH00455: Apache/2.4.41 (Win64) PHP/7.3.12 configured -- resuming normal operations
+[Fri Oct 25 09:06:08.728861 2024] [mpm_winnt:notice] [pid 4644:tid 820] AH00456: Apache Lounge VS16 Server built: Aug  9 2019 16:46:32
+[Fri Oct 25 09:06:08.728861 2024] [core:notice] [pid 4644:tid 820] AH00094: Command line: 'c:\\wamp64\\bin\\apache\\apache2.4.41\\bin\\httpd.exe -d C:/wamp64/bin/apache/apache2.4.41'
+[Fri Oct 25 09:06:08.738859 2024] [mpm_winnt:notice] [pid 4644:tid 820] AH00418: Parent: Created child process 18704
+[Fri Oct 25 09:06:09.608771 2024] [mpm_winnt:notice] [pid 18704:tid 760] AH00354: Child: Starting 64 worker threads.
+[Fri Oct 25 09:07:41.431376 2024] [mpm_winnt:notice] [pid 4644:tid 820] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Fri Oct 25 09:07:46.507916 2024] [mpm_winnt:notice] [pid 18704:tid 760] AH00364: Child: All worker threads have exited.
+[Fri Oct 25 09:07:46.529016 2024] [mpm_winnt:notice] [pid 4644:tid 820] AH00430: Parent: Child process 18704 exited successfully.
+[Fri Oct 25 09:08:45.661300 2024] [mpm_winnt:notice] [pid 10276:tid 776] AH00455: Apache/2.4.41 (Win64) PHP/7.3.12 configured -- resuming normal operations
+[Fri Oct 25 09:08:45.661300 2024] [mpm_winnt:notice] [pid 10276:tid 776] AH00456: Apache Lounge VS16 Server built: Aug  9 2019 16:46:32
+[Fri Oct 25 09:08:45.661300 2024] [core:notice] [pid 10276:tid 776] AH00094: Command line: 'c:\\wamp64\\bin\\apache\\apache2.4.41\\bin\\httpd.exe -d C:/wamp64/bin/apache/apache2.4.41'
+[Fri Oct 25 09:08:45.666273 2024] [mpm_winnt:notice] [pid 10276:tid 776] AH00418: Parent: Created child process 14380
+[Fri Oct 25 09:08:46.278593 2024] [mpm_winnt:notice] [pid 14380:tid 728] AH00354: Child: Starting 64 worker threads.
+[Mon Oct 28 10:51:19.030119 2024] [php7:error] [pid 14380:tid 1216] [client ::1:51360] script 'C:/wamp64/www/login-dashboard/edit_user.php' not found or unable to stat, referer: http://localhost/login-dashboard/users.php
+[Mon Oct 28 11:10:10.288434 2024] [php7:error] [pid 14380:tid 1216] [client ::1:51931] script 'C:/wamp64/www/login-dashboard/delete_user.php' not found or unable to stat, referer: http://localhost/login-dashboard/users.php
+[Mon Oct 28 11:48:05.752062 2024] [php7:error] [pid 14380:tid 1216] [client ::1:52875] script 'C:/wamp64/www/login-dashboard/edit_user.php' not found or unable to stat, referer: http://localhost/login-dashboard/users.php
+[Mon Oct 28 11:48:09.179823 2024] [php7:error] [pid 14380:tid 1216] [client ::1:52875] script 'C:/wamp64/www/login-dashboard/edit_user_form.php' not found or unable to stat, referer: http://localhost/login-dashboard/users.php
+[Mon Oct 28 11:55:00.993790 2024] [php7:error] [pid 14380:tid 1224] [client ::1:53106] script 'C:/wamp64/www/login-dashboard/edit_user_form.php' not found or unable to stat, referer: http://localhost/login-dashboard/users.php
+[Fri Nov 01 09:58:47.030591 2024] [php7:error] [pid 14380:tid 1228] [client ::1:62876] script 'C:/wamp64/www/login-dashboard/upload_file.php' not found or unable to stat, referer: http://localhost/login-dashboard/users.php
+[Mon Nov 04 11:16:02.224571 2024] [php7:error] [pid 14380:tid 1204] [client ::1:53778] script 'C:/wamp64/www/login-dashboard/Users/login2.php' not found or unable to stat, referer: http://localhost/login-dashboard/Users/register.php
+[Mon Nov 04 11:19:24.973116 2024] [php7:error] [pid 14380:tid 1204] [client ::1:53829] script 'C:/wamp64/www/login-dashboard/Users/login2.php' not found or unable to stat, referer: http://localhost/login-dashboard/Users/register.php
+[Mon Nov 04 11:47:30.617313 2024] [php7:error] [pid 14380:tid 1240] [client ::1:54759] script 'C:/wamp64/www/login-dashboard/Users/login2.php' not found or unable to stat, referer: http://localhost/login-dashboard/Users/login_User.php
+[Mon Nov 04 11:47:38.231444 2024] [php7:error] [pid 14380:tid 1204] [client ::1:54760] script 'C:/wamp64/www/login-dashboard/Users/login2.php' not found or unable to stat, referer: http://localhost/login-dashboard/Users/login_User.php
+[Mon Nov 04 11:47:49.976195 2024] [php7:error] [pid 14380:tid 1204] [client ::1:54760] script 'C:/wamp64/www/login-dashboard/Users/login2.php' not found or unable to stat, referer: http://localhost/login-dashboard/users/login_User.php
+[Mon Nov 04 11:47:58.934062 2024] [php7:error] [pid 14380:tid 1204] [client ::1:54760] script 'C:/wamp64/www/login-dashboard/Users/login2.php' not found or unable to stat, referer: http://localhost/login-dashboard/users/login_User.php
+[Mon Nov 04 11:48:26.709537 2024] [php7:error] [pid 14380:tid 1240] [client ::1:54762] script 'C:/wamp64/www/login-dashboard/Users/login2.php' not found or unable to stat, referer: http://localhost/login-dashboard/users/login_User.php
+[Mon Nov 04 11:48:38.682748 2024] [php7:error] [pid 14380:tid 1204] [client ::1:54768] script 'C:/wamp64/www/login-dashboard/Users/login2.php' not found or unable to stat, referer: http://localhost/login-dashboard/users/login_User.php
+[Mon Nov 04 11:48:41.691575 2024] [php7:error] [pid 14380:tid 1204] [client ::1:54768] script 'C:/wamp64/www/login-dashboard/Users/login2.php' not found or unable to stat, referer: http://localhost/login-dashboard/users/login_User.php
+[Mon Nov 04 11:49:10.708663 2024] [php7:error] [pid 14380:tid 1240] [client ::1:54769] script 'C:/wamp64/www/login-dashboard/Users/login2.php' not found or unable to stat, referer: http://localhost/login-dashboard/users/login_User.php
+[Mon Nov 04 16:11:41.390132 2024] [php7:error] [pid 14380:tid 1240] [client ::1:58037] script 'C:/wamp64/www/login-dashboard/Users/index2.php' not found or unable to stat, referer: http://localhost/login-dashboard/users/login_User.php
+[Mon Nov 04 16:12:23.057761 2024] [php7:error] [pid 14380:tid 1204] [client ::1:58039] script 'C:/wamp64/www/login-dashboard/Users/fileUpload.php' not found or unable to stat, referer: http://localhost/login-dashboard/users/index2.php
+[Mon Nov 04 16:12:25.064442 2024] [php7:error] [pid 14380:tid 1204] [client ::1:58039] script 'C:/wamp64/www/login-dashboard/Users/users.php' not found or unable to stat, referer: http://localhost/login-dashboard/users/index2.php
+[Mon Nov 04 16:21:54.531351 2024] [php7:error] [pid 14380:tid 1204] [client ::1:58126] script 'C:/wamp64/www/login-dashboard/Users/logout.php' not found or unable to stat, referer: http://localhost/login-dashboard/users/index2.php
+[Mon Nov 04 16:36:03.664226 2024] [php7:error] [pid 14380:tid 1204] [client ::1:58200] script 'C:/wamp64/www/login-dashboard/Users/login2.php' not found or unable to stat, referer: http://localhost/login-dashboard/users/
+[Mon Nov 04 16:36:09.522060 2024] [php7:error] [pid 14380:tid 1240] [client ::1:58205] script 'C:/wamp64/www/login-dashboard/Users/login2.php' not found or unable to stat, referer: http://localhost/login-dashboard/users/
+[Mon Nov 04 16:36:32.583401 2024] [php7:error] [pid 14380:tid 1204] [client ::1:58216] script 'C:/wamp64/www/login-dashboard/Users/login2.php' not found or unable to stat, referer: http://localhost/login-dashboard/users/
+[Tue Nov 05 12:53:27.894969 2024] [php7:error] [pid 14380:tid 1204] [client ::1:55357] script 'C:/wamp64/www/login-dashboard/Users/index2.php' not found or unable to stat, referer: http://localhost/login-dashboard/Users/register.php
+[Tue Nov 05 12:53:32.602278 2024] [php7:error] [pid 14380:tid 1204] [client ::1:55357] script 'C:/wamp64/www/login-dashboard/Users/index2.php' not found or unable to stat, referer: http://localhost/login-dashboard/Users/register.php
+[Tue Nov 05 12:54:09.768541 2024] [php7:error] [pid 14380:tid 1240] [client ::1:55364] script 'C:/wamp64/www/login-dashboard/Users/index2.php' not found or unable to stat, referer: http://localhost/login-dashboard/Users/register.php
+[Tue Nov 05 12:54:19.318320 2024] [php7:error] [pid 14380:tid 1204] [client ::1:55369] script 'C:/wamp64/www/login-dashboard/Users/index2.php' not found or unable to stat, referer: http://localhost/login-dashboard/users/register.php
+[Tue Nov 05 12:54:30.359250 2024] [php7:error] [pid 14380:tid 1240] [client ::1:55372] script 'C:/wamp64/www/login-dashboard/Users/index2.php' not found or unable to stat, referer: http://localhost/login-dashboard/users/register.php
+[Tue Nov 05 12:54:37.698634 2024] [php7:error] [pid 14380:tid 1240] [client ::1:55372] script 'C:/wamp64/www/login-dashboard/Users/index2.php' not found or unable to stat, referer: http://localhost/login-dashboard/users/register.php
+[Tue Nov 05 12:55:31.671731 2024] [php7:error] [pid 14380:tid 1240] [client ::1:55377] script 'C:/wamp64/www/login-dashboard/Users/index2.php' not found or unable to stat, referer: http://localhost/login-dashboard/users/register.php
+[Tue Nov 05 14:40:21.962533 2024] [php7:error] [pid 14380:tid 1236] [client ::1:57278] script 'C:/wamp64/www/login-dashboard/Users/index2.php' not found or unable to stat, referer: http://localhost/login-dashboard/Users/register.php
+[Tue Nov 05 14:40:58.620518 2024] [php7:error] [pid 14380:tid 1204] [client ::1:57305] script 'C:/wamp64/www/login-dashboard/Users/index2.php' not found or unable to stat
+[Tue Nov 05 14:41:04.938689 2024] [php7:error] [pid 14380:tid 1236] [client ::1:57321] script 'C:/wamp64/www/login-dashboard/Users/index2.php' not found or unable to stat
+[Tue Nov 05 14:41:16.952312 2024] [php7:error] [pid 14380:tid 1204] [client ::1:57325] script 'C:/wamp64/www/login-dashboard/Users/index2.php' not found or unable to stat
+[Tue Nov 05 16:34:09.660092 2024] [php7:error] [pid 14380:tid 1240] [client ::1:59377] script 'C:/wamp64/www/login-dashboard/Users/login2.php' not found or unable to stat, referer: http://localhost/login-dashboard/users/index_User.php
+[Tue Nov 05 16:35:04.074710 2024] [php7:error] [pid 14380:tid 1200] [client ::1:59378] script 'C:/wamp64/www/login-dashboard/Users/login2.php' not found or unable to stat, referer: http://localhost/login-dashboard/users/index_User.php
+[Wed Nov 06 10:10:25.740878 2024] [php7:error] [pid 14380:tid 1240] [client ::1:63617] script 'C:/wamp64/www/login-dashboard/Users/index2.php' not found or unable to stat, referer: http://localhost/login-dashboard/users/
+[Wed Nov 06 10:11:02.447942 2024] [php7:error] [pid 14380:tid 1200] [client ::1:63621] script 'C:/wamp64/www/login-dashboard/Users/index2.php' not found or unable to stat, referer: http://localhost/login-dashboard/users/
+[Wed Nov 06 10:11:03.037723 2024] [php7:error] [pid 14380:tid 1200] [client ::1:63621] script 'C:/wamp64/www/login-dashboard/Users/index2.php' not found or unable to stat, referer: http://localhost/login-dashboard/users/
+[Wed Nov 06 11:01:21.417429 2024] [php7:error] [pid 14380:tid 1200] [client ::1:64034] script 'C:/wamp64/www/login-dashboard/login.php' not found or unable to stat, referer: http://localhost/login-dashboard/users/
+[Wed Nov 06 11:02:02.022186 2024] [php7:error] [pid 14380:tid 1240] [client ::1:64035] script 'C:/wamp64/www/login-dashboard/login.php' not found or unable to stat, referer: http://localhost/login-dashboard/users/
+[Wed Nov 06 11:02:02.536450 2024] [php7:error] [pid 14380:tid 1240] [client ::1:64035] script 'C:/wamp64/www/login-dashboard/login.php' not found or unable to stat, referer: http://localhost/login-dashboard/users/
+[Wed Nov 06 11:09:47.213477 2024] [php7:error] [pid 14380:tid 1240] [client ::1:64247] script 'C:/wamp64/www/login-dashboard/Users/logout.php' not found or unable to stat, referer: http://localhost/login-dashboard/Users/index_User.php
+[Wed Nov 06 11:09:53.657028 2024] [php7:error] [pid 14380:tid 1240] [client ::1:64247] script 'C:/wamp64/www/login-dashboard/Users/logout.php' not found or unable to stat, referer: http://localhost/login-dashboard/Users/index_User.php
+[Wed Nov 06 11:14:26.955755 2024] [php7:error] [pid 14380:tid 1240] [client ::1:64390] script 'C:/wamp64/www/login-dashboard/Users/logout.php' not found or unable to stat, referer: http://localhost/login-dashboard/Users/index_User.php
+[Wed Nov 06 11:14:59.093061 2024] [php7:error] [pid 14380:tid 1200] [client ::1:64391] script 'C:/wamp64/www/login-dashboard/Users/logout.php' not found or unable to stat, referer: http://localhost/login-dashboard/Users/index_User.php
+[Wed Nov 06 11:14:59.809874 2024] [php7:error] [pid 14380:tid 1200] [client ::1:64391] script 'C:/wamp64/www/login-dashboard/Users/logout.php' not found or unable to stat, referer: http://localhost/login-dashboard/Users/index_User.php
+[Wed Nov 06 12:07:27.115273 2024] [php7:error] [pid 14380:tid 1224] [client ::1:65169] script 'C:/wamp64/www/login-dashboard/index_User.php' not found or unable to stat, referer: http://localhost/login-dashboard/
+[Wed Nov 06 14:45:29.785342 2024] [php7:error] [pid 14380:tid 1200] [client ::1:50010] script 'C:/wamp64/www/login-dashboard/products.php' not found or unable to stat, referer: http://localhost/login-dashboard/index2.php
+[Wed Nov 06 14:48:39.946298 2024] [php7:error] [pid 14380:tid 1200] [client ::1:50080] script 'C:/wamp64/www/login-dashboard/products.php' not found or unable to stat, referer: http://localhost/login-dashboard/index2.php
+[Wed Nov 06 15:31:46.614621 2024] [php7:error] [pid 14380:tid 1200] [client ::1:51484] script 'C:/wamp64/www/login-dashboard/add_product.php' not found or unable to stat, referer: http://localhost/login-dashboard/product.php
+[Wed Nov 06 15:35:38.036405 2024] [php7:error] [pid 14380:tid 1200] [client ::1:51647] script 'C:/wamp64/www/login-dashboard/edit_product.php' not found or unable to stat, referer: http://localhost/login-dashboard/product.php
+[Wed Nov 06 15:45:01.819699 2024] [php7:error] [pid 14380:tid 1200] [client ::1:51944] script 'C:/wamp64/www/login-dashboard/add_product.php' not found or unable to stat, referer: http://localhost/login-dashboard/product.php
+[Wed Nov 06 15:58:29.113301 2024] [php7:error] [pid 14380:tid 1200] [client ::1:52589] script 'C:/wamp64/www/login-dashboard/delete_product.php' not found or unable to stat, referer: http://localhost/login-dashboard/product.php
+[Wed Nov 06 15:58:39.755004 2024] [php7:error] [pid 14380:tid 1216] [client ::1:52602] script 'C:/wamp64/www/login-dashboard/edit_product.php' not found or unable to stat, referer: http://localhost/login-dashboard/product.php
+[Wed Nov 06 16:03:58.773502 2024] [php7:error] [pid 14380:tid 1200] [client ::1:52836] script 'C:/wamp64/www/login-dashboard/products.php' not found or unable to stat, referer: http://localhost/login-dashboard/add_product.php
+[Wed Nov 06 16:05:07.603899 2024] [php7:error] [pid 14380:tid 1200] [client ::1:52859] script 'C:/wamp64/www/login-dashboard/products.php' not found or unable to stat, referer: http://localhost/login-dashboard/add_product.php
+[Wed Nov 06 16:07:43.609467 2024] [php7:error] [pid 14380:tid 1216] [client ::1:52968] script 'C:/wamp64/www/login-dashboard/edit_product.php' not found or unable to stat, referer: http://localhost/login-dashboard/product.php
+[Thu Nov 07 11:21:55.911386 2024] [php7:error] [pid 14380:tid 1216] [client ::1:56852] script 'C:/wamp64/www/login-dashboard/upload_images.php' not found or unable to stat, referer: http://localhost/login-dashboard/product.php
+[Thu Nov 07 11:23:12.523540 2024] [php7:error] [pid 14380:tid 1240] [client ::1:56857] script 'C:/wamp64/www/login-dashboard/upload_images.php' not found or unable to stat, referer: http://localhost/login-dashboard/product.php
+[Thu Nov 07 11:23:16.853708 2024] [php7:error] [pid 14380:tid 1240] [client ::1:56857] script 'C:/wamp64/www/login-dashboard/upload_images.php' not found or unable to stat, referer: http://localhost/login-dashboard/product.php
+[Thu Nov 07 11:23:20.331548 2024] [php7:error] [pid 14380:tid 1240] [client ::1:56857] script 'C:/wamp64/www/login-dashboard/upload_images.php' not found or unable to stat, referer: http://localhost/login-dashboard/product.php
+[Thu Nov 07 12:13:31.539931 2024] [php7:error] [pid 14380:tid 1240] [client ::1:57518] script 'C:/wamp64/www/login-dashboard/products.php' not found or unable to stat, referer: http://localhost/login-dashboard/product.php
+[Thu Nov 07 14:51:27.543663 2024] [php7:error] [pid 14380:tid 1240] [client ::1:58658] script 'C:/wamp64/www/login-dashboard/block_product.php' not found or unable to stat, referer: http://localhost/login-dashboard/product.php
+[Thu Nov 07 16:00:22.306235 2024] [php7:error] [pid 14380:tid 1216] [client ::1:59326] script 'C:/wamp64/www/login-dashboard/products.php' not found or unable to stat, referer: http://localhost/login-dashboard/product.php
+[Thu Nov 07 16:00:36.589200 2024] [php7:error] [pid 14380:tid 1240] [client ::1:59330] script 'C:/wamp64/www/login-dashboard/products.php' not found or unable to stat, referer: http://localhost/login-dashboard/product.php
+[Thu Nov 07 16:22:19.369569 2024] [php7:error] [pid 14380:tid 1240] [client ::1:59457] script 'C:/wamp64/www/login-dashboard/products.php' not found or unable to stat, referer: http://localhost/login-dashboard/product.php
+[Mon Nov 11 14:08:35.103348 2024] [php7:error] [pid 14380:tid 1204] [client ::1:58650] script 'C:/wamp64/www/login-dashboard/product-details.php' not found or unable to stat, referer: http://localhost/login-dashboard/carousel.php
+[Mon Nov 11 14:17:55.268602 2024] [php7:error] [pid 14380:tid 1228] [client ::1:58773] script 'C:/wamp64/www/login-dashboard/product-details.php' not found or unable to stat, referer: http://localhost/login-dashboard/carousel.php
+[Mon Nov 11 14:26:42.946003 2024] [php7:error] [pid 14380:tid 1200] [client ::1:58858] script 'C:/wamp64/www/login-dashboard/get-product-details.php' not found or unable to stat, referer: http://localhost/login-dashboard/carousel.php
+[Tue Nov 12 16:19:56.133153 2024] [php7:error] [pid 14380:tid 1224] [client ::1:60487] script 'C:/wamp64/www/login-dashboard/add_to_cart.php' not found or unable to stat, referer: http://localhost/login-dashboard/product-details.php?product_id=49
+[Tue Nov 12 16:20:59.466394 2024] [php7:error] [pid 14380:tid 1240] [client ::1:60493] script 'C:/wamp64/www/login-dashboard/product_details.php' not found or unable to stat, referer: http://localhost/login-dashboard/product-details.php?product_id=49
+[Tue Nov 12 16:21:07.593163 2024] [php7:error] [pid 14380:tid 1224] [client ::1:60494] script 'C:/wamp64/www/login-dashboard/product_details.php' not found or unable to stat, referer: http://localhost/login-dashboard/product-details.php?product_id=49
+[Tue Nov 12 16:21:09.484699 2024] [php7:error] [pid 14380:tid 1224] [client ::1:60494] script 'C:/wamp64/www/login-dashboard/product_details.php' not found or unable to stat
+[Tue Nov 12 16:21:25.790221 2024] [php7:error] [pid 14380:tid 1204] [client ::1:60502] script 'C:/wamp64/www/login-dashboard/product_details.php' not found or unable to stat, referer: http://localhost/login-dashboard/product-details.php?product_id=49
+[Tue Nov 12 16:24:07.344799 2024] [php7:error] [pid 14380:tid 1228] [client ::1:60513] script 'C:/wamp64/www/login-dashboard/product_details.php' not found or unable to stat, referer: http://localhost/login-dashboard/product-details.php?product_id=49
+[Tue Nov 12 16:25:03.969286 2024] [php7:error] [pid 14380:tid 1204] [client ::1:60514] script 'C:/wamp64/www/login-dashboard/cart.php' not found or unable to stat, referer: http://localhost/login-dashboard/product-details.php?product_id=49
+[Tue Nov 12 16:25:06.784183 2024] [php7:error] [pid 14380:tid 1204] [client ::1:60514] script 'C:/wamp64/www/login-dashboard/product_details.php' not found or unable to stat, referer: http://localhost/login-dashboard/product-details.php?product_id=49
+[Tue Nov 12 16:26:05.419631 2024] [php7:error] [pid 14380:tid 1204] [client ::1:60526] script 'C:/wamp64/www/login-dashboard/checkout.php' not found or unable to stat, referer: http://localhost/login-dashboard/cart.php
+[Tue Nov 12 16:26:08.824268 2024] [php7:error] [pid 14380:tid 1204] [client ::1:60526] script 'C:/wamp64/www/login-dashboard/remove_from_cart.php' not found or unable to stat, referer: http://localhost/login-dashboard/cart.php
+[Tue Nov 12 16:27:34.651888 2024] [php7:error] [pid 14380:tid 1204] [client ::1:60532] script 'C:/wamp64/www/login-dashboard/product_details.php' not found or unable to stat, referer: http://localhost/login-dashboard/product-details.php?product_id=49
+[Tue Nov 12 17:02:11.047935 2024] [php7:error] [pid 14380:tid 1236] [client ::1:60868] script 'C:/wamp64/www/login-dashboard/checkout.php' not found or unable to stat, referer: http://localhost/login-dashboard/cart.php
+[Wed Nov 13 09:54:40.483967 2024] [php7:error] [pid 14380:tid 1224] [client ::1:62655] script 'C:/wamp64/www/login-dashboard/Users/login.php' not found or unable to stat, referer: http://localhost/login-dashboard/product-details.php?product_id=49
+[Wed Nov 13 09:55:35.382606 2024] [php7:error] [pid 14380:tid 1228] [client ::1:62656] script 'C:/wamp64/www/login-dashboard/Users/login.php' not found or unable to stat, referer: http://localhost/login-dashboard/product-details.php?product_id=49
+[Wed Nov 13 10:20:06.663653 2024] [php7:error] [pid 14380:tid 1236] [client ::1:62886] script 'C:/wamp64/www/login-dashboard/Users/login.php' not found or unable to stat, referer: http://localhost/login-dashboard/product-details.php?product_id=35
+[Wed Nov 13 10:20:25.898421 2024] [php7:error] [pid 14380:tid 1228] [client ::1:62887] script 'C:/wamp64/www/login-dashboard/Users/login.php' not found or unable to stat, referer: http://localhost/login-dashboard/product-details.php?product_id=35
+[Wed Nov 13 10:29:03.700343 2024] [php7:error] [pid 14380:tid 1228] [client ::1:62932] script 'C:/wamp64/www/login-dashboard/login_User.php' not found or unable to stat, referer: http://localhost/login-dashboard/product-details.php?product_id=35
+[Wed Nov 13 10:29:20.044603 2024] [php7:error] [pid 14380:tid 1236] [client ::1:62933] script 'C:/wamp64/www/login-dashboard/Users/index2.php' not found or unable to stat, referer: http://localhost/login-dashboard/Users/index_User.php
+[Wed Nov 13 10:29:28.172428 2024] [php7:error] [pid 14380:tid 1228] [client ::1:62941] script 'C:/wamp64/www/login-dashboard/Users/index2.php' not found or unable to stat, referer: http://localhost/login-dashboard/Users/index_User.php
+[Wed Nov 13 10:29:31.327768 2024] [php7:error] [pid 14380:tid 1228] [client ::1:62941] script 'C:/wamp64/www/login-dashboard/Users/index2.php' not found or unable to stat, referer: http://localhost/login-dashboard/Users/index_User.php
+[Wed Nov 13 10:29:33.772408 2024] [php7:error] [pid 14380:tid 1228] [client ::1:62941] script 'C:/wamp64/www/login-dashboard/Users/index2.php' not found or unable to stat, referer: http://localhost/login-dashboard/Users/index_User.php
+[Wed Nov 13 11:08:30.417947 2024] [php7:error] [pid 14380:tid 1236] [client ::1:63609] script 'C:/wamp64/www/login-dashboard/index_User.php' not found or unable to stat, referer: http://localhost/login-dashboard/
+[Wed Nov 13 11:12:20.312855 2024] [php7:error] [pid 14380:tid 1236] [client ::1:63679] script 'C:/wamp64/www/login-dashboard/login.php' not found or unable to stat, referer: http://localhost/login-dashboard/product-details.php?product_id=35
+[Wed Nov 13 11:14:21.601409 2024] [php7:error] [pid 14380:tid 1228] [client ::1:63741] script 'C:/wamp64/www/login-dashboard/profile.php' not found or unable to stat, referer: http://localhost/login-dashboard/product-details.php?product_id=49
+[Wed Nov 13 11:15:17.876389 2024] [php7:error] [pid 14380:tid 1228] [client ::1:63750] script 'C:/wamp64/www/login-dashboard/logout_User.php' not found or unable to stat, referer: http://localhost/login-dashboard/product-details.php?product_id=49
+[Wed Nov 13 11:16:55.942233 2024] [php7:error] [pid 14380:tid 1228] [client ::1:63768] script 'C:/wamp64/www/login-dashboard/Users/carousel.php' not found or unable to stat, referer: http://localhost/login-dashboard/Users/index_User.php
+[Wed Nov 13 14:35:55.726124 2024] [php7:error] [pid 14380:tid 1240] [client ::1:65494] script 'C:/wamp64/www/login-dashboard/checkout.php' not found or unable to stat, referer: http://localhost/login-dashboard/cart.php
+[Wed Nov 13 14:37:08.932565 2024] [php7:error] [pid 14380:tid 1216] [client ::1:65522] script 'C:/wamp64/www/login-dashboard/your_cart.php' not found or unable to stat, referer: http://localhost/login-dashboard/cart.php
+[Wed Nov 13 14:37:35.327454 2024] [php7:error] [pid 14380:tid 1216] [client ::1:65532] script 'C:/wamp64/www/login-dashboard/your_cart.php' not found or unable to stat, referer: http://localhost/login-dashboard/cart.php
+[Wed Nov 13 14:51:43.017085 2024] [php7:error] [pid 14380:tid 1240] [client ::1:49274] script 'C:/wamp64/www/login-dashboard/update_cart.php' not found or unable to stat, referer: http://localhost/login-dashboard/cart.php
+[Wed Nov 13 15:29:12.431399 2024] [php7:error] [pid 14380:tid 1216] [client ::1:49807] script 'C:/wamp64/www/login-dashboard/index_User.php' not found or unable to stat, referer: http://localhost/login-dashboard/
+[Wed Nov 13 16:08:48.547887 2024] [php7:error] [pid 14380:tid 1240] [client ::1:50294] script 'C:/wamp64/www/login-dashboard/Users/carousel.php' not found or unable to stat, referer: http://localhost/login-dashboard/Users/login_User.php
+[Wed Nov 13 16:09:05.810829 2024] [php7:error] [pid 14380:tid 1216] [client ::1:50306] script 'C:/wamp64/www/login-dashboard/Users/carousel.php' not found or unable to stat, referer: http://localhost/login-dashboard/Users/login_User.php
+[Wed Nov 13 16:09:08.161351 2024] [php7:error] [pid 14380:tid 1216] [client ::1:50306] script 'C:/wamp64/www/login-dashboard/Users/carousel.php' not found or unable to stat
+[Wed Nov 13 16:30:18.770074 2024] [php7:error] [pid 14380:tid 1240] [client ::1:50760] script 'C:/wamp64/www/login-dashboard/index_User.php' not found or unable to stat, referer: http://localhost/login-dashboard/
+[Wed Nov 13 17:09:46.444848 2024] [mpm_winnt:notice] [pid 10276:tid 776] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Wed Nov 13 17:09:49.357513 2024] [mpm_winnt:notice] [pid 14380:tid 728] AH00364: Child: All worker threads have exited.
+[Wed Nov 13 17:10:12.699922 2024] [mpm_winnt:notice] [pid 10276:tid 776] AH00430: Parent: Child process 14380 exited successfully.
+[Thu Nov 14 08:52:02.714756 2024] [mpm_winnt:notice] [pid 8124:tid 764] AH00455: Apache/2.4.41 (Win64) PHP/7.3.12 configured -- resuming normal operations
+[Thu Nov 14 08:52:04.324145 2024] [mpm_winnt:notice] [pid 8124:tid 764] AH00456: Apache Lounge VS16 Server built: Aug  9 2019 16:46:32
+[Thu Nov 14 08:52:04.324145 2024] [core:notice] [pid 8124:tid 764] AH00094: Command line: 'c:\\wamp64\\bin\\apache\\apache2.4.41\\bin\\httpd.exe -d C:/wamp64/bin/apache/apache2.4.41'
+[Thu Nov 14 08:52:05.918540 2024] [mpm_winnt:notice] [pid 8124:tid 764] AH00418: Parent: Created child process 8092
+[Thu Nov 14 08:52:11.544360 2024] [mpm_winnt:notice] [pid 8092:tid 720] AH00354: Child: Starting 64 worker threads.
+[Thu Nov 14 09:53:10.144198 2024] [php7:error] [pid 8092:tid 1240] [client ::1:51735] script 'C:/wamp64/www/login-dashboard/checkout_process.php' not found or unable to stat, referer: http://localhost/login-dashboard/cart.php
+[Thu Nov 14 09:54:06.417909 2024] [php7:error] [pid 8092:tid 1236] [client ::1:51751] script 'C:/wamp64/www/login-dashboard/update_cart_quantity.php' not found or unable to stat, referer: http://localhost/login-dashboard/cart.php
+[Thu Nov 14 09:54:06.927186 2024] [php7:error] [pid 8092:tid 1236] [client ::1:51751] script 'C:/wamp64/www/login-dashboard/update_cart_quantity.php' not found or unable to stat, referer: http://localhost/login-dashboard/cart.php
+[Thu Nov 14 09:54:07.367094 2024] [php7:error] [pid 8092:tid 1236] [client ::1:51751] script 'C:/wamp64/www/login-dashboard/update_cart_quantity.php' not found or unable to stat, referer: http://localhost/login-dashboard/cart.php
+[Thu Nov 14 09:54:07.798974 2024] [php7:error] [pid 8092:tid 1236] [client ::1:51751] script 'C:/wamp64/www/login-dashboard/update_cart_quantity.php' not found or unable to stat, referer: http://localhost/login-dashboard/cart.php
+[Thu Nov 14 09:54:08.046925 2024] [php7:error] [pid 8092:tid 1236] [client ::1:51751] script 'C:/wamp64/www/login-dashboard/update_cart_quantity.php' not found or unable to stat, referer: http://localhost/login-dashboard/cart.php
+[Thu Nov 14 09:54:08.230497 2024] [php7:error] [pid 8092:tid 1236] [client ::1:51751] script 'C:/wamp64/www/login-dashboard/update_cart_quantity.php' not found or unable to stat, referer: http://localhost/login-dashboard/cart.php
+[Thu Nov 14 09:54:08.655748 2024] [php7:error] [pid 8092:tid 1236] [client ::1:51751] script 'C:/wamp64/www/login-dashboard/update_cart_quantity.php' not found or unable to stat, referer: http://localhost/login-dashboard/cart.php
+[Thu Nov 14 09:54:08.943407 2024] [php7:error] [pid 8092:tid 1236] [client ::1:51751] script 'C:/wamp64/www/login-dashboard/update_cart_quantity.php' not found or unable to stat, referer: http://localhost/login-dashboard/cart.php
+[Thu Nov 14 09:54:09.110989 2024] [php7:error] [pid 8092:tid 1236] [client ::1:51751] script 'C:/wamp64/www/login-dashboard/update_cart_quantity.php' not found or unable to stat, referer: http://localhost/login-dashboard/cart.php
+[Thu Nov 14 09:54:09.314496 2024] [php7:error] [pid 8092:tid 1236] [client ::1:51751] script 'C:/wamp64/www/login-dashboard/update_cart_quantity.php' not found or unable to stat, referer: http://localhost/login-dashboard/cart.php
+[Thu Nov 14 09:54:10.066444 2024] [php7:error] [pid 8092:tid 1236] [client ::1:51751] script 'C:/wamp64/www/login-dashboard/checkout_process.php' not found or unable to stat, referer: http://localhost/login-dashboard/cart.php
+[Thu Nov 14 09:54:10.910712 2024] [php7:error] [pid 8092:tid 1236] [client ::1:51751] script 'C:/wamp64/www/login-dashboard/update_cart_quantity.php' not found or unable to stat, referer: http://localhost/login-dashboard/cart.php
+[Thu Nov 14 09:54:11.533591 2024] [php7:error] [pid 8092:tid 1236] [client ::1:51751] script 'C:/wamp64/www/login-dashboard/update_cart_quantity.php' not found or unable to stat, referer: http://localhost/login-dashboard/cart.php
+[Thu Nov 14 09:54:11.791756 2024] [php7:error] [pid 8092:tid 1236] [client ::1:51751] script 'C:/wamp64/www/login-dashboard/update_cart_quantity.php' not found or unable to stat, referer: http://localhost/login-dashboard/cart.php
+[Thu Nov 14 09:55:28.467325 2024] [php7:error] [pid 8092:tid 1236] [client ::1:51778] script 'C:/wamp64/www/login-dashboard/update_cart_quantity.php' not found or unable to stat, referer: http://localhost/login-dashboard/cart.php
+[Thu Nov 14 09:55:28.904520 2024] [php7:error] [pid 8092:tid 1236] [client ::1:51778] script 'C:/wamp64/www/login-dashboard/update_cart_quantity.php' not found or unable to stat, referer: http://localhost/login-dashboard/cart.php
+[Thu Nov 14 09:55:29.328188 2024] [php7:error] [pid 8092:tid 1236] [client ::1:51778] script 'C:/wamp64/www/login-dashboard/update_cart_quantity.php' not found or unable to stat, referer: http://localhost/login-dashboard/cart.php
+[Thu Nov 14 09:55:29.691331 2024] [php7:error] [pid 8092:tid 1236] [client ::1:51778] script 'C:/wamp64/www/login-dashboard/update_cart_quantity.php' not found or unable to stat, referer: http://localhost/login-dashboard/cart.php
+[Thu Nov 14 10:07:42.404952 2024] [php7:error] [pid 8092:tid 1236] [client ::1:51903] script 'C:/wamp64/www/login-dashboard/checkout_process.php' not found or unable to stat, referer: http://localhost/login-dashboard/cart.php
+[Thu Nov 14 10:08:27.948286 2024] [php7:error] [pid 8092:tid 1240] [client ::1:51922] script 'C:/wamp64/www/login-dashboard/checkout_process.php' not found or unable to stat, referer: http://localhost/login-dashboard/cart.php
+[Thu Nov 14 10:16:14.324854 2024] [php7:error] [pid 8092:tid 1236] [client ::1:51990] script 'C:/wamp64/www/login-dashboard/checkout_process.php' not found or unable to stat, referer: http://localhost/login-dashboard/cart.php
+[Fri Nov 15 14:32:43.155371 2024] [php7:error] [pid 8092:tid 1260] [client ::1:53867] script 'C:/wamp64/www/login-dashboard/order_confirmation.php' not found or unable to stat, referer: http://localhost/login-dashboard/cartTest.php
+[Fri Nov 15 14:33:10.639518 2024] [php7:error] [pid 8092:tid 1240] [client ::1:53869] script 'C:/wamp64/www/login-dashboard/order_confirmation.php' not found or unable to stat, referer: http://localhost/login-dashboard/cartTest.php
+[Fri Nov 15 14:33:12.018401 2024] [php7:error] [pid 8092:tid 1240] [client ::1:53869] script 'C:/wamp64/www/login-dashboard/order_confirmation.php' not found or unable to stat, referer: http://localhost/login-dashboard/cartTest.php
+[Tue Nov 19 09:53:10.570550 2024] [php7:error] [pid 8092:tid 1240] [client ::1:59606] script 'C:/wamp64/www/login-dashboard/order_confirmation.php' not found or unable to stat, referer: http://localhost/login-dashboard/cartTest.php
+[Tue Nov 19 10:02:30.019719 2024] [php7:error] [pid 8092:tid 1240] [client ::1:59797] script 'C:/wamp64/www/login-dashboard/index.php' not found or unable to stat, referer: http://localhost/login-dashboard/order_confirmation.php
+[Tue Nov 19 10:55:25.753054 2024] [php7:error] [pid 8092:tid 1236] [client ::1:60596] script 'C:/wamp64/www/login-dashboard/user_login.php' not found or unable to stat, referer: http://localhost/login-dashboard/cartTest.php
+[Tue Nov 19 10:56:33.418684 2024] [php7:error] [pid 8092:tid 1240] [client ::1:60670] script 'C:/wamp64/www/login-dashboard/user_login.php' not found or unable to stat, referer: http://localhost/login-dashboard/cartTest.php
+[Tue Nov 19 10:57:11.072929 2024] [php7:error] [pid 8092:tid 1240] [client ::1:60696] script 'C:/wamp64/www/login-dashboard/user_login.php' not found or unable to stat, referer: http://localhost/login-dashboard/cartTest.php
+[Tue Nov 19 11:00:44.048225 2024] [php7:error] [pid 8092:tid 1236] [client ::1:60714] script 'C:/wamp64/www/login-dashboard/user_login.php' not found or unable to stat, referer: http://localhost/login-dashboard/cartTest.php
+[Tue Nov 19 11:01:44.806652 2024] [php7:error] [pid 8092:tid 1236] [client ::1:60773] script 'C:/wamp64/www/login-dashboard/user_login.php' not found or unable to stat, referer: http://localhost/login-dashboard/cartTest.php
+[Wed Nov 20 12:23:16.227472 2024] [php7:error] [pid 8092:tid 1260] [client ::1:62525] script 'C:/wamp64/www/update_profile.php' not found or unable to stat, referer: http://localhost/login-dashboard/cartTest.php
+[Wed Nov 20 15:07:06.713929 2024] [php7:error] [pid 8092:tid 1260] [client ::1:64090] script 'C:/wamp64/www/login-dashboard/paypal_process.php' not found or unable to stat, referer: http://localhost/login-dashboard/mpayment.php
+[Wed Nov 20 15:17:55.941239 2024] [php7:error] [pid 8092:tid 1248] [client ::1:64293] script 'C:/wamp64/www/login-dashboard/paypal_process.php' not found or unable to stat, referer: http://localhost/login-dashboard/mpayment.php
+[Fri Nov 22 10:27:10.128752 2024] [php7:error] [pid 8092:tid 1244] [client ::1:52512] script 'C:/wamp64/www/login-dashboard/payment_process.php' not found or unable to stat, referer: http://localhost/login-dashboard/mpayment.php
+[Fri Nov 22 10:28:02.106897 2024] [php7:error] [pid 8092:tid 1244] [client ::1:52558] script 'C:/wamp64/www/login-dashboard/payment_process.php' not found or unable to stat, referer: http://localhost/login-dashboard/mpayment.php
+[Fri Nov 22 10:29:17.963998 2024] [php7:error] [pid 8092:tid 1244] [client ::1:52600] script 'C:/wamp64/www/login-dashboard/payment_process.php' not found or unable to stat, referer: http://localhost/login-dashboard/mpayment.php
+[Fri Nov 22 10:29:34.614118 2024] [php7:error] [pid 8092:tid 1244] [client ::1:52607] script 'C:/wamp64/www/login-dashboard/payment_process.php' not found or unable to stat
+[Fri Nov 22 10:33:56.754465 2024] [php7:error] [pid 8092:tid 1232] [client ::1:52760] script 'C:/wamp64/www/login-dashboard/payment_process.php' not found or unable to stat, referer: http://localhost/login-dashboard/mpayment.php
+[Mon Nov 25 12:46:31.561089 2024] [mpm_winnt:notice] [pid 8124:tid 764] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Mon Nov 25 12:46:34.234493 2024] [mpm_winnt:notice] [pid 8092:tid 720] AH00364: Child: All worker threads have exited.
+[Mon Nov 25 12:46:38.277918 2024] [mpm_winnt:notice] [pid 8124:tid 764] AH00430: Parent: Child process 8092 exited successfully.
+[Mon Nov 25 12:46:46.871453 2024] [mpm_winnt:notice] [pid 21136:tid 792] AH00455: Apache/2.4.41 (Win64) PHP/7.3.12 configured -- resuming normal operations
+[Mon Nov 25 12:46:46.871453 2024] [mpm_winnt:notice] [pid 21136:tid 792] AH00456: Apache Lounge VS16 Server built: Aug  9 2019 16:46:32
+[Mon Nov 25 12:46:46.871453 2024] [core:notice] [pid 21136:tid 792] AH00094: Command line: 'c:\\wamp64\\bin\\apache\\apache2.4.41\\bin\\httpd.exe -d C:/wamp64/bin/apache/apache2.4.41'
+[Mon Nov 25 12:46:46.877581 2024] [mpm_winnt:notice] [pid 21136:tid 792] AH00418: Parent: Created child process 9336
+[Mon Nov 25 12:46:47.605141 2024] [mpm_winnt:notice] [pid 9336:tid 772] AH00354: Child: Starting 64 worker threads.
+[Mon Nov 25 12:48:20.461679 2024] [mpm_winnt:notice] [pid 21136:tid 792] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Mon Nov 25 12:48:22.475875 2024] [mpm_winnt:notice] [pid 9336:tid 772] AH00364: Child: All worker threads have exited.
+[Mon Nov 25 12:48:22.518275 2024] [mpm_winnt:notice] [pid 21136:tid 792] AH00430: Parent: Child process 9336 exited successfully.
+[Mon Nov 25 12:48:38.388563 2024] [mpm_winnt:notice] [pid 14848:tid 824] AH00455: Apache/2.4.41 (Win64) PHP/7.3.12 configured -- resuming normal operations
+[Mon Nov 25 12:48:38.388563 2024] [mpm_winnt:notice] [pid 14848:tid 824] AH00456: Apache Lounge VS16 Server built: Aug  9 2019 16:46:32
+[Mon Nov 25 12:48:38.388563 2024] [core:notice] [pid 14848:tid 824] AH00094: Command line: 'c:\\wamp64\\bin\\apache\\apache2.4.41\\bin\\httpd.exe -d C:/wamp64/bin/apache/apache2.4.41'
+[Mon Nov 25 12:48:38.392556 2024] [mpm_winnt:notice] [pid 14848:tid 824] AH00418: Parent: Created child process 19268
+[Mon Nov 25 12:48:38.913778 2024] [mpm_winnt:notice] [pid 19268:tid 204] AH00354: Child: Starting 64 worker threads.
+[Mon Nov 25 12:48:54.208161 2024] [mpm_winnt:notice] [pid 14848:tid 824] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Mon Nov 25 12:48:56.221469 2024] [mpm_winnt:notice] [pid 19268:tid 204] AH00364: Child: All worker threads have exited.
+[Mon Nov 25 12:48:56.241988 2024] [mpm_winnt:notice] [pid 14848:tid 824] AH00430: Parent: Child process 19268 exited successfully.
+[Mon Nov 25 12:49:05.167430 2024] [mpm_winnt:notice] [pid 13740:tid 704] AH00455: Apache/2.4.41 (Win64) PHP/7.3.12 configured -- resuming normal operations
+[Mon Nov 25 12:49:05.167430 2024] [mpm_winnt:notice] [pid 13740:tid 704] AH00456: Apache Lounge VS16 Server built: Aug  9 2019 16:46:32
+[Mon Nov 25 12:49:05.167430 2024] [core:notice] [pid 13740:tid 704] AH00094: Command line: 'c:\\wamp64\\bin\\apache\\apache2.4.41\\bin\\httpd.exe -d C:/wamp64/bin/apache/apache2.4.41'
+[Mon Nov 25 12:49:05.177975 2024] [mpm_winnt:notice] [pid 13740:tid 704] AH00418: Parent: Created child process 5068
+[Mon Nov 25 12:49:05.991486 2024] [mpm_winnt:notice] [pid 5068:tid 452] AH00354: Child: Starting 64 worker threads.
+[Mon Nov 25 12:49:25.749207 2024] [mpm_winnt:notice] [pid 13740:tid 704] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Mon Nov 25 12:49:27.753982 2024] [mpm_winnt:notice] [pid 5068:tid 452] AH00364: Child: All worker threads have exited.
+[Mon Nov 25 12:49:27.802235 2024] [mpm_winnt:notice] [pid 13740:tid 704] AH00430: Parent: Child process 5068 exited successfully.
+[Mon Nov 25 12:49:49.958630 2024] [mpm_winnt:notice] [pid 12136:tid 856] AH00455: Apache/2.4.41 (Win64) PHP/7.3.12 configured -- resuming normal operations
+[Mon Nov 25 12:49:49.958630 2024] [mpm_winnt:notice] [pid 12136:tid 856] AH00456: Apache Lounge VS16 Server built: Aug  9 2019 16:46:32
+[Mon Nov 25 12:49:49.958630 2024] [core:notice] [pid 12136:tid 856] AH00094: Command line: 'c:\\wamp64\\bin\\apache\\apache2.4.41\\bin\\httpd.exe -d C:/wamp64/bin/apache/apache2.4.41'
+[Mon Nov 25 12:49:49.974109 2024] [mpm_winnt:notice] [pid 12136:tid 856] AH00418: Parent: Created child process 18680
+[Mon Nov 25 12:49:50.528077 2024] [mpm_winnt:notice] [pid 18680:tid 508] AH00354: Child: Starting 64 worker threads.
+[Mon Nov 25 12:52:29.451792 2024] [mpm_winnt:notice] [pid 12136:tid 856] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Mon Nov 25 12:52:31.467293 2024] [mpm_winnt:notice] [pid 18680:tid 508] AH00364: Child: All worker threads have exited.
+[Mon Nov 25 12:52:31.491071 2024] [mpm_winnt:notice] [pid 12136:tid 856] AH00430: Parent: Child process 18680 exited successfully.
+[Mon Nov 25 12:52:35.104227 2024] [mpm_winnt:notice] [pid 20448:tid 812] AH00455: Apache/2.4.41 (Win64) PHP/7.3.12 configured -- resuming normal operations
+[Mon Nov 25 12:52:35.104227 2024] [mpm_winnt:notice] [pid 20448:tid 812] AH00456: Apache Lounge VS16 Server built: Aug  9 2019 16:46:32
+[Mon Nov 25 12:52:35.104227 2024] [core:notice] [pid 20448:tid 812] AH00094: Command line: 'c:\\wamp64\\bin\\apache\\apache2.4.41\\bin\\httpd.exe -d C:/wamp64/bin/apache/apache2.4.41'
+[Mon Nov 25 12:52:35.114168 2024] [mpm_winnt:notice] [pid 20448:tid 812] AH00418: Parent: Created child process 9876
+[Mon Nov 25 12:52:35.610684 2024] [mpm_winnt:notice] [pid 9876:tid 792] AH00354: Child: Starting 64 worker threads.
+[Mon Nov 25 14:16:32.747585 2024] [mpm_winnt:notice] [pid 20448:tid 812] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Mon Nov 25 14:16:34.757376 2024] [mpm_winnt:notice] [pid 9876:tid 792] AH00364: Child: All worker threads have exited.
+[Mon Nov 25 14:16:36.396519 2024] [mpm_winnt:notice] [pid 20448:tid 812] AH00430: Parent: Child process 9876 exited successfully.
+[Mon Nov 25 14:16:41.835234 2024] [mpm_winnt:notice] [pid 9916:tid 872] AH00455: Apache/2.4.41 (Win64) PHP/7.3.12 configured -- resuming normal operations
+[Mon Nov 25 14:16:41.835234 2024] [mpm_winnt:notice] [pid 9916:tid 872] AH00456: Apache Lounge VS16 Server built: Aug  9 2019 16:46:32
+[Mon Nov 25 14:16:41.835234 2024] [core:notice] [pid 9916:tid 872] AH00094: Command line: 'c:\\wamp64\\bin\\apache\\apache2.4.41\\bin\\httpd.exe -d C:/wamp64/bin/apache/apache2.4.41'
+[Mon Nov 25 14:16:41.882108 2024] [mpm_winnt:notice] [pid 9916:tid 872] AH00418: Parent: Created child process 7160
+[Mon Nov 25 14:16:42.462674 2024] [mpm_winnt:notice] [pid 7160:tid 740] AH00354: Child: Starting 64 worker threads.
+[Mon Nov 25 14:16:55.450069 2024] [mpm_winnt:notice] [pid 9916:tid 872] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Mon Nov 25 14:16:57.482271 2024] [mpm_winnt:notice] [pid 7160:tid 740] AH00364: Child: All worker threads have exited.
+[Mon Nov 25 14:16:57.513508 2024] [mpm_winnt:notice] [pid 9916:tid 872] AH00430: Parent: Child process 7160 exited successfully.
+[Mon Nov 25 14:17:20.286761 2024] [mpm_winnt:notice] [pid 22388:tid 648] AH00455: Apache/2.4.41 (Win64) PHP/7.3.12 configured -- resuming normal operations
+[Mon Nov 25 14:17:20.286761 2024] [mpm_winnt:notice] [pid 22388:tid 648] AH00456: Apache Lounge VS16 Server built: Aug  9 2019 16:46:32
+[Mon Nov 25 14:17:20.286761 2024] [core:notice] [pid 22388:tid 648] AH00094: Command line: 'c:\\wamp64\\bin\\apache\\apache2.4.41\\bin\\httpd.exe -d C:/wamp64/bin/apache/apache2.4.41'
+[Mon Nov 25 14:17:20.293726 2024] [mpm_winnt:notice] [pid 22388:tid 648] AH00418: Parent: Created child process 20712
+[Mon Nov 25 14:17:21.119710 2024] [mpm_winnt:notice] [pid 20712:tid 756] AH00354: Child: Starting 64 worker threads.
+[Mon Nov 25 14:47:45.215428 2024] [mpm_winnt:notice] [pid 22388:tid 648] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Mon Nov 25 14:47:47.227019 2024] [mpm_winnt:notice] [pid 20712:tid 756] AH00364: Child: All worker threads have exited.
+[Mon Nov 25 14:47:48.707064 2024] [mpm_winnt:notice] [pid 22388:tid 648] AH00430: Parent: Child process 20712 exited successfully.

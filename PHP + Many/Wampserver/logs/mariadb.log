@@ -1,0 +1,602 @@
+- Wampserver trace report -
+File created by Wampserver install
+InnoDB: using atomic writes.
+2024-09-12 11:32:01 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2024-09-12 11:32:01 0 [Note] InnoDB: Uses event mutexes
+2024-09-12 11:32:01 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2024-09-12 11:32:01 0 [Note] InnoDB: Number of pools: 1
+2024-09-12 11:32:01 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2024-09-12 11:32:01 0 [Note] InnoDB: Initializing buffer pool, total size = 256M, instances = 1, chunk size = 128M
+2024-09-12 11:32:01 0 [Note] InnoDB: Completed initialization of buffer pool
+2024-09-12 11:32:02 0 [Note] InnoDB: Resizing redo log from 2*50331648 to 2*67108864 bytes; LSN=140169
+2024-09-12 11:32:02 0 [Note] InnoDB: Starting to delete and rewrite log files.
+2024-09-12 11:32:02 0 [Note] InnoDB: Setting log file .\ib_logfile101 size to 67108864 bytes
+2024-09-12 11:32:02 0 [Note] InnoDB: Setting log file .\ib_logfile1 size to 67108864 bytes
+2024-09-12 11:32:02 0 [Note] InnoDB: Renaming log file .\ib_logfile101 to .\ib_logfile0
+2024-09-12 11:32:02 0 [Note] InnoDB: New log files created, LSN=140169
+2024-09-12 11:32:02 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2024-09-12 11:32:02 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2024-09-12 11:32:02 0 [Note] InnoDB: Setting file '.\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2024-09-12 11:32:02 0 [Note] InnoDB: File '.\ibtmp1' size is now 12 MB.
+2024-09-12 11:32:02 0 [Note] InnoDB: 10.4.10 started; log sequence number 140169; transaction id 21
+2024-09-12 11:32:02 0 [Note] InnoDB: Loading buffer pool(s) from c:\wamp64\bin\mariadb\mariadb10.4.10\data\ib_buffer_pool
+2024-09-12 11:32:02 0 [Note] Plugin 'FEEDBACK' is disabled.
+2024-09-12 11:32:03 0 [Note] Server socket created on IP: '::'.
+2024-09-12 11:32:03 0 [Note] InnoDB: Buffer pool(s) load completed at 240912 11:32:03
+2024-09-12 11:32:03 0 [Note] Reading of all Master_info entries succeeded
+2024-09-12 11:32:03 0 [Note] Added new Master_info '' to hash table
+2024-09-12 11:32:03 0 [Note] wampmariadb64: ready for connections.
+Version: '10.4.10-MariaDB'  socket: ''  port: 3306  mariadb.org binary distribution
+2024-09-12 13:53:47 0 [Note] wampmariadb64 (initiated by: unknown): Normal shutdown
+2024-09-12 13:53:47 0 [Note] InnoDB: FTS optimize thread exiting.
+2024-09-12 13:53:47 0 [Note] Event Scheduler: Purging the queue. 0 events
+2024-09-12 13:53:47 0 [Note] InnoDB: Starting shutdown...
+2024-09-12 13:53:47 0 [Note] InnoDB: Dumping buffer pool(s) to c:\wamp64\bin\mariadb\mariadb10.4.10\data\ib_buffer_pool
+2024-09-12 13:53:47 0 [Note] InnoDB: Buffer pool(s) dump completed at 240912 13:53:47
+2024-09-12 13:53:48 0 [Note] InnoDB: Shutdown completed; log sequence number 140309; transaction id 22
+2024-09-12 13:53:48 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2024-09-12 13:53:49 0 [Note] wampmariadb64: Shutdown complete
+
+InnoDB: using atomic writes.
+2024-09-12 13:54:12 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2024-09-12 13:54:12 0 [Note] InnoDB: Uses event mutexes
+2024-09-12 13:54:12 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2024-09-12 13:54:12 0 [Note] InnoDB: Number of pools: 1
+2024-09-12 13:54:12 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2024-09-12 13:54:12 0 [Note] InnoDB: Initializing buffer pool, total size = 256M, instances = 1, chunk size = 128M
+2024-09-12 13:54:12 0 [Note] InnoDB: Completed initialization of buffer pool
+2024-09-12 13:54:13 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2024-09-12 13:54:13 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2024-09-12 13:54:13 0 [Note] InnoDB: Setting file '.\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2024-09-12 13:54:13 0 [Note] InnoDB: File '.\ibtmp1' size is now 12 MB.
+2024-09-12 13:54:13 0 [Note] InnoDB: Waiting for purge to start
+2024-09-12 13:54:13 0 [Note] InnoDB: 10.4.10 started; log sequence number 140309; transaction id 21
+2024-09-12 13:54:13 0 [Note] InnoDB: Loading buffer pool(s) from c:\wamp64\bin\mariadb\mariadb10.4.10\data\ib_buffer_pool
+2024-09-12 13:54:13 0 [Note] Plugin 'FEEDBACK' is disabled.
+2024-09-12 13:54:13 0 [Note] InnoDB: Buffer pool(s) load completed at 240912 13:54:13
+2024-09-12 13:54:13 0 [Note] Server socket created on IP: '::'.
+2024-09-12 13:54:14 0 [Note] Reading of all Master_info entries succeeded
+2024-09-12 13:54:14 0 [Note] Added new Master_info '' to hash table
+2024-09-12 13:54:14 0 [Note] wampmariadb64: ready for connections.
+Version: '10.4.10-MariaDB'  socket: ''  port: 3306  mariadb.org binary distribution
+2024-09-13  9:00:18 0 [Note] wampmariadb64 (initiated by: unknown): Normal shutdown
+2024-09-13  9:00:18 0 [Note] Event Scheduler: Purging the queue. 0 events
+2024-09-13  9:00:19 0 [Note] InnoDB: FTS optimize thread exiting.
+2024-09-13  9:00:29 0 [Note] InnoDB: Starting shutdown...
+2024-09-13  9:00:29 0 [Note] InnoDB: Dumping buffer pool(s) to c:\wamp64\bin\mariadb\mariadb10.4.10\data\ib_buffer_pool
+2024-09-13  9:00:29 0 [Note] InnoDB: Buffer pool(s) dump completed at 240913  9:00:29
+2024-09-13  9:00:34 0 [Note] InnoDB: Shutdown completed; log sequence number 140318; transaction id 22
+2024-09-13  9:00:34 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2024-09-13  9:00:36 0 [Note] wampmariadb64: Shutdown complete
+
+InnoDB: using atomic writes.
+2024-09-13  9:09:36 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2024-09-13  9:09:36 0 [Note] InnoDB: Uses event mutexes
+2024-09-13  9:09:36 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2024-09-13  9:09:36 0 [Note] InnoDB: Number of pools: 1
+2024-09-13  9:09:36 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2024-09-13  9:09:36 0 [Note] InnoDB: Initializing buffer pool, total size = 256M, instances = 1, chunk size = 128M
+2024-09-13  9:09:36 0 [Note] InnoDB: Completed initialization of buffer pool
+2024-09-13  9:09:36 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2024-09-13  9:09:36 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2024-09-13  9:09:36 0 [Note] InnoDB: Setting file '.\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2024-09-13  9:09:36 0 [Note] InnoDB: File '.\ibtmp1' size is now 12 MB.
+2024-09-13  9:09:36 0 [Note] InnoDB: Waiting for purge to start
+2024-09-13  9:09:36 0 [Note] InnoDB: 10.4.10 started; log sequence number 140318; transaction id 21
+2024-09-13  9:09:36 0 [Note] InnoDB: Loading buffer pool(s) from c:\wamp64\bin\mariadb\mariadb10.4.10\data\ib_buffer_pool
+2024-09-13  9:09:36 0 [Note] Plugin 'FEEDBACK' is disabled.
+2024-09-13  9:09:36 0 [Note] InnoDB: Buffer pool(s) load completed at 240913  9:09:36
+2024-09-13  9:09:36 0 [Note] Server socket created on IP: '::'.
+2024-09-13  9:09:36 0 [Note] Reading of all Master_info entries succeeded
+2024-09-13  9:09:36 0 [Note] Added new Master_info '' to hash table
+2024-09-13  9:09:36 0 [Note] wampmariadb64: ready for connections.
+Version: '10.4.10-MariaDB'  socket: ''  port: 3306  mariadb.org binary distribution
+2024-09-30 11:42:49 0 [Note] wampmariadb64 (initiated by: unknown): Normal shutdown
+2024-09-30 11:42:52 0 [Note] Event Scheduler: Purging the queue. 0 events
+2024-09-30 11:42:54 0 [Note] InnoDB: FTS optimize thread exiting.
+2024-09-30 11:43:09 0 [Note] InnoDB: Starting shutdown...
+2024-09-30 11:43:10 0 [Note] InnoDB: Dumping buffer pool(s) to c:\wamp64\bin\mariadb\mariadb10.4.10\data\ib_buffer_pool
+2024-09-30 11:43:10 0 [Note] InnoDB: Buffer pool(s) dump completed at 240930 11:43:10
+2024-09-30 11:43:16 0 [Note] InnoDB: Shutdown completed; log sequence number 140327; transaction id 22
+2024-09-30 11:43:16 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2024-09-30 11:43:20 0 [Note] wampmariadb64: Shutdown complete
+
+InnoDB: using atomic writes.
+2024-10-07  8:54:06 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2024-10-07  8:54:06 0 [Note] InnoDB: Uses event mutexes
+2024-10-07  8:54:06 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2024-10-07  8:54:06 0 [Note] InnoDB: Number of pools: 1
+2024-10-07  8:54:06 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2024-10-07  8:54:06 0 [Note] InnoDB: Initializing buffer pool, total size = 256M, instances = 1, chunk size = 128M
+2024-10-07  8:54:06 0 [Note] InnoDB: Completed initialization of buffer pool
+2024-10-07  8:54:07 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2024-10-07  8:54:07 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2024-10-07  8:54:07 0 [Note] InnoDB: Setting file '.\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2024-10-07  8:54:07 0 [Note] InnoDB: File '.\ibtmp1' size is now 12 MB.
+2024-10-07  8:54:07 0 [Note] InnoDB: Waiting for purge to start
+2024-10-07  8:54:07 0 [Note] InnoDB: 10.4.10 started; log sequence number 140327; transaction id 21
+2024-10-07  8:54:07 0 [Note] InnoDB: Loading buffer pool(s) from c:\wamp64\bin\mariadb\mariadb10.4.10\data\ib_buffer_pool
+2024-10-07  8:54:07 0 [Note] Plugin 'FEEDBACK' is disabled.
+2024-10-07  8:54:07 0 [Note] InnoDB: Buffer pool(s) load completed at 241007  8:54:07
+2024-10-07  8:54:08 0 [Note] Server socket created on IP: '::'.
+2024-10-07  8:54:09 0 [Note] Reading of all Master_info entries succeeded
+2024-10-07  8:54:09 0 [Note] Added new Master_info '' to hash table
+2024-10-07  8:54:09 0 [Note] wampmariadb64: ready for connections.
+Version: '10.4.10-MariaDB'  socket: ''  port: 3306  mariadb.org binary distribution
+2024-10-07 15:36:45 0 [Note] wampmariadb64 (initiated by: unknown): Normal shutdown
+2024-10-07 15:36:47 0 [Note] Event Scheduler: Purging the queue. 0 events
+2024-10-07 15:36:47 0 [Note] InnoDB: FTS optimize thread exiting.
+2024-10-07 15:37:11 0 [Note] InnoDB: Starting shutdown...
+2024-10-07 15:37:11 0 [Note] InnoDB: Dumping buffer pool(s) to c:\wamp64\bin\mariadb\mariadb10.4.10\data\ib_buffer_pool
+2024-10-07 15:37:12 0 [Note] InnoDB: Buffer pool(s) dump completed at 241007 15:37:12
+2024-10-07 15:37:18 0 [Note] InnoDB: Shutdown completed; log sequence number 140336; transaction id 22
+2024-10-07 15:37:18 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2024-10-07 15:37:20 0 [Note] wampmariadb64: Shutdown complete
+
+InnoDB: using atomic writes.
+2024-10-08  9:14:30 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2024-10-08  9:14:30 0 [Note] InnoDB: Uses event mutexes
+2024-10-08  9:14:30 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2024-10-08  9:14:30 0 [Note] InnoDB: Number of pools: 1
+2024-10-08  9:14:30 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2024-10-08  9:14:30 0 [Note] InnoDB: Initializing buffer pool, total size = 256M, instances = 1, chunk size = 128M
+2024-10-08  9:14:30 0 [Note] InnoDB: Completed initialization of buffer pool
+2024-10-08  9:14:31 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2024-10-08  9:14:31 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2024-10-08  9:14:31 0 [Note] InnoDB: Setting file '.\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2024-10-08  9:14:31 0 [Note] InnoDB: File '.\ibtmp1' size is now 12 MB.
+2024-10-08  9:14:31 0 [Note] InnoDB: 10.4.10 started; log sequence number 140336; transaction id 21
+2024-10-08  9:14:31 0 [Note] InnoDB: Loading buffer pool(s) from c:\wamp64\bin\mariadb\mariadb10.4.10\data\ib_buffer_pool
+2024-10-08  9:14:31 0 [Note] Plugin 'FEEDBACK' is disabled.
+2024-10-08  9:14:31 0 [Note] InnoDB: Buffer pool(s) load completed at 241008  9:14:31
+2024-10-08  9:14:31 0 [Note] Server socket created on IP: '::'.
+2024-10-08  9:14:31 0 [Note] Reading of all Master_info entries succeeded
+2024-10-08  9:14:31 0 [Note] Added new Master_info '' to hash table
+2024-10-08  9:14:31 0 [Note] wampmariadb64: ready for connections.
+Version: '10.4.10-MariaDB'  socket: ''  port: 3306  mariadb.org binary distribution
+2024-10-08 11:30:25 0 [Note] wampmariadb64 (initiated by: unknown): Normal shutdown
+2024-10-08 11:30:26 0 [Note] InnoDB: FTS optimize thread exiting.
+2024-10-08 11:30:26 0 [Note] Event Scheduler: Purging the queue. 0 events
+2024-10-08 11:30:33 0 [Note] InnoDB: Starting shutdown...
+2024-10-08 11:30:33 0 [Note] InnoDB: Dumping buffer pool(s) to c:\wamp64\bin\mariadb\mariadb10.4.10\data\ib_buffer_pool
+2024-10-08 11:30:33 0 [Note] InnoDB: Buffer pool(s) dump completed at 241008 11:30:33
+2024-10-08 11:30:50 0 [Note] InnoDB: Shutdown completed; log sequence number 140345; transaction id 22
+2024-10-08 11:30:50 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2024-10-08 11:30:53 0 [Note] wampmariadb64: Shutdown complete
+
+InnoDB: using atomic writes.
+2024-10-08 11:36:32 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2024-10-08 11:36:32 0 [Note] InnoDB: Uses event mutexes
+2024-10-08 11:36:32 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2024-10-08 11:36:32 0 [Note] InnoDB: Number of pools: 1
+2024-10-08 11:36:32 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2024-10-08 11:36:32 0 [Note] InnoDB: Initializing buffer pool, total size = 256M, instances = 1, chunk size = 128M
+2024-10-08 11:36:32 0 [Note] InnoDB: Completed initialization of buffer pool
+2024-10-08 11:36:34 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2024-10-08 11:36:34 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2024-10-08 11:36:34 0 [Note] InnoDB: Setting file '.\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2024-10-08 11:36:34 0 [Note] InnoDB: File '.\ibtmp1' size is now 12 MB.
+2024-10-08 11:36:34 0 [Note] InnoDB: 10.4.10 started; log sequence number 140345; transaction id 21
+2024-10-08 11:36:34 0 [Note] InnoDB: Loading buffer pool(s) from c:\wamp64\bin\mariadb\mariadb10.4.10\data\ib_buffer_pool
+2024-10-08 11:36:34 0 [Note] Plugin 'FEEDBACK' is disabled.
+2024-10-08 11:36:34 0 [Note] InnoDB: Buffer pool(s) load completed at 241008 11:36:34
+2024-10-08 11:36:35 0 [Note] Server socket created on IP: '::'.
+2024-10-08 11:36:36 0 [Note] Reading of all Master_info entries succeeded
+2024-10-08 11:36:36 0 [Note] Added new Master_info '' to hash table
+2024-10-08 11:36:36 0 [Note] wampmariadb64: ready for connections.
+Version: '10.4.10-MariaDB'  socket: ''  port: 3306  mariadb.org binary distribution
+2024-10-09 17:17:30 0 [Note] wampmariadb64 (initiated by: unknown): Normal shutdown
+2024-10-09 17:17:31 0 [Note] Event Scheduler: Purging the queue. 0 events
+2024-10-09 17:17:32 0 [Note] InnoDB: FTS optimize thread exiting.
+2024-10-09 17:17:38 0 [Note] InnoDB: Starting shutdown...
+2024-10-09 17:17:38 0 [Note] InnoDB: Dumping buffer pool(s) to c:\wamp64\bin\mariadb\mariadb10.4.10\data\ib_buffer_pool
+2024-10-09 17:17:39 0 [Note] InnoDB: Buffer pool(s) dump completed at 241009 17:17:39
+2024-10-09 17:17:46 0 [Note] InnoDB: Shutdown completed; log sequence number 140354; transaction id 22
+2024-10-09 17:17:46 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2024-10-09 17:17:48 0 [Note] wampmariadb64: Shutdown complete
+
+InnoDB: using atomic writes.
+2024-10-10  8:56:20 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2024-10-10  8:56:20 0 [Note] InnoDB: Uses event mutexes
+2024-10-10  8:56:20 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2024-10-10  8:56:20 0 [Note] InnoDB: Number of pools: 1
+2024-10-10  8:56:20 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2024-10-10  8:56:20 0 [Note] InnoDB: Initializing buffer pool, total size = 256M, instances = 1, chunk size = 128M
+2024-10-10  8:56:20 0 [Note] InnoDB: Completed initialization of buffer pool
+2024-10-10  8:56:20 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2024-10-10  8:56:20 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2024-10-10  8:56:20 0 [Note] InnoDB: Setting file '.\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2024-10-10  8:56:20 0 [Note] InnoDB: File '.\ibtmp1' size is now 12 MB.
+2024-10-10  8:56:20 0 [Note] InnoDB: Waiting for purge to start
+2024-10-10  8:56:20 0 [Note] InnoDB: 10.4.10 started; log sequence number 140354; transaction id 21
+2024-10-10  8:56:20 0 [Note] InnoDB: Loading buffer pool(s) from c:\wamp64\bin\mariadb\mariadb10.4.10\data\ib_buffer_pool
+2024-10-10  8:56:20 0 [Note] Plugin 'FEEDBACK' is disabled.
+2024-10-10  8:56:21 0 [Note] InnoDB: Buffer pool(s) load completed at 241010  8:56:21
+2024-10-10  8:56:21 0 [Note] Server socket created on IP: '::'.
+2024-10-10  8:56:21 0 [Note] Reading of all Master_info entries succeeded
+2024-10-10  8:56:21 0 [Note] Added new Master_info '' to hash table
+2024-10-10  8:56:21 0 [Note] wampmariadb64: ready for connections.
+Version: '10.4.10-MariaDB'  socket: ''  port: 3306  mariadb.org binary distribution
+2024-10-16 10:03:07 0 [Note] wampmariadb64 (initiated by: unknown): Normal shutdown
+2024-10-16 10:03:07 0 [Note] Event Scheduler: Purging the queue. 0 events
+2024-10-16 10:03:07 0 [Note] InnoDB: FTS optimize thread exiting.
+2024-10-16 10:03:08 0 [Note] InnoDB: Starting shutdown...
+2024-10-16 10:03:08 0 [Note] InnoDB: Dumping buffer pool(s) to c:\wamp64\bin\mariadb\mariadb10.4.10\data\ib_buffer_pool
+2024-10-16 10:03:08 0 [Note] InnoDB: Buffer pool(s) dump completed at 241016 10:03:08
+2024-10-16 10:03:09 0 [Note] InnoDB: Shutdown completed; log sequence number 140363; transaction id 22
+2024-10-16 10:03:09 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2024-10-16 10:03:10 0 [Note] wampmariadb64: Shutdown complete
+
+InnoDB: using atomic writes.
+2024-10-16 10:03:15 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2024-10-16 10:03:15 0 [Note] InnoDB: Uses event mutexes
+2024-10-16 10:03:15 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2024-10-16 10:03:15 0 [Note] InnoDB: Number of pools: 1
+2024-10-16 10:03:15 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2024-10-16 10:03:15 0 [Note] InnoDB: Initializing buffer pool, total size = 256M, instances = 1, chunk size = 128M
+2024-10-16 10:03:15 0 [Note] InnoDB: Completed initialization of buffer pool
+2024-10-16 10:03:16 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2024-10-16 10:03:16 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2024-10-16 10:03:16 0 [Note] InnoDB: Setting file '.\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2024-10-16 10:03:16 0 [Note] InnoDB: File '.\ibtmp1' size is now 12 MB.
+2024-10-16 10:03:16 0 [Note] InnoDB: Waiting for purge to start
+2024-10-16 10:03:16 0 [Note] InnoDB: 10.4.10 started; log sequence number 140363; transaction id 21
+2024-10-16 10:03:16 0 [Note] InnoDB: Loading buffer pool(s) from c:\wamp64\bin\mariadb\mariadb10.4.10\data\ib_buffer_pool
+2024-10-16 10:03:16 0 [Note] Plugin 'FEEDBACK' is disabled.
+2024-10-16 10:03:16 0 [Note] Server socket created on IP: '::'.
+2024-10-16 10:03:16 0 [Note] InnoDB: Buffer pool(s) load completed at 241016 10:03:16
+2024-10-16 10:03:16 0 [Note] Reading of all Master_info entries succeeded
+2024-10-16 10:03:16 0 [Note] Added new Master_info '' to hash table
+2024-10-16 10:03:16 0 [Note] wampmariadb64: ready for connections.
+Version: '10.4.10-MariaDB'  socket: ''  port: 3306  mariadb.org binary distribution
+2024-10-16 10:10:43 0 [Note] wampmariadb64 (initiated by: unknown): Normal shutdown
+2024-10-16 10:10:43 0 [Note] InnoDB: FTS optimize thread exiting.
+2024-10-16 10:10:43 0 [Note] Event Scheduler: Purging the queue. 0 events
+2024-10-16 10:10:43 0 [Note] InnoDB: Starting shutdown...
+2024-10-16 10:10:43 0 [Note] InnoDB: Dumping buffer pool(s) to c:\wamp64\bin\mariadb\mariadb10.4.10\data\ib_buffer_pool
+2024-10-16 10:10:43 0 [Note] InnoDB: Buffer pool(s) dump completed at 241016 10:10:43
+2024-10-16 10:10:44 0 [Note] InnoDB: Shutdown completed; log sequence number 140372; transaction id 22
+2024-10-16 10:10:44 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2024-10-16 10:10:44 0 [Note] wampmariadb64: Shutdown complete
+
+InnoDB: using atomic writes.
+2024-10-16 10:10:46 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2024-10-16 10:10:46 0 [Note] InnoDB: Uses event mutexes
+2024-10-16 10:10:46 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2024-10-16 10:10:46 0 [Note] InnoDB: Number of pools: 1
+2024-10-16 10:10:46 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2024-10-16 10:10:46 0 [Note] InnoDB: Initializing buffer pool, total size = 256M, instances = 1, chunk size = 128M
+2024-10-16 10:10:46 0 [Note] InnoDB: Completed initialization of buffer pool
+2024-10-16 10:10:46 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2024-10-16 10:10:46 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2024-10-16 10:10:46 0 [Note] InnoDB: Setting file '.\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2024-10-16 10:10:46 0 [Note] InnoDB: File '.\ibtmp1' size is now 12 MB.
+2024-10-16 10:10:46 0 [Note] InnoDB: Waiting for purge to start
+2024-10-16 10:10:46 0 [Note] InnoDB: 10.4.10 started; log sequence number 140372; transaction id 21
+2024-10-16 10:10:46 0 [Note] InnoDB: Loading buffer pool(s) from c:\wamp64\bin\mariadb\mariadb10.4.10\data\ib_buffer_pool
+2024-10-16 10:10:46 0 [Note] Plugin 'FEEDBACK' is disabled.
+2024-10-16 10:10:46 0 [Note] InnoDB: Buffer pool(s) load completed at 241016 10:10:46
+2024-10-16 10:10:46 0 [Note] Server socket created on IP: '::'.
+2024-10-16 10:10:47 0 [Note] Reading of all Master_info entries succeeded
+2024-10-16 10:10:47 0 [Note] Added new Master_info '' to hash table
+2024-10-16 10:10:47 0 [Note] wampmariadb64: ready for connections.
+Version: '10.4.10-MariaDB'  socket: ''  port: 3306  mariadb.org binary distribution
+2024-10-17 17:26:58 9 [Warning] Aborted connection 9 to db: 'unconnected' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2024-10-17 17:26:58 11 [Warning] Aborted connection 11 to db: 'db_tayyab' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2024-10-18 16:55:04 12 [Warning] Aborted connection 12 to db: 'db_tayyab' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2024-10-18 16:55:04 14 [Warning] Aborted connection 14 to db: 'unconnected' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2024-10-21 17:05:41 15 [Warning] Aborted connection 15 to db: 'db_tayyab' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2024-10-21 17:05:41 17 [Warning] Aborted connection 17 to db: 'unconnected' user: 'root' host: 'localhost' (Got an error reading communication packets)
+InnoDB: using atomic writes.
+2024-10-22 12:46:16 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2024-10-22 12:46:16 0 [Note] InnoDB: Uses event mutexes
+2024-10-22 12:46:16 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2024-10-22 12:46:16 0 [Note] InnoDB: Number of pools: 1
+2024-10-22 12:46:16 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2024-10-22 12:46:16 0 [Note] InnoDB: Initializing buffer pool, total size = 256M, instances = 1, chunk size = 128M
+2024-10-22 12:46:16 0 [Note] InnoDB: Completed initialization of buffer pool
+2024-10-22 12:46:16 0 [Note] InnoDB: Starting crash recovery from checkpoint LSN=880119121
+2024-10-22 12:46:16 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2024-10-22 12:46:16 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2024-10-22 12:46:16 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2024-10-22 12:46:16 0 [Note] InnoDB: Setting file '.\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2024-10-22 12:46:16 0 [Note] InnoDB: File '.\ibtmp1' size is now 12 MB.
+2024-10-22 12:46:16 0 [Note] InnoDB: Waiting for purge to start
+2024-10-22 12:46:16 0 [Note] InnoDB: 10.4.10 started; log sequence number 880119130; transaction id 368
+2024-10-22 12:46:16 0 [Note] InnoDB: Loading buffer pool(s) from c:\wamp64\bin\mariadb\mariadb10.4.10\data\ib_buffer_pool
+2024-10-22 12:46:16 0 [Note] Plugin 'FEEDBACK' is disabled.
+2024-10-22 12:46:16 0 [Note] InnoDB: Buffer pool(s) load completed at 241022 12:46:16
+2024-10-22 12:46:16 0 [Note] Server socket created on IP: '::'.
+2024-10-22 12:46:17 0 [Note] Reading of all Master_info entries succeeded
+2024-10-22 12:46:17 0 [Note] Added new Master_info '' to hash table
+2024-10-22 12:46:17 0 [Note] wampmariadb64: ready for connections.
+Version: '10.4.10-MariaDB'  socket: ''  port: 3306  mariadb.org binary distribution
+2024-10-22 12:46:34 9 [ERROR] mysqld.exe: Table '.\db_tayyab\tbl_roles' is marked as crashed and should be repaired
+2024-10-22 12:46:34 9 [Warning] Checking table:   '.\db_tayyab\tbl_roles'
+2024-10-22 12:46:34 9 [ERROR] mysqld.exe: Table '.\db_tayyab\tbl_users' is marked as crashed and should be repaired
+2024-10-22 12:46:34 9 [Warning] Checking table:   '.\db_tayyab\tbl_users'
+2024-10-22 12:46:34 9 [ERROR] mysqld.exe: Table '.\hrmsdb_test\tbl_day_off' is marked as crashed and should be repaired
+2024-10-22 12:46:34 9 [Warning] Checking table:   '.\hrmsdb_test\tbl_day_off'
+2024-10-22 12:46:34 9 [ERROR] mysqld.exe: Table '.\hrmsdb_test\tbl_emp_leave' is marked as crashed and should be repaired
+2024-10-22 12:46:34 9 [Warning] Checking table:   '.\hrmsdb_test\tbl_emp_leave'
+2024-10-23 12:07:25 20 [Warning] Aborted connection 20 to db: 'hrmsdb_test' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2024-10-23 12:07:26 22 [Warning] Aborted connection 22 to db: 'unconnected' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2024-10-23 12:08:36 0 [Note] wampmariadb64 (initiated by: unknown): Normal shutdown
+2024-10-23 12:08:36 0 [Note] Event Scheduler: Purging the queue. 0 events
+2024-10-23 12:08:36 0 [Note] InnoDB: FTS optimize thread exiting.
+2024-10-23 12:09:27 0 [Note] InnoDB: Starting shutdown...
+2024-10-23 12:09:27 0 [Note] InnoDB: Dumping buffer pool(s) to c:\wamp64\bin\mariadb\mariadb10.4.10\data\ib_buffer_pool
+2024-10-23 12:09:27 0 [Note] InnoDB: Instance 0, restricted to 4009 pages due to innodb_buf_pool_dump_pct=25
+2024-10-23 12:09:27 0 [Note] InnoDB: Buffer pool(s) dump completed at 241023 12:09:27
+2024-10-23 12:09:30 0 [Note] InnoDB: Shutdown completed; log sequence number 880119148; transaction id 378
+2024-10-23 12:09:30 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2024-10-23 12:09:34 0 [Note] wampmariadb64: Shutdown complete
+
+InnoDB: using atomic writes.
+2024-10-23 12:17:53 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2024-10-23 12:17:53 0 [Note] InnoDB: Uses event mutexes
+2024-10-23 12:17:53 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2024-10-23 12:17:53 0 [Note] InnoDB: Number of pools: 1
+2024-10-23 12:17:53 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2024-10-23 12:17:53 0 [Note] InnoDB: Initializing buffer pool, total size = 256M, instances = 1, chunk size = 128M
+2024-10-23 12:17:53 0 [Note] InnoDB: Completed initialization of buffer pool
+2024-10-23 12:17:54 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2024-10-23 12:17:54 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2024-10-23 12:17:54 0 [Note] InnoDB: Setting file '.\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2024-10-23 12:17:54 0 [Note] InnoDB: File '.\ibtmp1' size is now 12 MB.
+2024-10-23 12:17:54 0 [Note] InnoDB: 10.4.10 started; log sequence number 880119148; transaction id 368
+2024-10-23 12:17:54 0 [Note] InnoDB: Loading buffer pool(s) from c:\wamp64\bin\mariadb\mariadb10.4.10\data\ib_buffer_pool
+2024-10-23 12:17:54 0 [Note] Plugin 'FEEDBACK' is disabled.
+2024-10-23 12:17:54 0 [Note] Server socket created on IP: '::'.
+2024-10-23 12:17:55 0 [Note] Reading of all Master_info entries succeeded
+2024-10-23 12:17:55 0 [Note] Added new Master_info '' to hash table
+2024-10-23 12:17:55 0 [Note] wampmariadb64: ready for connections.
+Version: '10.4.10-MariaDB'  socket: ''  port: 3306  mariadb.org binary distribution
+2024-10-23 12:18:38 0 [Note] InnoDB: Buffer pool(s) load completed at 241023 12:18:38
+2024-10-23 17:11:31 8 [Warning] Aborted connection 8 to db: 'db_tayyab' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2024-10-23 17:11:32 9 [Warning] Aborted connection 9 to db: 'unconnected' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2024-10-24 17:28:13 13 [Warning] Aborted connection 13 to db: 'unconnected' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2024-10-24 17:28:13 190 [Warning] Aborted connection 190 to db: 'db_users' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2024-10-25  9:07:41 0 [Note] wampmariadb64 (initiated by: unknown): Normal shutdown
+2024-10-25  9:07:41 0 [Note] Event Scheduler: Purging the queue. 0 events
+2024-10-25  9:07:41 0 [Note] InnoDB: FTS optimize thread exiting.
+2024-10-25  9:07:42 0 [Note] InnoDB: Starting shutdown...
+2024-10-25  9:07:42 0 [Note] InnoDB: Dumping buffer pool(s) to c:\wamp64\bin\mariadb\mariadb10.4.10\data\ib_buffer_pool
+2024-10-25  9:07:42 0 [Note] InnoDB: Instance 0, restricted to 4009 pages due to innodb_buf_pool_dump_pct=25
+2024-10-25  9:07:42 0 [Note] InnoDB: Buffer pool(s) dump completed at 241025  9:07:42
+2024-10-25  9:07:43 0 [Note] InnoDB: Shutdown completed; log sequence number 880119157; transaction id 378
+2024-10-25  9:07:43 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2024-10-25  9:07:43 0 [Note] wampmariadb64: Shutdown complete
+
+InnoDB: using atomic writes.
+2024-10-25  9:08:45 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2024-10-25  9:08:45 0 [Note] InnoDB: Uses event mutexes
+2024-10-25  9:08:45 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2024-10-25  9:08:45 0 [Note] InnoDB: Number of pools: 1
+2024-10-25  9:08:45 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2024-10-25  9:08:45 0 [Note] InnoDB: Initializing buffer pool, total size = 256M, instances = 1, chunk size = 128M
+2024-10-25  9:08:45 0 [Note] InnoDB: Completed initialization of buffer pool
+2024-10-25  9:08:46 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2024-10-25  9:08:46 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2024-10-25  9:08:46 0 [Note] InnoDB: Setting file '.\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2024-10-25  9:08:46 0 [Note] InnoDB: File '.\ibtmp1' size is now 12 MB.
+2024-10-25  9:08:46 0 [Note] InnoDB: Waiting for purge to start
+2024-10-25  9:08:46 0 [Note] InnoDB: 10.4.10 started; log sequence number 880119157; transaction id 368
+2024-10-25  9:08:46 0 [Note] InnoDB: Loading buffer pool(s) from c:\wamp64\bin\mariadb\mariadb10.4.10\data\ib_buffer_pool
+2024-10-25  9:08:46 0 [Note] Plugin 'FEEDBACK' is disabled.
+2024-10-25  9:08:47 0 [Note] Server socket created on IP: '::'.
+2024-10-25  9:08:48 0 [Note] Reading of all Master_info entries succeeded
+2024-10-25  9:08:48 0 [Note] Added new Master_info '' to hash table
+2024-10-25  9:08:48 0 [Note] wampmariadb64: ready for connections.
+Version: '10.4.10-MariaDB'  socket: ''  port: 3306  mariadb.org binary distribution
+2024-10-25  9:08:50 0 [Note] InnoDB: Buffer pool(s) load completed at 241025  9:08:50
+2024-10-25 17:14:36 21 [Warning] Aborted connection 21 to db: 'db_users' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2024-10-25 17:14:36 41 [Warning] Aborted connection 41 to db: 'unconnected' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2024-10-28 13:02:45 320 [Warning] Aborted connection 320 to db: 'db_users' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2024-10-28 13:02:45 321 [Warning] Aborted connection 321 to db: 'unconnected' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2024-10-30 17:17:50 518 [Warning] Aborted connection 518 to db: 'unconnected' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2024-10-30 17:17:50 517 [Warning] Aborted connection 517 to db: 'db_users' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2024-11-01 17:09:32 1885 [Warning] Aborted connection 1885 to db: 'db_users' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2024-11-01 17:09:32 1887 [Warning] Aborted connection 1887 to db: 'unconnected' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2024-11-04 17:13:23 2677 [Warning] Aborted connection 2677 to db: 'unconnected' user: 'root' host: 'localhost' (Got timeout reading communication packets)
+2024-11-04 17:20:54 2675 [Warning] Aborted connection 2675 to db: 'db_users' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2024-11-06  8:42:45 2759 [Warning] Aborted connection 2759 to db: 'db_users' user: 'root' host: 'localhost' (Got timeout reading communication packets)
+2024-11-06  8:42:45 2761 [Warning] Aborted connection 2761 to db: 'unconnected' user: 'root' host: 'localhost' (Got timeout reading communication packets)
+2024-11-08 16:01:36 3641 [Warning] Aborted connection 3641 to db: 'db_users' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2024-11-08 16:01:36 3643 [Warning] Aborted connection 3643 to db: 'unconnected' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2024-11-11 16:50:25 3875 [Warning] Aborted connection 3875 to db: 'unconnected' user: 'root' host: 'localhost' (Got timeout reading communication packets)
+2024-11-11 17:05:14 3873 [Warning] Aborted connection 3873 to db: 'db_users' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2024-11-12 17:06:29 4260 [Warning] Aborted connection 4260 to db: 'db_users' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2024-11-12 17:06:30 4262 [Warning] Aborted connection 4262 to db: 'unconnected' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2024-11-13 16:59:36 4921 [Warning] Aborted connection 4921 to db: 'db_users' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2024-11-13 16:59:36 4922 [Warning] Aborted connection 4922 to db: 'unconnected' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2024-11-13 17:09:45 0 [Note] wampmariadb64 (initiated by: unknown): Normal shutdown
+2024-11-13 17:09:45 0 [Note] InnoDB: FTS optimize thread exiting.
+2024-11-13 17:09:46 0 [Note] Event Scheduler: Purging the queue. 0 events
+2024-11-13 17:10:03 0 [Note] InnoDB: Starting shutdown...
+2024-11-13 17:10:03 0 [Note] InnoDB: Dumping buffer pool(s) to c:\wamp64\bin\mariadb\mariadb10.4.10\data\ib_buffer_pool
+2024-11-13 17:10:03 0 [Note] InnoDB: Instance 0, restricted to 4009 pages due to innodb_buf_pool_dump_pct=25
+2024-11-13 17:10:04 0 [Note] InnoDB: Buffer pool(s) dump completed at 241113 17:10:04
+2024-11-13 17:10:09 0 [Note] InnoDB: Shutdown completed; log sequence number 880119166; transaction id 378
+2024-11-13 17:10:09 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2024-11-13 17:10:09 0 [Note] wampmariadb64: Shutdown complete
+
+InnoDB: using atomic writes.
+2024-11-14  8:51:40 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2024-11-14  8:51:40 0 [Note] InnoDB: Uses event mutexes
+2024-11-14  8:51:40 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2024-11-14  8:51:40 0 [Note] InnoDB: Number of pools: 1
+2024-11-14  8:51:41 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2024-11-14  8:51:41 0 [Note] InnoDB: Initializing buffer pool, total size = 256M, instances = 1, chunk size = 128M
+2024-11-14  8:51:41 0 [Note] InnoDB: Completed initialization of buffer pool
+2024-11-14  8:51:48 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2024-11-14  8:51:48 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2024-11-14  8:51:48 0 [Note] InnoDB: Setting file '.\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2024-11-14  8:51:48 0 [Note] InnoDB: File '.\ibtmp1' size is now 12 MB.
+2024-11-14  8:51:48 0 [Note] InnoDB: Waiting for purge to start
+2024-11-14  8:51:48 0 [Note] InnoDB: Waiting for purge to start
+2024-11-14  8:51:48 0 [Note] InnoDB: Waiting for purge to start
+2024-11-14  8:51:48 0 [Note] InnoDB: Waiting for purge to start
+2024-11-14  8:51:48 0 [Note] InnoDB: Waiting for purge to start
+2024-11-14  8:51:48 0 [Note] InnoDB: Waiting for purge to start
+2024-11-14  8:51:48 0 [Note] InnoDB: 10.4.10 started; log sequence number 880119166; transaction id 368
+2024-11-14  8:51:48 0 [Note] InnoDB: Loading buffer pool(s) from c:\wamp64\bin\mariadb\mariadb10.4.10\data\ib_buffer_pool
+2024-11-14  8:51:48 0 [Note] Plugin 'FEEDBACK' is disabled.
+2024-11-14  8:51:49 0 [Note] Server socket created on IP: '::'.
+2024-11-14  8:52:21 0 [Note] Reading of all Master_info entries succeeded
+2024-11-14  8:52:21 0 [Note] Added new Master_info '' to hash table
+2024-11-14  8:52:21 0 [Note] wampmariadb64: ready for connections.
+Version: '10.4.10-MariaDB'  socket: ''  port: 3306  mariadb.org binary distribution
+2024-11-14  8:55:05 0 [Note] InnoDB: Buffer pool(s) load completed at 241114  8:55:05
+2024-11-14 17:12:39 946 [Warning] Aborted connection 946 to db: 'db_users' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2024-11-14 17:12:39 9 [Warning] Aborted connection 9 to db: 'unconnected' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2024-11-15 17:12:08 2864 [Warning] Aborted connection 2864 to db: 'unconnected' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2024-11-15 17:12:08 3487 [Warning] Aborted connection 3487 to db: 'db_users' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2024-11-19 17:06:07 4525 [Warning] Aborted connection 4525 to db: 'db_users' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2024-11-19 17:06:07 4526 [Warning] Aborted connection 4526 to db: 'unconnected' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2024-11-20 17:09:33 6610 [Warning] Aborted connection 6610 to db: 'db_users' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2024-11-20 17:09:33 6611 [Warning] Aborted connection 6611 to db: 'unconnected' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2024-11-22 17:02:05 8991 [Warning] Aborted connection 8991 to db: 'unconnected' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2024-11-22 17:02:06 8990 [Warning] Aborted connection 8990 to db: 'db_users' user: 'root' host: 'localhost' (Got an error reading communication packets)
+2024-11-25 12:46:39 0 [Note] wampmariadb64 (initiated by: unknown): Normal shutdown
+2024-11-25 12:46:39 0 [Note] Event Scheduler: Purging the queue. 0 events
+2024-11-25 12:46:39 0 [Note] InnoDB: FTS optimize thread exiting.
+2024-11-25 12:46:42 0 [Note] InnoDB: Starting shutdown...
+2024-11-25 12:46:42 0 [Note] InnoDB: Dumping buffer pool(s) to c:\wamp64\bin\mariadb\mariadb10.4.10\data\ib_buffer_pool
+2024-11-25 12:46:42 0 [Note] InnoDB: Instance 0, restricted to 4009 pages due to innodb_buf_pool_dump_pct=25
+2024-11-25 12:46:42 0 [Note] InnoDB: Buffer pool(s) dump completed at 241125 12:46:42
+2024-11-25 12:46:44 0 [Note] InnoDB: Shutdown completed; log sequence number 880119175; transaction id 378
+2024-11-25 12:46:44 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2024-11-25 12:46:44 0 [Note] wampmariadb64: Shutdown complete
+
+InnoDB: using atomic writes.
+2024-11-25 12:46:48 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2024-11-25 12:46:48 0 [Note] InnoDB: Uses event mutexes
+2024-11-25 12:46:48 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2024-11-25 12:46:48 0 [Note] InnoDB: Number of pools: 1
+2024-11-25 12:46:48 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2024-11-25 12:46:48 0 [Note] InnoDB: Initializing buffer pool, total size = 256M, instances = 1, chunk size = 128M
+2024-11-25 12:46:48 0 [Note] InnoDB: Completed initialization of buffer pool
+2024-11-25 12:46:50 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2024-11-25 12:46:50 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2024-11-25 12:46:50 0 [Note] InnoDB: Setting file '.\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2024-11-25 12:46:50 0 [Note] InnoDB: File '.\ibtmp1' size is now 12 MB.
+2024-11-25 12:46:50 0 [Note] InnoDB: Waiting for purge to start
+2024-11-25 12:46:50 0 [Note] InnoDB: 10.4.10 started; log sequence number 880119175; transaction id 368
+2024-11-25 12:46:50 0 [Note] Plugin 'FEEDBACK' is disabled.
+2024-11-25 12:46:50 0 [Note] InnoDB: Loading buffer pool(s) from c:\wamp64\bin\mariadb\mariadb10.4.10\data\ib_buffer_pool
+2024-11-25 12:46:50 0 [Note] Server socket created on IP: '::'.
+2024-11-25 12:46:52 0 [Note] Reading of all Master_info entries succeeded
+2024-11-25 12:46:52 0 [Note] Added new Master_info '' to hash table
+2024-11-25 12:46:52 0 [Note] wampmariadb64: ready for connections.
+Version: '10.4.10-MariaDB'  socket: ''  port: 3306  mariadb.org binary distribution
+2024-11-25 12:46:54 0 [Note] InnoDB: Buffer pool(s) load completed at 241125 12:46:54
+2024-11-25 12:48:20 0 [Note] wampmariadb64 (initiated by: unknown): Normal shutdown
+2024-11-25 12:48:20 0 [Note] Event Scheduler: Purging the queue. 0 events
+2024-11-25 12:48:20 0 [Note] InnoDB: FTS optimize thread exiting.
+2024-11-25 12:48:21 0 [Note] InnoDB: Starting shutdown...
+2024-11-25 12:48:21 0 [Note] InnoDB: Dumping buffer pool(s) to c:\wamp64\bin\mariadb\mariadb10.4.10\data\ib_buffer_pool
+2024-11-25 12:48:21 0 [Note] InnoDB: Instance 0, restricted to 4009 pages due to innodb_buf_pool_dump_pct=25
+2024-11-25 12:48:21 0 [Note] InnoDB: Buffer pool(s) dump completed at 241125 12:48:21
+2024-11-25 12:48:21 0 [Note] InnoDB: Shutdown completed; log sequence number 880119184; transaction id 369
+2024-11-25 12:48:21 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2024-11-25 12:48:21 0 [Note] wampmariadb64: Shutdown complete
+
+InnoDB: using atomic writes.
+2024-11-25 12:48:38 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2024-11-25 12:48:38 0 [Note] InnoDB: Uses event mutexes
+2024-11-25 12:48:38 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2024-11-25 12:48:38 0 [Note] InnoDB: Number of pools: 1
+2024-11-25 12:48:38 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2024-11-25 12:48:38 0 [Note] InnoDB: Initializing buffer pool, total size = 256M, instances = 1, chunk size = 128M
+2024-11-25 12:48:38 0 [Note] InnoDB: Completed initialization of buffer pool
+2024-11-25 12:48:38 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2024-11-25 12:48:38 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2024-11-25 12:48:38 0 [Note] InnoDB: Setting file '.\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2024-11-25 12:48:38 0 [Note] InnoDB: File '.\ibtmp1' size is now 12 MB.
+2024-11-25 12:48:38 0 [Note] InnoDB: Waiting for purge to start
+2024-11-25 12:48:38 0 [Note] InnoDB: 10.4.10 started; log sequence number 880119184; transaction id 368
+2024-11-25 12:48:38 0 [Note] Plugin 'FEEDBACK' is disabled.
+2024-11-25 12:48:38 0 [Note] InnoDB: Loading buffer pool(s) from c:\wamp64\bin\mariadb\mariadb10.4.10\data\ib_buffer_pool
+2024-11-25 12:48:38 0 [Note] Server socket created on IP: '::'.
+2024-11-25 12:48:38 0 [Note] InnoDB: Buffer pool(s) load completed at 241125 12:48:38
+2024-11-25 12:48:38 0 [Note] Reading of all Master_info entries succeeded
+2024-11-25 12:48:38 0 [Note] Added new Master_info '' to hash table
+2024-11-25 12:48:38 0 [Note] wampmariadb64: ready for connections.
+Version: '10.4.10-MariaDB'  socket: ''  port: 3306  mariadb.org binary distribution
+2024-11-25 14:16:36 0 [Note] wampmariadb64 (initiated by: unknown): Normal shutdown
+2024-11-25 14:16:36 0 [Note] InnoDB: FTS optimize thread exiting.
+2024-11-25 14:16:36 0 [Note] Event Scheduler: Purging the queue. 0 events
+2024-11-25 14:16:37 0 [Note] InnoDB: Starting shutdown...
+2024-11-25 14:16:37 0 [Note] InnoDB: Dumping buffer pool(s) to c:\wamp64\bin\mariadb\mariadb10.4.10\data\ib_buffer_pool
+2024-11-25 14:16:37 0 [Note] InnoDB: Instance 0, restricted to 4009 pages due to innodb_buf_pool_dump_pct=25
+2024-11-25 14:16:37 0 [Note] InnoDB: Buffer pool(s) dump completed at 241125 14:16:37
+2024-11-25 14:16:40 0 [Note] InnoDB: Shutdown completed; log sequence number 880119193; transaction id 369
+2024-11-25 14:16:40 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2024-11-25 14:16:40 0 [Note] wampmariadb64: Shutdown complete
+
+InnoDB: using atomic writes.
+2024-11-25 14:16:43 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2024-11-25 14:16:43 0 [Note] InnoDB: Uses event mutexes
+2024-11-25 14:16:43 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2024-11-25 14:16:43 0 [Note] InnoDB: Number of pools: 1
+2024-11-25 14:16:43 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2024-11-25 14:16:43 0 [Note] InnoDB: Initializing buffer pool, total size = 256M, instances = 1, chunk size = 128M
+2024-11-25 14:16:43 0 [Note] InnoDB: Completed initialization of buffer pool
+2024-11-25 14:16:44 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2024-11-25 14:16:44 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2024-11-25 14:16:44 0 [Note] InnoDB: Setting file '.\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2024-11-25 14:16:44 0 [Note] InnoDB: File '.\ibtmp1' size is now 12 MB.
+2024-11-25 14:16:44 0 [Note] InnoDB: 10.4.10 started; log sequence number 880119193; transaction id 368
+2024-11-25 14:16:44 0 [Note] InnoDB: Loading buffer pool(s) from c:\wamp64\bin\mariadb\mariadb10.4.10\data\ib_buffer_pool
+2024-11-25 14:16:44 0 [Note] Plugin 'FEEDBACK' is disabled.
+2024-11-25 14:16:45 0 [Note] Server socket created on IP: '::'.
+2024-11-25 14:16:47 0 [Note] Reading of all Master_info entries succeeded
+2024-11-25 14:16:47 0 [Note] Added new Master_info '' to hash table
+2024-11-25 14:16:47 0 [Note] wampmariadb64: ready for connections.
+Version: '10.4.10-MariaDB'  socket: ''  port: 3306  mariadb.org binary distribution
+2024-11-25 14:16:47 0 [Note] InnoDB: Buffer pool(s) load completed at 241125 14:16:47
+2024-11-25 14:16:55 0 [Note] wampmariadb64 (initiated by: unknown): Normal shutdown
+2024-11-25 14:16:55 0 [Note] Event Scheduler: Purging the queue. 0 events
+2024-11-25 14:16:55 0 [Note] InnoDB: FTS optimize thread exiting.
+2024-11-25 14:16:57 0 [Note] InnoDB: Starting shutdown...
+2024-11-25 14:16:57 0 [Note] InnoDB: Dumping buffer pool(s) to c:\wamp64\bin\mariadb\mariadb10.4.10\data\ib_buffer_pool
+2024-11-25 14:16:57 0 [Note] InnoDB: Instance 0, restricted to 4009 pages due to innodb_buf_pool_dump_pct=25
+2024-11-25 14:16:57 0 [Note] InnoDB: Buffer pool(s) dump completed at 241125 14:16:57
+2024-11-25 14:16:58 0 [Note] InnoDB: Shutdown completed; log sequence number 880119202; transaction id 369
+2024-11-25 14:16:58 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2024-11-25 14:16:58 0 [Note] wampmariadb64: Shutdown complete
+
+InnoDB: using atomic writes.
+2024-11-25 14:17:20 0 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2024-11-25 14:17:20 0 [Note] InnoDB: Uses event mutexes
+2024-11-25 14:17:20 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2024-11-25 14:17:20 0 [Note] InnoDB: Number of pools: 1
+2024-11-25 14:17:20 0 [Note] InnoDB: Using SSE2 crc32 instructions
+2024-11-25 14:17:20 0 [Note] InnoDB: Initializing buffer pool, total size = 256M, instances = 1, chunk size = 128M
+2024-11-25 14:17:20 0 [Note] InnoDB: Completed initialization of buffer pool
+2024-11-25 14:17:20 0 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2024-11-25 14:17:20 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2024-11-25 14:17:20 0 [Note] InnoDB: Setting file '.\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2024-11-25 14:17:20 0 [Note] InnoDB: File '.\ibtmp1' size is now 12 MB.
+2024-11-25 14:17:20 0 [Note] InnoDB: Waiting for purge to start
+2024-11-25 14:17:20 0 [Note] InnoDB: 10.4.10 started; log sequence number 880119202; transaction id 368
+2024-11-25 14:17:20 0 [Note] InnoDB: Loading buffer pool(s) from c:\wamp64\bin\mariadb\mariadb10.4.10\data\ib_buffer_pool
+2024-11-25 14:17:20 0 [Note] Plugin 'FEEDBACK' is disabled.
+2024-11-25 14:17:20 0 [Note] Server socket created on IP: '::'.
+2024-11-25 14:17:20 0 [Note] Reading of all Master_info entries succeeded
+2024-11-25 14:17:20 0 [Note] Added new Master_info '' to hash table
+2024-11-25 14:17:20 0 [Note] wampmariadb64: ready for connections.
+Version: '10.4.10-MariaDB'  socket: ''  port: 3306  mariadb.org binary distribution
+2024-11-25 14:17:20 0 [Note] InnoDB: Buffer pool(s) load completed at 241125 14:17:20
+2024-11-25 14:47:50 0 [Note] wampmariadb64 (initiated by: unknown): Normal shutdown
+2024-11-25 14:47:50 0 [Note] InnoDB: FTS optimize thread exiting.
+2024-11-25 14:47:50 0 [Note] Event Scheduler: Purging the queue. 0 events
+2024-11-25 14:47:52 0 [Note] InnoDB: Starting shutdown...
+2024-11-25 14:47:52 0 [Note] InnoDB: Dumping buffer pool(s) to c:\wamp64\bin\mariadb\mariadb10.4.10\data\ib_buffer_pool
+2024-11-25 14:47:52 0 [Note] InnoDB: Instance 0, restricted to 4009 pages due to innodb_buf_pool_dump_pct=25
+2024-11-25 14:47:52 0 [Note] InnoDB: Buffer pool(s) dump completed at 241125 14:47:52
+2024-11-25 14:47:53 0 [Note] InnoDB: Shutdown completed; log sequence number 880119211; transaction id 369
+2024-11-25 14:47:53 0 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2024-11-25 14:47:54 0 [Note] wampmariadb64: Shutdown complete
+
