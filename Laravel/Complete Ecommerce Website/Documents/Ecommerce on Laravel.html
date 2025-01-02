@@ -1,0 +1,1040 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ecommerce on Laravel</title>
+
+
+    <link href="./Ecommerce on Laravel_files/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+
+    <link href="./Ecommerce on Laravel_files/bootstrap-icons.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Header Start -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+            <div class="container">
+                <!-- Logo -->
+                <a class="navbar-brand" href="https://user4test.itspk.com/">
+                    <img src="./Ecommerce on Laravel_files/Arsenal_FC.svg.png" alt="Logo" class="d-inline-block align-top" style="width: 80px;">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="https://user4test.itspk.com/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="https://user4test.itspk.com/#shop">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="https://user4test.itspk.com/#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="https://user4test.itspk.com/#contact">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white d-flex align-items-center" href="https://user4test.itspk.com/cart" title="cart">
+                                <i class="bi bi-cart me-2"></i>
+                                <span class="badge bg-primary" id="cart-count">0</span>
+                            </a>
+                        </li>
+
+
+
+                                                <li class="nav-item">
+                            <a class="nav-link text-white" href="https://user4test.itspk.com/login">Login</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link text-white" href="https://user4test.itspk.com/register">Register</a>
+                        </li> -->
+                                            </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Header End -->
+
+    <div class="container-fluid">
+        
+
+
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Laravel</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.bunny.net/">
+    <link href="./Ecommerce on Laravel_files/css" rel="stylesheet">
+
+    <!-- Styles -->
+    <style>
+        body {
+            background-color: #f0f8ff;
+            /* Alice Blue */
+            color: #333;
+        }
+
+        h2 {
+            margin-bottom: 30px;
+            color: #007bff;
+        }
+
+        .carousel-item img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+
+        .carousel-inner {
+            display: flex;
+            align-items: center;
+        }
+
+        .carousel-control-prev,
+        .carousel-control-next {
+            width: 5%;
+        }
+
+        .carousel-control-prev {
+            margin-left: 10px;
+        }
+
+        .carousel-control-next {
+            margin-right: 10px;
+        }
+
+        .carousel {
+            margin-bottom: 40px;
+        }
+
+        .carousel-container {
+            display: flex;
+            flex-direction: column;
+            /* Stack carousels vertically */
+            gap: 20px;
+            /* Space between carousels */
+            margin-top: 30px;
+            /* Adjust top margin */
+        }
+
+        .carousel-item-small {
+            width: 100%;
+            /* Ensure each small carousel takes full width */
+        }
+
+        .carousel-name {
+            /* text-align: center; */
+            font-size: 1.6rem;
+            font-weight: bold;
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+
+        .carousel-small {
+            width: 100%;
+            /* Ensure the carousel takes full width */
+        }
+
+        .carousel-small img {
+            height: 150px;
+            /* Set a fixed height for images */
+            object-fit: cover;
+            /* Keep aspect ratio */
+        }
+
+        .carousel-item-small .d-flex {
+            display: flex;
+            /* Use flexbox for horizontal layout */
+            justify-content: space-between;
+            /* Space out images evenly */
+        }
+
+        .card {
+            margin-bottom: 20px;
+            border: none;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: fill;
+        }
+
+        .card-body {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .btn-show-details {
+            margin-top: 10px;
+        }
+
+        /* Smooth Scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Optional: For better styling of anchor links */
+        a {
+            text-decoration: none;
+        }
+
+        /* Styling for category buttons */
+        .btn-category {
+            font-size: 1rem;
+            font-weight: bold;
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 30px;
+            border: 2px solid #007bff;
+            transition: background-color 0.3s, transform 0.3s ease;
+            text-decoration: none;
+        }
+
+        .btn-category:hover {
+            background-color: #0056b3;
+            transform: translateY(-3px);
+        }
+
+        .btn-category:focus {
+            outline: none;
+        }
+
+        .btn-category:active {
+            transform: translateY(2px);
+        }
+
+        .carousel-item img {
+            width: 100%;
+            height: 500px;
+            /* Increased height for better visibility */
+            transition: transform 0.5s ease-in-out;
+            /* Smooth transition for zoom effect */
+        }
+
+
+        /* Fade-in effect for captions */
+        .carousel-item.active .carousel-caption {
+            opacity: 1;
+        }
+
+
+
+        /* Additional padding for carousel */
+        .carousel-inner {
+            padding: 10px 0;
+        }
+
+        /* Ensure category buttons look like navbar links */
+        .navbar-btn {
+            font-size: 1rem;
+            font-weight: bold;
+            background-color: transparent;
+            color: white;
+            border: none;
+            padding: 8px 20px;
+            text-transform: uppercase;
+            transition: background-color 0.3s, transform 0.3s ease;
+            border-radius: 25px;
+            text-decoration: none;
+        }
+
+        .navbar-btn:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            /* Light hover effect */
+            transform: translateY(-3px);
+        }
+
+        .navbar-btn:focus {
+            outline: none;
+        }
+
+        .navbar-btn:active {
+            transform: translateY(2px);
+            /* Slight button press effect */
+        }
+
+        /* Make the main carousel full width */
+        .carousel {
+            width: 100%;
+            max-width: 100%;
+            margin-bottom: 40px;
+        }
+
+        /* Carousel Control buttons (Prev/Next) */
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            background-color: #333;
+            /* Dark color for the icons */
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            transition: background-color 0.3s ease;
+        }
+
+        .carousel-control-prev-icon:hover,
+        .carousel-control-next-icon:hover {
+            background-color: #555;
+
+        }
+
+        /* Pagination Dots */
+        .carousel-indicators button {
+            background-color: #333;
+            /* Dark color for the pagination dots */
+            border-radius: 50%;
+            width: 20px;
+            height: 2px;
+            margin: 0 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .carousel-indicators .active {
+            background-color: #555;
+            /* Lighter shade when the dot is active */
+        }
+
+        .carousel-indicators button:hover {
+            background-color: #555;
+            /* Hover effect for pagination dots */
+        }
+
+        .card-body {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 15px;
+            height: 100%;
+        }
+
+        .card-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .card-price {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: green;
+            margin-left: 10px;
+        }
+
+        .card-text {
+            font-size: 0.9rem;
+            color: #555;
+            margin-top: 10px;
+        }
+
+        .btn-show-details {
+            margin-top: auto;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+    </style>
+
+
+    <div class="container-fluid">
+    <!-- Categories Carousel -->
+    <div id="categoryCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+                        <div class="carousel-item">
+                <div class="row">
+                                        <div class="col-md-12">
+                        <a href="https://user4test.itspk.com/#footballCarousel">
+                            <img src="./Ecommerce on Laravel_files/football.jpg" alt="Football" style="cursor: pointer;">
+                        </a>
+                    </div>
+                                    </div>
+            </div>
+                        <div class="carousel-item">
+                <div class="row">
+                                        <div class="col-md-12">
+                        <a href="https://user4test.itspk.com/#cricketCarousel">
+                            <img src="./Ecommerce on Laravel_files/cricket.jpg" alt="Cricket" style="cursor: pointer;">
+                        </a>
+                    </div>
+                                    </div>
+            </div>
+                        <div class="carousel-item">
+                <div class="row">
+                                        <div class="col-md-12">
+                        <a href="https://user4test.itspk.com/#tennisCarousel">
+                            <img src="./Ecommerce on Laravel_files/tennis.jpg" alt="Tennis" style="cursor: pointer;">
+                        </a>
+                    </div>
+                                    </div>
+            </div>
+                        <div class="carousel-item">
+                <div class="row">
+                                        <div class="col-md-12">
+                        <a href="https://user4test.itspk.com/#hockeyCarousel">
+                            <img src="./Ecommerce on Laravel_files/hockey.jpg" alt="Hockey" style="cursor: pointer;">
+                        </a>
+                    </div>
+                                    </div>
+            </div>
+                        <div class="carousel-item active">
+                <div class="row">
+                                        <div class="col-md-12">
+                        <a href="https://user4test.itspk.com/#badmintonCarousel">
+                            <img src="./Ecommerce on Laravel_files/badminton2.jpg" alt="Badminton" style="cursor: pointer;">
+                        </a>
+                    </div>
+                                    </div>
+            </div>
+                    </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#categoryCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#categoryCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+    </div>
+</div>
+    <div class="container-fluid" style="background-color: white;">
+
+    <div>
+        <h2 style="color: red;"><i class="bi bi-fire"></i> Hot Products</h2>
+    </div>
+    <div id="productCarousel" class="carousel slide product-carousel" data-bs-ride="carousel">
+        <div class="carousel-inner">
+                        <div class="carousel-item active">
+                <div class="row">
+                                        <div class="col-md-4 product-carousel-item">
+                        <div class="card bg-light">
+                                                        <!-- Display the first image of the product with H priority -->
+                            <img src="./Ecommerce on Laravel_files/1733465141_tenisballadidas.jpg" class="card-img-top" alt="Tennis Balls">
+                                                        <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h5 class="card-title">Tennis Balls</h5>
+                                    <p class="card-price mb-0">5$</p>
+                                </div>
+                                <p class="card-text">
+                                    Tennis balls for tennis or soft cricket
+                                </p>
+                                <a href="https://user4test.itspk.com/product/eyJpdiI6ImZKTkkxRXc0NTd2UHNXMUdMZlkwdkE9PSIsInZhbHVlIjoic29mTGF3OVF1RlhRR3lHazl0RituUT09IiwibWFjIjoiZjY2MTU1Yjg5OTZkNjc1NGI0YWMwNGM1YTk4N2E3ZDQzYTlkYThmMWYzZDk0Njk5ZGQ2ODI4NjI1MjYyNTM2MSIsInRhZyI6IiJ9" class="btn btn-primary">View Details</a>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                                        <div class="col-md-4 product-carousel-item">
+                        <div class="card bg-light">
+                                                        <!-- Display the first image of the product with H priority -->
+                            <img src="./Ecommerce on Laravel_files/1733391886_ArsenalJersey.jpg" class="card-img-top" alt="Arsenal Jersey">
+                                                        <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h5 class="card-title">Arsenal Jersey</h5>
+                                    <p class="card-price mb-0">60$</p>
+                                </div>
+                                <p class="card-text">
+                                    Arsenal Football Club Kit
+Full kit of Arsenal Football Club...
+                                </p>
+                                <a href="https://user4test.itspk.com/product/eyJpdiI6InZpT2VyMndwZHhsU0syMUd4RlJ5TWc9PSIsInZhbHVlIjoiRlZ0a2JnRGR6WENFYlk0eWVXS2JFdz09IiwibWFjIjoiZjNlYWQxY2FhNzM3NDhjNjJkY2U3N2U0NDcyMmM3OTdkYTgwYjlkODNmYjEzMGQyOThkOGMzNWU3NGQyYzQ5NiIsInRhZyI6IiJ9" class="btn btn-primary">View Details</a>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                                        <div class="col-md-4 product-carousel-item">
+                        <div class="card bg-light">
+                                                        <!-- Display the first image of the product with H priority -->
+                            <img src="./Ecommerce on Laravel_files/1733462431_badmintonShuttle.jpg" class="card-img-top" alt="Shuttle">
+                                                        <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h5 class="card-title">Shuttle</h5>
+                                    <p class="card-price mb-0">5$</p>
+                                </div>
+                                <p class="card-text">
+                                    Shuttle for badminton
+                                </p>
+                                <a href="https://user4test.itspk.com/product/eyJpdiI6IjJBamlpb2dBWk1WZXc2MDdEQXFYdnc9PSIsInZhbHVlIjoiWFVYSCtId1d6V09JTmhHSFF4aXdsUT09IiwibWFjIjoiYTFiNTI4Mjc0MjVlOGNjM2E1YWU0MzczOWEyMzdjYzg1YTE2NWVjYjMzYTk4ZWQwODdjMmE3Mzk3ZjdlOWZiMCIsInRhZyI6IiJ9" class="btn btn-primary">View Details</a>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                                    </div>
+            </div>
+                        <div class="carousel-item">
+                <div class="row">
+                                        <div class="col-md-4 product-carousel-item">
+                        <div class="card bg-light">
+                                                        <!-- Display the first image of the product with H priority -->
+                            <img src="./Ecommerce on Laravel_files/1733462490_footballBoots3.jpg" class="card-img-top" alt="Football Boots">
+                                                        <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h5 class="card-title">Football Boots</h5>
+                                    <p class="card-price mb-0">50$</p>
+                                </div>
+                                <p class="card-text">
+                                    Professional Football Boots
+                                </p>
+                                <a href="https://user4test.itspk.com/product/eyJpdiI6IkF1dXk4R1R6SnRRMFFQM3VmQStZMXc9PSIsInZhbHVlIjoicUVkR2hYd003dmt1T1V6TXN4V1FuZz09IiwibWFjIjoiZmUzMDQxMWVkZWI1YmM3NzliNzhmYThhOTdjZjQ4YTJjZTkwNmZiYjA4MmVkOTc0ZDE1ZjY5MTc2OWQzYWI1OSIsInRhZyI6IiJ9" class="btn btn-primary">View Details</a>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                                        <div class="col-md-4 product-carousel-item">
+                        <div class="card bg-light">
+                                                        <!-- Display the first image of the product with H priority -->
+                            <img src="./Ecommerce on Laravel_files/1733462582_bat2.jpg" class="card-img-top" alt="Cricket Bat">
+                                                        <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h5 class="card-title">Cricket Bat</h5>
+                                    <p class="card-price mb-0">80$</p>
+                                </div>
+                                <p class="card-text">
+                                    Bats for Hard ball cricket
+                                </p>
+                                <a href="https://user4test.itspk.com/product/eyJpdiI6Inh2ejZ4Q1RLNWRkQ2FLRUJ6QWpuVVE9PSIsInZhbHVlIjoiL20ydlpqNC9vRlAxeHBySFVFOFdFdz09IiwibWFjIjoiZjllMDM3YmRhZGZiODUxMjNiZTUyYWM4NWI1ZWFmY2E5Yjg1ZTZiNzZiMWMzYzc3Zjg0ODk5MmJmNDU3ODgzOCIsInRhZyI6IiJ9" class="btn btn-primary">View Details</a>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                                    </div>
+            </div>
+                    </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+    </div>
+</div>    <div class="container-fluid" style="background-color: white;">
+
+    <div id="footballCarousel" class="carousel slide product-carousel" data-bs-ride="carousel">
+        <h2 class="carousel-name">Football Products</h2>
+        <div class="carousel-inner">
+                        <div class="carousel-item active">
+                <div class="row">
+                                        <div class="col-md-4 product-carousel-item">
+                        <div class="card bg-light">
+                                                                                    <img src="./Ecommerce on Laravel_files/1733465716_football.jpg" class="card-img-top" alt="Football">
+                                                        <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h5 class="card-title">Football</h5>
+                                    <p class="card-price mb-0">20$</p>
+                                </div>
+                                <p class="card-text">
+                                    Full size football
+                                </p>
+                                <a href="https://user4test.itspk.com/product/eyJpdiI6ImZTNGdEd2N4UXE3eFh1OVNEcnJUd2c9PSIsInZhbHVlIjoieDFNK3hsYjQwUU94cW1ZVDhLYnZPUT09IiwibWFjIjoiOTExYmE0MTQ0NzMyYjA0Y2EyYjRkNTNjMjVkZWI2YzllZjE2YWUyODkwYzg1NzYzZmYxZmQyODgzNGM0OGViMyIsInRhZyI6IiJ9" class="btn btn-primary">View Details</a>
+
+                            </div>
+                        </div>
+                    </div>
+                                        <div class="col-md-4 product-carousel-item">
+                        <div class="card bg-light">
+                                                                                    <img src="./Ecommerce on Laravel_files/1733465572_footballGloves.jpg" class="card-img-top" alt="GoalKeeper Gloves">
+                                                        <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h5 class="card-title">GoalKeeper Gloves</h5>
+                                    <p class="card-price mb-0">30$</p>
+                                </div>
+                                <p class="card-text">
+                                    Goalie Gloves for Football
+                                </p>
+                                <a href="https://user4test.itspk.com/product/eyJpdiI6IlBBNm9OVld6L2lMWURnTUdaWXAvY3c9PSIsInZhbHVlIjoibEY3M2pCMXZ6SjRtaFl4TXc2cmR0dz09IiwibWFjIjoiZGNlMjljZjBhYWNjNDA5YmQ5OGRkMDhiYTUzMTM1MTJmYzM2NGU2NGIzNThiOWJiN2MxOWQ4M2IxYzY4Y2YxMSIsInRhZyI6IiJ9" class="btn btn-primary">View Details</a>
+
+                            </div>
+                        </div>
+                    </div>
+                                        <div class="col-md-4 product-carousel-item">
+                        <div class="card bg-light">
+                                                                                    <img src="./Ecommerce on Laravel_files/1733391886_ArsenalJersey.jpg" class="card-img-top" alt="Arsenal Jersey">
+                                                        <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h5 class="card-title">Arsenal Jersey</h5>
+                                    <p class="card-price mb-0">60$</p>
+                                </div>
+                                <p class="card-text">
+                                    Arsenal Football Club Kit
+Full kit of Arsenal Football Club...
+                                </p>
+                                <a href="https://user4test.itspk.com/product/eyJpdiI6IjcyQ01sKzJDY2FJMi90Y0dqVGk2a0E9PSIsInZhbHVlIjoiZk9peG91cXJNSkx5cjJGWHgwZG9jZz09IiwibWFjIjoiMDY0ZmQzYWUwNzQwZDFhZjdhZjg4M2U2Y2YwZWI0M2NjMGE4YTVmMDA2MzlhNGMzNzYwMzgzMDQwNzc4ZGQ5OSIsInRhZyI6IiJ9" class="btn btn-primary">View Details</a>
+
+                            </div>
+                        </div>
+                    </div>
+                                    </div>
+            </div>
+                        <div class="carousel-item">
+                <div class="row">
+                                        <div class="col-md-4 product-carousel-item">
+                        <div class="card bg-light">
+                                                                                    <img src="./Ecommerce on Laravel_files/1733462490_footballBoots3.jpg" class="card-img-top" alt="Football Boots">
+                                                        <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h5 class="card-title">Football Boots</h5>
+                                    <p class="card-price mb-0">50$</p>
+                                </div>
+                                <p class="card-text">
+                                    Professional Football Boots
+                                </p>
+                                <a href="https://user4test.itspk.com/product/eyJpdiI6IjNpc3ppcHVuL3UwRkdQSTcyTkRRdlE9PSIsInZhbHVlIjoiVm5ZN0JLaVRoUnhqajBPMlZqMUxLUT09IiwibWFjIjoiOTJkYzNmZWRkOGQ2MmViMjVkMTVjNjVlZjcxZGEwNjYyZmYwNjAzZjM5ZjRmMWFiNjJjZTUwMWYzMzliZjliZSIsInRhZyI6IiJ9" class="btn btn-primary">View Details</a>
+
+                            </div>
+                        </div>
+                    </div>
+                                        <div class="col-md-4 product-carousel-item">
+                        <div class="card bg-light">
+                                                                                    <img src="./Ecommerce on Laravel_files/1733466373_goalpost2.jpg" class="card-img-top" alt="Goal">
+                                                        <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h5 class="card-title">Goal</h5>
+                                    <p class="card-price mb-0">70$</p>
+                                </div>
+                                <p class="card-text">
+                                    Full size goal for football field
+                                </p>
+                                <a href="https://user4test.itspk.com/product/eyJpdiI6IndvaGI2cWFGV05NM0gzTGZNU3IyWnc9PSIsInZhbHVlIjoibk9QTXY5VG5BUDN1Yy9Fdzk3NEtaZz09IiwibWFjIjoiYjU1NDE5YzNmMjE0Nzc2Y2VlMGEyZWUyNWIwZDYxN2ZiOGJkZGIzNDVhZWViMTk2MzY3OGZhMDViYzdlNzRlMiIsInRhZyI6IiJ9" class="btn btn-primary">View Details</a>
+
+                            </div>
+                        </div>
+                    </div>
+                                        <div class="col-md-4 product-carousel-item">
+                        <div class="card bg-light">
+                                                                                    <img src="./Ecommerce on Laravel_files/1733466453_footballShinGuards.jpg" class="card-img-top" alt="Shin Guards">
+                                                        <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h5 class="card-title">Shin Guards</h5>
+                                    <p class="card-price mb-0">20$</p>
+                                </div>
+                                <p class="card-text">
+                                    Shin guards black color
+                                </p>
+                                <a href="https://user4test.itspk.com/product/eyJpdiI6IktZZGxLQlZYY0tFdUZTOFdmeTFhU0E9PSIsInZhbHVlIjoiekJZRFJzdzVqYUh3YnpNSThsdFlmUT09IiwibWFjIjoiNTFlNmM1NjU3Y2NiZTA3NmQ1YTE3YmYzMzFjMWMzMGZjN2I5YWE4ZTc4YjU2YjYwZjFmOWQ0ZmFjODQ2MmNmMSIsInRhZyI6IiJ9" class="btn btn-primary">View Details</a>
+
+                            </div>
+                        </div>
+                    </div>
+                                    </div>
+            </div>
+                    </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#footballCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#footballCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+    </div>
+</div>
+<div class="container-fluid" style="background-color: white;">
+
+    <div id="cricketCarousel" class="carousel slide product-carousel" data-bs-ride="carousel">
+        <h2 class="carousel-name">Cricket Products</h2>
+        <div class="carousel-inner">
+                        <div class="carousel-item">
+                <div class="row">
+                                        <div class="col-md-4 product-carousel-item">
+                        <div class="card bg-light">
+                                                                                    <img src="./Ecommerce on Laravel_files/1733465764_WKGloves.jpg" class="card-img-top" alt="WicketKeeper Gloves">
+                                                        <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h5 class="card-title">WicketKeeper Gloves</h5>
+                                    <p class="card-price mb-0">20$</p>
+                                </div>
+                                <p class="card-text">
+                                    Gloves for wicket keeper
+                                </p>
+                                <a href="https://user4test.itspk.com/product/eyJpdiI6IkNKVXpOaW5hQ0NuZjI4dFlCZ2JFeXc9PSIsInZhbHVlIjoiZHM5QXVJeDhSN2VDZkc0SUNsaHF6Zz09IiwibWFjIjoiY2NkNDQ3MDVhNDM4NjEzNDI1ZWM4YmVhZGVhMWYwMTQxZDE3NmUxZjk3NTY3MmY4Y2JiYTY5MThlYTRjNjNlZiIsInRhZyI6IiJ9" class="btn btn-primary">View Details</a>
+
+                            </div>
+                        </div>
+                    </div>
+                                        <div class="col-md-4 product-carousel-item">
+                        <div class="card bg-light">
+                                                                                    <img src="./Ecommerce on Laravel_files/1733465683_tapeball2.jpg" class="card-img-top" alt="tape ball">
+                                                        <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h5 class="card-title">tape ball</h5>
+                                    <p class="card-price mb-0">10$</p>
+                                </div>
+                                <p class="card-text">
+                                    Tape ball for cricket
+                                </p>
+                                <a href="https://user4test.itspk.com/product/eyJpdiI6Iis1YlUySzhFU3ZqSzVQQThOc3RFQVE9PSIsInZhbHVlIjoibUVQem8xY2NodjNUOWV1a2VPblZIUT09IiwibWFjIjoiOTI4NWQxOWVmZTU3MzVjZTc3NDk3ZjBlYWI2YmIzNWI0YzJmODMwM2E3OTFlYTU1MjMxYzE0ZjIyYzA4NzM4YyIsInRhZyI6IiJ9" class="btn btn-primary">View Details</a>
+
+                            </div>
+                        </div>
+                    </div>
+                                        <div class="col-md-4 product-carousel-item">
+                        <div class="card bg-light">
+                                                                                    <img src="./Ecommerce on Laravel_files/1733465640_helmet cricket.jpg" class="card-img-top" alt="Helmet">
+                                                        <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h5 class="card-title">Helmet</h5>
+                                    <p class="card-price mb-0">20$</p>
+                                </div>
+                                <p class="card-text">
+                                    Helmet for hard ball cricket
+                                </p>
+                                <a href="https://user4test.itspk.com/product/eyJpdiI6IlVNVmVqT0Y5K0k3MkZFWUY2akdLRmc9PSIsInZhbHVlIjoiRkZ1U0g2ZWdrVW1ZWWVCS2NuZVdDZz09IiwibWFjIjoiZjlmNzM2MGZjYzk0MWE0OWE0ZjlmY2RhZWYzYTJmZjFmMjc3MGRkNWU1N2NlNTgxZTI2YjRlOGQ4NGQ4NzVhOCIsInRhZyI6IiJ9" class="btn btn-primary">View Details</a>
+
+                            </div>
+                        </div>
+                    </div>
+                                    </div>
+            </div>
+                        <div class="carousel-item active">
+                <div class="row">
+                                        <div class="col-md-4 product-carousel-item">
+                        <div class="card bg-light">
+                                                                                    <img src="./Ecommerce on Laravel_files/1733466241_wickets.jpg" class="card-img-top" alt="Wicket">
+                                                        <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h5 class="card-title">Wicket</h5>
+                                    <p class="card-price mb-0">55$</p>
+                                </div>
+                                <p class="card-text">
+                                    full size wooden wickets for cricket
+                                </p>
+                                <a href="https://user4test.itspk.com/product/eyJpdiI6IjFuQmtvWS93TFZZazRRcGVzcWJXaFE9PSIsInZhbHVlIjoiNy9lRTZsUnhoOWw5YkNZdGsvZDc5dz09IiwibWFjIjoiY2JiMTU0ZjkwMjRkNzk0ZGU1Y2FhZjA3NGE0MzVmM2QwNzEzMTRhYWNjN2FkMTc4ZGE0NjJkNWJhNmNkODQ5OCIsInRhZyI6IiJ9" class="btn btn-primary">View Details</a>
+
+                            </div>
+                        </div>
+                    </div>
+                                        <div class="col-md-4 product-carousel-item">
+                        <div class="card bg-light">
+                                                                                    <img src="./Ecommerce on Laravel_files/1733462582_bat2.jpg" class="card-img-top" alt="Cricket Bat">
+                                                        <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h5 class="card-title">Cricket Bat</h5>
+                                    <p class="card-price mb-0">80$</p>
+                                </div>
+                                <p class="card-text">
+                                    Bats for Hard ball cricket
+                                </p>
+                                <a href="https://user4test.itspk.com/product/eyJpdiI6IkxoY2FWRUhnbksybE1vM1hyZy9MOVE9PSIsInZhbHVlIjoiMkhGTzFsL09Zd3hrc2NEUzk5a1R1dz09IiwibWFjIjoiNjhkOWI0NTk2N2YyYzMyNzEwMGQzNDhlMTRmN2Y0ZjIxYjE3OGE4NmIyMjQ3OTkzNzg1OTM0OGJmNmQwNGI0NiIsInRhZyI6IiJ9" class="btn btn-primary">View Details</a>
+
+                            </div>
+                        </div>
+                    </div>
+                                        <div class="col-md-4 product-carousel-item">
+                        <div class="card bg-light">
+                                                                                    <img src="./Ecommerce on Laravel_files/1733466303_cricketBall.jpg" class="card-img-top" alt="Red Hard Ball">
+                                                        <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h5 class="card-title">Red Hard Ball</h5>
+                                    <p class="card-price mb-0">45$</p>
+                                </div>
+                                <p class="card-text">
+                                    Red hard ball for cricket
+                                </p>
+                                <a href="https://user4test.itspk.com/product/eyJpdiI6ImlQVnFjazd4U1BvaTZ5NTcxc3NzTUE9PSIsInZhbHVlIjoiTHU4QUN4L1lENUZkNFZqVitud0hyQT09IiwibWFjIjoiNzgzNWM1MTgzZWQ1MmE0YWQ4NTJiNDhkZTMyZjU4ZWU5OTU2NDQ4NjAxYjM0OTBkNDE5ZmJiNjI4MDJjYzQ2NSIsInRhZyI6IiJ9" class="btn btn-primary">View Details</a>
+
+                            </div>
+                        </div>
+                    </div>
+                                    </div>
+            </div>
+                        <div class="carousel-item">
+                <div class="row">
+                                        <div class="col-md-4 product-carousel-item">
+                        <div class="card bg-light">
+                                                                                    <img src="./Ecommerce on Laravel_files/1733466341_helmet.png" class="card-img-top" alt="Batsman Helmet">
+                                                        <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h5 class="card-title">Batsman Helmet</h5>
+                                    <p class="card-price mb-0">40$</p>
+                                </div>
+                                <p class="card-text">
+                                    Helmet for batsman
+                                </p>
+                                <a href="https://user4test.itspk.com/product/eyJpdiI6Im52cnZDVGVWVzducld0aUZPaDFtRGc9PSIsInZhbHVlIjoiNHdNbEtyQUE3bHI0a2tsMjZGb01Zdz09IiwibWFjIjoiZDk2M2Y2MGZkMDNjMWEyZTE1MWYyN2MzZGFkZDA3NzRmMjY4NjEzOGIzNDYxOTBiNGMyYjFjOWM5YTZkMGE3YSIsInRhZyI6IiJ9" class="btn btn-primary">View Details</a>
+
+                            </div>
+                        </div>
+                    </div>
+                                    </div>
+            </div>
+                    </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#cricketCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#cricketCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+    </div>
+</div>
+<div class="container-fluid" style="background-color: white;">
+
+    <div id="tennisCarousel" class="carousel slide product-carousel" data-bs-ride="carousel">
+        <h2 class="carousel-name">Tennis Products</h2>
+        <div class="carousel-inner">
+                        <div class="carousel-item  active ">
+                <div class="row">
+                                        <div class="col-md-4 product-carousel-item">
+                        <div class="card bg-light">
+                                                                                    <img src="./Ecommerce on Laravel_files/1733465606_racketTennis.jpg" class="card-img-top" alt="Racket">
+                                                        <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h5 class="card-title">Racket</h5>
+                                    <p class="card-price mb-0">30$</p>
+                                </div>
+                                <p class="card-text">
+                                    Racket for Tennis
+                                </p>
+                                <a href="https://user4test.itspk.com/product/eyJpdiI6Imc2WUI4OVQxOUZ1cEdYYWFJTnNjVUE9PSIsInZhbHVlIjoiUEs2c1NvZ3NuTGRtbloreWt1NlJVQT09IiwibWFjIjoiY2I3OTQ3MDQwMjQyZDVhMWRjZTlhMzBhMzRlZDczMDgzNjY5M2M0ZTIzYjdjYjdlZjkzZGJmNTZhMTJmZThiYSIsInRhZyI6IiJ9" class="btn btn-primary">View Details</a>
+
+                            </div>
+                        </div>
+                    </div>
+                                        <div class="col-md-4 product-carousel-item">
+                        <div class="card bg-light">
+                                                                                    <img src="./Ecommerce on Laravel_files/1733465176_netTennis.jpg" class="card-img-top" alt="Net">
+                                                        <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h5 class="card-title">Net</h5>
+                                    <p class="card-price mb-0">40$</p>
+                                </div>
+                                <p class="card-text">
+                                    Net for tennis court
+                                </p>
+                                <a href="https://user4test.itspk.com/product/eyJpdiI6Inc2NkdxckRYbzc1TXJRNnQzaytzYmc9PSIsInZhbHVlIjoiUk5pcXhUZXZyaWJRSUNPRTFuSUNwQT09IiwibWFjIjoiNzAyMWFjYWNiOTE5MWUwOGU3ZGMyYTEwNzBkMjE5YzMxNWMxOTk5YjU5ODU4YzhhZjhkNmYyNzZmNjAzMzdhMiIsInRhZyI6IiJ9" class="btn btn-primary">View Details</a>
+
+                            </div>
+                        </div>
+                    </div>
+                                        <div class="col-md-4 product-carousel-item">
+                        <div class="card bg-light">
+                                                                                    <img src="./Ecommerce on Laravel_files/1733465141_tenisballadidas.jpg" class="card-img-top" alt="Tennis Balls">
+                                                        <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h5 class="card-title">Tennis Balls</h5>
+                                    <p class="card-price mb-0">5$</p>
+                                </div>
+                                <p class="card-text">
+                                    Tennis balls for tennis or soft cricket
+                                </p>
+                                <a href="https://user4test.itspk.com/product/eyJpdiI6IlJxTHI3ZmNQVUZPM2JCWWNTWEpTSHc9PSIsInZhbHVlIjoidWN4Y2hMSC8zYk9zbG82L1Jva0VNUT09IiwibWFjIjoiMTIwZTFhYmZkNzZjN2RlOGIzMDI5NzAyYzUzYTMzZDlhZTYzZDA2NzBhMDEyYjk2ZGYzYzEzMzNlZmIzZDZmZCIsInRhZyI6IiJ9" class="btn btn-primary">View Details</a>
+
+                            </div>
+                        </div>
+                    </div>
+                                    </div>
+            </div>
+                    </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#tennisCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#tennisCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+    </div>
+</div>
+<div class="container-fluid" style="background-color: white;">
+
+    <div id="hockeyCarousel" class="carousel slide product-carousel" data-bs-ride="carousel">
+        <h2 class="carousel-name">Hockey Products</h2>
+        <div class="carousel-inner">
+                        <div class="carousel-item  active ">
+                <div class="row">
+                                        <div class="col-md-4 product-carousel-item">
+                        <div class="card bg-light">
+                                                                                    <img src="./Ecommerce on Laravel_files/1733466054_hocketHelmet.jpg" class="card-img-top" alt="Hockey Helmet">
+                                                        <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h5 class="card-title">Hockey Helmet</h5>
+                                    <p class="card-price mb-0">40$</p>
+                                </div>
+                                <p class="card-text">
+                                    Good quality helmet for hocket goalie
+                                </p>
+                                <a href="https://user4test.itspk.com/product/eyJpdiI6Ik9JZ2J0eEJCTVRJQ2ZQUm5ZWTZFa1E9PSIsInZhbHVlIjoiYkZrYzJNeDVXUjZhSGQ2UDlsRkRuZz09IiwibWFjIjoiM2MyM2IzNjVjZDllZDc1ZjA1NWMxNTk3MGQyMmU4ODdiY2Y1ZWMzZDkwOWFjNDBiZjIwMWRiOTA4NTMzZjU4OSIsInRhZyI6IiJ9" class="btn btn-primary">View Details</a>
+
+                            </div>
+                        </div>
+                    </div>
+                                        <div class="col-md-4 product-carousel-item">
+                        <div class="card bg-light">
+                                                                                    <img src="./Ecommerce on Laravel_files/1733466011_hockeyBall.jpg" class="card-img-top" alt="Hockey Ball">
+                                                        <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h5 class="card-title">Hockey Ball</h5>
+                                    <p class="card-price mb-0">35$</p>
+                                </div>
+                                <p class="card-text">
+                                    white hockey ball
+                                </p>
+                                <a href="https://user4test.itspk.com/product/eyJpdiI6IjZQM0FBUXgyczBBczYyU3dMM0l3UlE9PSIsInZhbHVlIjoiRTl2UUgrQjlkZUx4WUxoc0lhQjRMUT09IiwibWFjIjoiZGQ4YmFhZTZhZDgwYzRjZmE3MTM3MDAxODQyNzYwNGQ3YjAwZTRlZjdhYzQwMWE4NDMyMjI5ODdhYTcwNjdlZiIsInRhZyI6IiJ9" class="btn btn-primary">View Details</a>
+
+                            </div>
+                        </div>
+                    </div>
+                                        <div class="col-md-4 product-carousel-item">
+                        <div class="card bg-light">
+                                                                                    <img src="./Ecommerce on Laravel_files/1733465967_hockeyStick.jpg" class="card-img-top" alt="Hockey stick">
+                                                        <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h5 class="card-title">Hockey stick</h5>
+                                    <p class="card-price mb-0">30$</p>
+                                </div>
+                                <p class="card-text">
+                                    Hockey stick
+                                </p>
+                                <a href="https://user4test.itspk.com/product/eyJpdiI6IklEaGRGUlNvS3Vvc3JNRjdDdW5VclE9PSIsInZhbHVlIjoidHZwWUhQQjljeEpLZUpwYzJCaUpCUT09IiwibWFjIjoiOTU4YzZkZTZlYjMwMzNiYTRiZjQ1ZWRkMWM2Y2Y4NzlkOTNlMjkxMWZmMmJkY2ZlYmEyODhkMDEzY2Y1MjYxMCIsInRhZyI6IiJ9" class="btn btn-primary">View Details</a>
+
+                            </div>
+                        </div>
+                    </div>
+                                    </div>
+            </div>
+                    </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#hockeyCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#hockeyCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+    </div>
+</div>
+<div class="container-fluid" style="background-color: white;">
+
+    <div id="badmintonCarousel" class="carousel slide product-carousel" data-bs-ride="carousel">
+        <h2 class="carousel-name">Badminton Products</h2>
+        <div class="carousel-inner">
+                        <div class="carousel-item  active ">
+                <div class="row">
+                                        <div class="col-md-4 product-carousel-item">
+                        <div class="card bg-light">
+                                                                                    <img src="./Ecommerce on Laravel_files/1733466203_badmintonNet.jpg" class="card-img-top" alt="Badminton Net">
+                                                        <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h5 class="card-title">Badminton Net</h5>
+                                    <p class="card-price mb-0">25$</p>
+                                </div>
+                                <p class="card-text">
+                                    Full size net for badminton
+                                </p>
+                                <a href="https://user4test.itspk.com/product/eyJpdiI6InQ2NjZzVXprcVlIQVB0MDVFWWNKWGc9PSIsInZhbHVlIjoieVgreWg4Tm5RbkJkVThaazAwdk9Qdz09IiwibWFjIjoiZjA5MDAzZmViYzE2Y2ExY2VkYzE4MTgwMzdkMzViNjZkNTkwOGFlNWIwOTEzY2RiYWE5OWYzM2I1YWUxNjFiYiIsInRhZyI6IiJ9" class="btn btn-primary">View Details</a>
+
+                            </div>
+                        </div>
+                    </div>
+                                        <div class="col-md-4 product-carousel-item">
+                        <div class="card bg-light">
+                                                                                    <img src="./Ecommerce on Laravel_files/1733466093_badmintonRacket.jpg" class="card-img-top" alt="Badminton Racket">
+                                                        <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h5 class="card-title">Badminton Racket</h5>
+                                    <p class="card-price mb-0">20$</p>
+                                </div>
+                                <p class="card-text">
+                                    Badminton racket with cover
+                                </p>
+                                <a href="https://user4test.itspk.com/product/eyJpdiI6IlB2c0JKK2dMaks0UzB2RCtZQkM0Nnc9PSIsInZhbHVlIjoiejdicXZyN0kyK2hIZFFoc1hJaFVrZz09IiwibWFjIjoiZmNmMWE4ZTQxMGRjNjkxNzE0OTYxZDA4Y2FlMjMwOTMyMDc4NGYwNTk1ZjI1YjEwNDVhMzZmYWU4NzMwZWZjYiIsInRhZyI6IiJ9" class="btn btn-primary">View Details</a>
+
+                            </div>
+                        </div>
+                    </div>
+                                        <div class="col-md-4 product-carousel-item">
+                        <div class="card bg-light">
+                                                                                    <img src="./Ecommerce on Laravel_files/1733462431_badmintonShuttle.jpg" class="card-img-top" alt="Shuttle">
+                                                        <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h5 class="card-title">Shuttle</h5>
+                                    <p class="card-price mb-0">5$</p>
+                                </div>
+                                <p class="card-text">
+                                    Shuttle for badminton
+                                </p>
+                                <a href="https://user4test.itspk.com/product/eyJpdiI6IlFlRkVrUGFPK1J6ZWE2TVBJMXo5YlE9PSIsInZhbHVlIjoiQ3JaQTlhZDBmSEN0TWh1NG43dXAvUT09IiwibWFjIjoiYTVlM2RkZjMwMTE5ZGYyZmE4MGUyNjhiZDI1MmEyMDEyZTQ5YTMzMWQ0OTlmNTE3MWZkYWJiMWNmYWUwZmQyNSIsInRhZyI6IiJ9" class="btn btn-primary">View Details</a>
+
+                            </div>
+                        </div>
+                    </div>
+                                    </div>
+            </div>
+                    </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#badmintonCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#badmintonCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+    </div>
+</div>
+
+
+
+    </div>
+
+    <!-- Footer Start -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Logo Section -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <a href="https://user4test.itspk.com/#" class="d-block mb-3">
+                        <img src="./Ecommerce on Laravel_files/Arsenal_FC.svg.png" alt="Logo" class="img-fluid" style="width: 120px;">
+                    </a>
+                    <p>Leading sportswear brand offering top-quality products for athletes.</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="text-uppercase">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="https://user4test.itspk.com/#shop" class="text-white">Shop</a></li>
+                        <li><a href="https://user4test.itspk.com/#about" class="text-white">About Us</a></li>
+                        <li><a href="https://user4test.itspk.com/#contact" class="text-white">Contact Us</a></li>
+                        <li><a href="https://user4test.itspk.com/#faq" class="text-white">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <!-- Social Media Links -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="text-uppercase">Follow Us</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="https://user4test.itspk.com/#" class="text-white"><i class="bi bi-facebook"></i> Facebook</a></li>
+                        <li><a href="https://user4test.itspk.com/#" class="text-white"><i class="bi bi-twitter"></i> Twitter</a></li>
+                        <li><a href="https://user4test.itspk.com/#" class="text-white"><i class="bi bi-instagram"></i> Instagram</a></li>
+                        <li><a href="https://user4test.itspk.com/#" class="text-white"><i class="bi bi-youtube"></i> YouTube</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center">
+                <p>© 2024 MTM_AFC. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Bootstrap JS CDN -->
+    <script src="./Ecommerce on Laravel_files/bootstrap.bundle.min.js.download" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+
+
+</body></html>
