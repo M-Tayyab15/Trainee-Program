@@ -1,0 +1,18 @@
+<div id="location"></div> <!-- This will display the coordinates -->
+<script>
+        // Check if geolocation is available
+        if (navigator.geolocation) {
+            // Get the current position
+            navigator.geolocation.getCurrentPosition(function(position) {
+                var latitude = position.coords.latitude;
+                var longitude = position.coords.longitude;
+
+                document.getElementById('location').innerHTML = 
+                    "Latitude: " + latitude + "<br>Longitude: " + longitude;
+            }, function(error) {
+                document.getElementById('location').innerHTML = "Unable to retrieve your location.";
+            });
+        } else {
+            document.getElementById('location').innerHTML = "Geolocation is not supported by this browser.";
+        }
+    </script>
